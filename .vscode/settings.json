@@ -1,0 +1,21 @@
+{
+  "editor.tabSize": 4,
+
+  "liveSassCompile.settings.formats":[
+    {
+      "format": "compressed", // expanded, compact, compressed, nested
+      "extensionName": ".min.css", // css or .min.css
+      "savePath": "/css/" // null
+    }
+  ],
+  // map 파일 삭제
+  "liveSassCompile.settings.generateMap": false,
+  // "liveSassCompile.settings.includeItems": [
+  //   "/Scss/plugin/_jquery-scrollbar.scss"
+  // ],
+  "liveSassCompile.settings.autoprefix": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "liveServer.settings.port": 5501
+}
