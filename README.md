@@ -1,5 +1,9 @@
 # arket_korea_publish
 
+## CDN
+http://image.thehyundai.com/
+
+
 <script src="https://www.arket.com/etc/designs/appeaser/p11/pattern-lib/frontend/js/modernizr-custom.min.js"></script>
 <script src="https://www.arket.com/en/metrics/default/touchpoint.js"></script>
 <script src="https://www.arket.com/etc/designs/appeaser/shared/clientlibs/components.min.0ff734763f97062b81ea61876bc97b89.js"></script>
