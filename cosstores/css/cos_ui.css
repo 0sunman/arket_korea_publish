@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import "styles.css";
+@import "cos_jquery-ui.css";
+@import "frontend.min.css";
+@import "_global.css";
+@import "_reset.css";
+@import "form.css";
+@import "member.css";
+@import "mypage.css";
+@import "popup.css";
+@import "cos_revision.css";
+@import "_font.css";
+@import "landing.css";
+/*
+    파일 개요
+    ---------------------------------------------------------------------
+    @ 범위 : (V) OFF | ( ) SIS
+    @ 목적 : COS import base file
+    @ 작성 : IDR System - Publishing Team.
+    @ 최종 : 2018.02.19.00:00
+    @ 메모 : 이곳에 정의하지 않습니다. 그저 import를 위한 파일입니다. 이전 스타일은 cos_revision.css으로 옮겼습니다.
+*/

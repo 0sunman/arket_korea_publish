@@ -1,0 +1,382 @@
+@charset "utf-8";
+/*
+*  COS CUSTOM (20181127)
+*  작성자 : 유영선
+* */
+
+/* 무제한 이미지 20181127 */
+.o-product-gallery .o-slider { max-height: 100%; }
+/* // 무제한 이미지 20181127 */
+
+/* banded-component 20181127 */
+.banded-component .headline-preamble-wrapper h2 {
+	margin-bottom: 0px !important
+}
+
+.banded-component .textdata-preamble-wrapper {
+	padding-bottom: 13px;
+}
+
+.banded-component .m-free-tile {
+	cursor: auto;
+}
+
+.banded-component .m-free-tile>div {
+	display: block;
+}
+
+.banded-component .m-free-tile>div h2,
+.banded-component .m-free-tile>div p,
+.banded-component .m-free-tile>div span {
+	display: inline;
+}
+
+.banded-component .m-free-tile>div.left {
+	text-align: left;
+}
+
+.banded-component .m-free-tile>div.center {
+	text-align: center;
+}
+
+.banded-component .m-free-tile>div.right {
+	text-align: right;
+}
+
+.banded-component .m-free-tile .a-picture img.athird {
+	width: 33%;
+}
+
+.banded-component .m-free-tile .a-picture img.half {
+	width: 50%;
+}
+
+.banded-component .m-free-tile .a-picture img.full {
+	width: 100%;
+}
+
+.banded-component .ctalist-wrapper a {
+	margin-right: 14px;
+}
+
+.banded-component .ctalist-wrapper a:last-child {
+	margin-right: 0px;
+}
+
+@media (max-width: 768px){
+	.banded-component .o-grid-controller .column{ margin: 15px 0px 15px 0px; }	
+}
+
+/* // banded-component 20181127 */
+
+/* HTML MDF 자동화 20190121 */
+.product-description .description-text > p{
+	min-height:15px
+}
+/* // HTML MDF 자동화 20190121 */
+
+/* QR코드 2019-02-14 */
+.qr-code{display:none;text-align:left;}
+.details-qrcode{display:none;}
+.details-qrcode-dash{display:none !important;}
+.qr-code img{width:120px; height:120px; }
+.o-product-information .o-form .product-description .qr-code.is-open{ display:none }
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+    .qr-code{display:block;}
+    .details-qrcode-dash{display:inline !important;}
+    .details-qrcode{display:inline;}
+    .o-product-information .o-form .product-description .qr-code.is-open{ display:block }
+}
+
+/* iPads (landscape)  */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    .qr-code{display:block;}
+    .details-qrcode-dash{display:inline !important;}
+    .details-qrcode{display:inline;}
+    .o-product-information .o-form .product-description .qr-code.is-open{ display:block }
+}
+
+/* iPads (portrait)  */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    .qr-code{display:block;}
+    .details-qrcode-dash{display:inline !important;}
+    .details-qrcode{display:inline;}
+    .o-product-information .o-form .product-description .qr-code.is-open{ display:block }
+}
+
+.o-product-information .o-form .description-header .details-qrcode{ cursor:pointer }
+.o-product-information .o-form .description-header .details-qrcode.is-selected{ border-bottom: 1px solid #444444; color: #444444; }
+.o-product-information .o-form .product-description .qr-code{ display:none; }
+
+/* QR코드 // 2019-02-14 */
+
+/* 헤더 변경 */
+#gnb_warp .main-menu .sub-menu .search-text{ padding: 10px 12px 10px 0px; float: right; font-size: 11px; }
+#gnb_warp .main-menu .sub-menu .a-icon-search{ margin-top: 1px;  padding-right: 8px; }
+#gnb_warp .main-menu .sub-menu .shipping { padding-right: 12px; }
+#gnb_warp .main-menu .sub-menu .sign-in { padding-right: 12px; }
+#gnb_warp .main-menu .sub-menu .account { padding-right: 12px; }
+#gnb_warp .main-menu .sub-menu .sign-out { padding-right: 12px; }
+@media (min-width:1151px){
+	#gnb_warp .m-bag {right:70px}
+}
+#gnb_warp .m-bag .a-icon-bag{display: inline-block !important;}
+
+/* PRA 헤더 좌측정렬 */
+.o-slider-cofs.o-pra-component.o-product-slider .swiper-wrapper{-ms-flex-pack:start !important; justify-content:flex-start !important}
+/* // PRA 헤더 좌측정렬 */
+
+
+
+/* 마커 무조건 8px */
+.m-product-marker.m-product-markers .a-image{height:8px !important}
+#category-list .column .o-product .description .m-product-marker.m-product-markers .marker-image.product-marker{ margin-top:6px }
+/* // 마커 무조건 8px */
+
+/* BC카드 */
+.bccard-list{   display:none;  width: 93%;    padding: 15px;    background-color: #fff;    border: 1px solid #000;    position: absolute;   z-index: 99999999999;    left: 50%;      transform: translateX(-50%); word-break:break-all;}
+
+@media (min-width:1024px){
+	.bccard-list{ display:none;  width: 68%;    padding: 15px;    background-color: #fff;    border: 1px solid #000;    position: absolute; word-break:break-all;}
+}
+/* // BC카드 */
+
+
+/* 20191008 배너팝업 */
+.cos-hyundai-popup {
+	/* overflow-y: scroll; */
+	top: 0px;
+	clear: both;
+	width: 100% !important;
+	height: 100% !important;
+	position: absolute;
+	max-height: 100% !important;
+	overflow-y: scroll !important;
+}
+
+.cos-hyundai-popup .hyundai-cos.country {
+	width: 34.375%;
+	padding: 50px 47px;
+	min-width: 400px;
+	/*max-height: 100vh;*/
+	max-width: none;
+}
+
+@media (max-width:768px) {
+	.cos-hyundai-popup .scroll-wrapper.scrollbar-inner {
+		max-height: 100% !important;
+	}
+	.cos-hyundai-popup .hyundai-cos.country {
+		width: 90% !important;
+		height: 90% !important;
+		padding: 50px 47px !important;
+		max-width: none !important;
+		position: absolute !important;
+		box-sizing: border-box;
+		top: 70px !important;
+        left:50% !important;
+		transform: translate(-50%, 0%) !important;
+		min-width: 350px !important;
+	}
+	.cos-hyundai-popup .countries>a {
+		display: block !important
+	}
+}
+
+.hyundai-cos.country .lightbox-content {
+	padding: 0px;
+}
+
+.hyundai-cos.country .scroll-wrapper {
+	padding-right: 0px;
+}
+
+.hyundai-cos.country p {
+	margin: 17px 0 28px;
+}
+
+@media (min-width: 768px) {
+	.hyundai-cos.country p:last-child {
+		margin-top: 73px;
+		margin-bottom: 0;
+	}
+}
+
+.hyundai-cos.country p:last-child {
+	font-size: 11px;
+	margin-top: 72px;
+}
+
+.hyundai-cos.country p {
+	color: #999;
+	margin: 17px 0 28px;
+	line-height: 21px;
+}
+
+.hyundai-cos.country .countries {
+	display: block;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0;
+	column-count: 2;
+}
+
+.hyundai-cos.country .countries>a {
+	margin-bottom: 12px !important;
+	padding-left: 17px !important;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 12px;
+}
+
+.hyundai-cos.country .m-button-icon.a-icon-close.js-close-button {
+	font-size: 20px;
+	padding: 14px;
+}
+.hyundai-cos.country .scroll-wrapper{
+}
+/* 20191107 */
+@media(max-height:800px){
+	.hyundai-cos.country{height:800px !important}
+}
+@media(max-height:750px){
+	.hyundai-cos.country{height:100% !important}
+    .hyundai-cos.country .scrollbar-inner{padding-bottom: 50px !important; }
+}
+.hyundai-cos.country{overflow-y: auto !important}
+.hyundai-cos .js-content{overflow: visible !important; }
+.hyundai-cos.country .scrollbar-inner{overflow: visible !important; }
+/* // 20191107 */
+/* // 배너 팝업 */
+
+
+/* 20200205 쿠폰 관련 프로모션 코드 하단 잘리는 문제*/
+.o-cart-discount-code.is-active .code-area {
+	max-height: 100%;
+}
+/* // 20200205 */
+
+
+.icon-jsns.google {
+	/*background-image: url('../images/cos/01/google.png');*/
+	background-image: url('https://image.thehyundai.com/cos/hyundai/lib/icon/google_cos.svg') !important;
+	background-size: contain;
+	width:11px;
+}
+@media (min-width:767px){
+	#footer_warp .hyundai_footer .footer_cont span {
+		display: inline-block;
+	}
+
+
+}
+
+
+
+/* 20200914 */
+
+/*.sns_button_list span.caption{position:relative; top:-6px; margin-left:10%; right:0px}*/
+.sns_button_type .sns_button_list .icon.google{background-image: url(https://image.thehyundai.com/cos/hyundai/2020/8/sns/KR_Google.svg); background-size: contain; width:20px; height:20px; display: inline-block;}
+.sns_button_type .sns_button_list .icon.facebook{background-image: url(https://image.thehyundai.com/cos/hyundai/2020/8/sns/KR_FB.svg); background-size: contain; width:20px; height:20px; display: inline-block;}
+.sns_button_type .sns_button_list .icon.naver{background-image: url(https://image.thehyundai.com/cos/hyundai/2020/8/sns/KR_N.svg); background-size: contain; width:20px; height:20px; display: inline-block;}
+.sns_button_type .sns_button_list .icon.kakao{background-image: url(https://image.thehyundai.com/cos/hyundai/2020/8/sns/KR_Talk.svg); background-size: contain; width:20px; height:20px; display: inline-block;}
+.sns_button_type .sns_button_list .icon.kakao.w{background-image: url(https://image.thehyundai.com/cos/hyundai/2020/8/sns/KR_Talk-w.svg); background-size: contain; width:20px; height:20px; display: inline-block;}
+.sns_button_type .sns_button_list .icon.email {background-image: url(https://image.thehyundai.com/cos_cdn/images/cos/02/email.svg); background-size: contain; width:30px; height:30px; top: -5px; left: -5px; position:relative; display: inline-block;}
+.sns_button_type .sns_button_list {display:block; width:100%;font-size: 0;}
+.sns_button_type .sns_button_list {display:block; width:100%;font-size: 0;margin-top:20px !important;}
+.sns_button_type .sns_button_list ul{display:block; margin:0;border:0; width:100%;}
+.sns_button_type .sns_button_list ul:after{content:"";clear:both;display: block;}
+.sns_button_type .sns_button_list li{float: left; width:50% !important; padding:0; border:0;letter-spacing: -1px;text-align:left;height:50px;margin:0 !important}
+.sns_button_type .sns_button_list a{position:relative;display: block;width:calc(100% - 5px) !important;height:40px;font-size: 13px;text-align: left;padding: 10px;padding-left:0px;padding-right: 0px;border:1px solid #ddd !important;cursor: pointer;color:#444 !important}
+.sns_button_type .sns_button_list a .icon{margin-left:10px}
+.sns_button_type .sns_button_list a:hover{background-color: #000 !important;}
+
+.sns_button_type .sns_button_list a:hover .caption{color:white;}
+.sns_button_type .sns_button_list a:hover .icon.google{background-image: url(https://image.thehyundai.com/cos/hyundai/2020/8/sns/KR_Google-w.svg); background-size: contain; width:20px; height:20px; display: inline-block;}
+.sns_button_type .sns_button_list a:hover .icon.facebook{background-image: url(https://image.thehyundai.com/cos/hyundai/2020/8/sns/KR_FB-w.svg); background-size: contain; width:20px; height:20px; display: inline-block;}
+.sns_button_type .sns_button_list a:hover .icon.naver{background-image: url(https://image.thehyundai.com/cos/hyundai/2020/8/sns/KR_N-w.svg); background-size: contain; width:20px; height:20px; display: inline-block;}
+.sns_button_type .sns_button_list a:hover .icon.kakao{background-image: url(https://image.thehyundai.com/cos/hyundai/2020/8/sns/KR_Talk-w.svg); background-size: contain; width:20px; height:20px; display: inline-block;}
+.sns_button_type .sns_button_list a:hover .icon.email{background-image: url(https://image.thehyundai.com/cos/hyundai/2020/8/sns/email-w.svg); background-size: contain; width:30px; height:30px; top: -5px; left: -5px; position:relative; display: inline-block;}
+.sns_button_type .sns_button_list li:nth-child(2){text-align:right;}
+.sns_button_type .popup_cont.member .login_box_area .ly_line_txt{margin-top:20px}
+.sns_button_type.bt_list .idpw_list{margin: 0 auto !important; text-align: center !important; float: none !important; margin-bottom: 20px !important;}
+.sns_button_type .sns_button_list a div{width:100%;display: block;}
+.sns_button_type .sns_button_list a .icontab{position:absolute; width:20%;float: left;}
+.sns_button_type .sns_button_list a .captiontab{text-align: center;width: 100%;float: left;}
+
+.ly_member #topDisp .s-auth-select{margin-bottom:0px;}
+.ly_member #topDisp .txt_info.line{margin-top:0px;}
+.ly_member .s-auth-select ul li a{
+	/* width: 98%; */
+	/* padding: 0; */
+}
+.ly_member .s-auth-select ul li a[name='sns'].btn{line-height:20px !important;}
+.ly_member .s-auth-select ul li a[name='sns']{padding: 10px;padding-left: 0px;padding-right: 0px;}
+/* // 20200914 */
+
+
+@media (min-width: 1025px){
+	.cos-hyundai-popup .hyundai-cos.country{ width: 1022px; }
+	.cos-hyundai-popup .hyundai-cos.country .js-content.u-clearfix{ padding: 85px 10px 0; }
+	.cos-hyundai-popup .hyundai-cos.country .scrollbar-inner.scroll-content{ padding: 0 80px; }
+	.hyundai-cos.country .countries { column-count:4; }
+}
+span.no-shiping { margin-left: 20px;}
+span.shiping { content: url(https://www.cosstores.com/content/dam/cos/icon/COSbag.svg); margin-right: 10px; width: 10px; top: 2px; position: relative; }
+
+
+/* floating menu 20210324*/
+.cos-floatingbtn{
+	display:none; width:100%;height: auto;bottom: 0px;
+	text-align: center;position: fixed;
+	background-color: #fff;z-index: 24; border-top: 1px solid #e7e7e7;
+}
+.cos-floatingbtn > div{padding:12px 14px 4px 14px;}
+.cos-floatingbtn .title{font-family: 'Nanum Barun Gothic'; text-align: left;}
+.cos-floatingbtn .title .is-regular{ top:14px; right: 14px; position: absolute;}
+.cos-floatingbtn .btn-area{width: 100%;}
+.cos-floatingbtn .btn-area .blackstyle{
+	margin: 0 auto; border: none; padding: 11px 9px 6px; font-size: 12px;
+	line-height: 21px; margin-bottom: 8px; color: #fff;
+	background-color: #444; border: 1px solid #444;
+	font-size: 13px; line-height: 21px;
+	letter-spacing: .0825em; text-transform: uppercase;
+	font-family: 'Nanum Barun Gothic'; font-weight: 400;
+	text-align: center; width: 100%;
+}
+@media (max-width:787px){
+	.onlyMo{display:block !important;}
+	.onlyMo-margin-bottom-40{margin-bottom:40px;}
+	.onlyPc{display:none !important;}
+}
+/* // floating menu 20210324*/
+@media(min-width: 1025px){
+	.m-dropdown.filter-dropdown.is-open{z-index:2}
+	.o-product-filter.is-in-search-result ~ #barForPC .priceFilterWidget--outer{ padding-top:30px }
+}
+.m-product-image.video-vimeo-1{ position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; }
+
+.m-product-image.video-vimeo-2{ position: relative; padding-bottom: 133.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; }
+.m-product-image.video-vimeo-1 iframe, .m-product-image.video-vimeo-2 iframe{ position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
+
+@media (min-width:768px){
+	.slider-wrapper.prdslider-mobile.partition{display:none}
+}
+@media (max-width:767px){
+	.slider-wrapper.prdslider.partition{display: none}
+}
+
+.slider-wrapper.prdslider-mobile.partition .cover{width:100%;position: absolute;z-index: 30;height:100%;}
+.slider-wrapper.prdslider-mobile.partition .isVideo .wrapper{ position: relative; padding-bottom: 150.25%; overflow: hidden;	/* max-width: 100%; */ height: auto }
+.slider-wrapper.prdslider-mobile.partition .isVideo .wrapper iframe{	position: absolute;	left: 0px; height: 100%; top: 0px; width: 100%; max-width: 100%;}

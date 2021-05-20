@@ -1,0 +1,1490 @@
+@charset "utf-8";
+/*
+    파일 개요
+    ---------------------------------------------------------------------
+    @ 범위 : (V) OFF | (V) SIS
+    @ 목적 : COS 한국 현지화 + 텍스트 가이드 새롭게 정의
+    @ 작성 : IDR System - Publishing Team.
+    @ 최종 : 2018.04.19.17:24
+    @ 메모 : frontend.min.css에서 font-size/line-height를 일일히 추적하여 새롭게 정의한다.
+      
+      [기존 클래스 (한글용)]
+      .q-peta
+      .q-giga
+      .q-giga2
+      .q-mega
+      .q-alpha
+      .q-alpha2
+      .q-alpha3
+      .q-alpha4
+      .q-sub-headline
+      .q-body-copy-1
+      .q-body-copy-2
+      .q-body-copy-3    
+      
+      [2018.03.20 클래스 추가 (영문용)]
+      .q-peta-e
+      .q-giga-e
+      .q-giga2-e
+      .q-mega-e
+      .q-alpha-e
+      .q-alpha2-e
+      .q-alpha3-e
+      .q-alpha4-e
+      .q-sub-headline-e
+      .q-body-copy-1-e
+      .q-body-copy-2-e
+      .q-body-copy-3-e
+*/
+
+/*
+  Peta 
+  ---------------------------------------------------------------------
+  30/34 --> 26/38 --> 24/38
+*/
+@media (min-width: 768px) {
+  .example.fonts .o-font-holder {
+   /*font-size: 26px; */
+   font-size: 24px; /*@ 0130디자인리뷰-Peta가이드를 변경한다. /  2018.01.30 / mglee */
+  }
+}
+@media (min-width: 768px) {
+  [class^="a-"] .q-peta,
+  [class^="m-"] .q-peta,
+  [class^="o-"] .q-peta {
+   /*font-size: 26px; */
+   font-size: 24px; /*@ 0130디자인리뷰-Peta가이드를 변경한다. /  2018.01.30 / mglee */
+  }
+}
+
+/*
+  Giga
+  ---------------------------------------------------------------------
+  28/34 --> 24/36
+*/
+@media (min-width: 768px) {
+  .o-store-locator .a-heading-1 {
+    font-size: 24px; 
+  }
+}
+@media (min-width: 768px) {
+  [class^="a-"] .q-giga,
+  [class^="m-"] .q-giga,
+  [class^="o-"] .q-giga {
+    font-size: 24px; 
+  }
+}
+
+/*
+  Giga2
+  ---------------------------------------------------------------------
+  22/25 --> 20/28
+*/
+.o-category-push-text .category-links .a-link {
+  font-size: 20px; 
+}
+@media (min-width: 768px) {
+  .o-search .a-input {
+    font-size: 20px; 
+  }
+}
+.o-social-share .a-link [class^="a-icon-"] {
+  font-size: 20px; 
+}
+[class^="a-"] .q-giga2,
+[class^="m-"] .q-giga2,
+[class^="o-"] .q-giga2 {
+  font-size: 20px; 
+}
+
+/*
+  Mega
+  ---------------------------------------------------------------------
+  24/30 --> 22/32
+*/
+@media (min-width: 768px) {
+  .o-checkout .checkout-heading {
+    font-size: 22px;
+    /*line-height: 30px;*/
+  }
+}
+.o-local-navigation .a-heading-1 {
+  /*font-size: 22px;*/ /*@ CKR-35 : Difference in title & text size / 2018.03.28 / mglee */
+  /*line-height: 26px;*/
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .o-my-page-navigation .a-heading-2 {
+    /*마이페이지 타이틀 영문이므로 주석*/
+    /*font-size: 22px;*/
+  }
+}
+.o-order-confirmation .receipt-section .page-title {
+  font-size: 22px;
+  /*line-height: 22px;*/
+}
+.o-seo-text .a-heading-2 {
+  font-size: 22px;
+  /*line-height: 31px;*/
+}
+.o-store-locator .a-heading-1 {
+  font-size: 22px;
+}
+.o-text-block .a-heading-1 {
+  font-size: 22px;
+  /*line-height: 26px;*/
+}
+@media (min-width: 768px) {
+  [class^="a-"] .q-mega,
+  [class^="m-"] .q-mega,
+  [class^="o-"] .q-mega {
+    font-size: 22px;
+    /*line-height: 30px;*/
+  }
+}
+
+/*@ COS_KR_Style_Guide_V2에 의거 추가 / 2018.02.14 / mglee */
+/*@ 잘못된 디폴트 폰트 사이즈 - 주석으로 제거 / 2018.04.18 / mglee */
+/*
+.o-blog-listing .o-text-block .a-heading-1 {
+  font-size: 22px;
+}
+*/
+
+/*
+  Alpha
+  ---------------------------------------------------------------------
+  20/26 --> 18/26
+*/
+@media (min-width: 768px) {
+  .m-teaser.blog-teaser .a-heading-1:not(.fixed-size),
+  .m-teaser.blog-teaser .a-paragraph:not(.fixed-size) {
+    font-size: 18px;
+    /*line-height: 26px;*/
+  }
+}
+.o-blog-listing.image-left .o-text-block .a-paragraph {
+  /*font-size: 18px;*/ /* @블로그-리스팅의 이미지-레프트 스타일 오류-주석으로 제거 / 2018.02.08 / mglee */
+  /*line-height: 26px;*/
+}
+
+/*@ COS_KR_Style_Guide_V2에 의거 삭제 / 2018.02.14 / mglee */
+/*
+.o-blog-listing .o-text-block .a-heading-1 {
+  font-size: 18px;
+}
+*/
+
+.o-blog-text .a-heading-1 {
+  font-size: 18px;
+  /*line-height: 26px;*/
+}
+.o-checkout .checkout-heading {
+  font-size: 18px;
+  /*line-height: 26px;*/
+}
+@media (min-width: 768px) {
+  .o-header .search {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .o-my-page-navigation .a-heading-2 {
+    /*마이페이지 타이틀 영문이므로 주석*/
+    /*font-size: 18px;*/
+    /*line-height: 21px;*/
+  }
+}
+@media (min-width: 1151px) {
+  .o-search .a-input {
+    font-size: 18px;
+    /*line-height: 26px;*/
+  }
+}
+[class^="a-"] .q-alpha,
+[class^="m-"] .q-alpha,
+[class^="o-"] .q-alpha {
+  font-size: 18px;
+  /*line-height: 26px;*/
+}
+
+/*@ COS_KR_Style_Guide_V2에 의거 추가 / 2018.02.14 / mglee */
+.m-teaser.blog-teaser .a-heading-1:not(.fixed-size),
+.m-teaser.blog-teaser .a-paragraph:not(.fixed-size) {
+  font-size: 18px; 
+}
+
+
+/*
+  Alpha2
+  ---------------------------------------------------------------------
+  18/23 --> 16/25
+*/
+.o-my-details .m-link-toggle .a-link:after {
+  font-size: 16px; 
+  /*line-height: 100%;*/
+}
+.o-quick-buy .right-panel .o-product-information .o-form .title .a-paragraph,
+.o-quick-buy .right-panel .o-product-information .o-form .title .a-label,
+.o-quick-buy .right-panel .o-product-information .o-form .m-product-price .a-paragraph,
+.o-quick-buy .right-panel .o-product-information .o-form .m-product-price .a-label {
+  font-size: 16px; 
+  /*line-height: 23px;*/
+}
+.o-takeover .m-teaser .a-link {
+  font-size: 16px; 
+  /*line-height: 23px;*/
+}
+[class^="a-"] .q-alpha2,
+[class^="m-"] .q-alpha2,
+[class^="o-"] .q-alpha2 {
+  font-size: 16px; 
+  /*line-height: 23px;*/
+}
+
+/*@ COS_KR_Style_Guide_V2에 의거 추가 / 2018.02.14 / mglee */
+/*@ 잘못된 디폴트 폰트 사이즈 - 주석으로 제거 / 2018.04.18 / mglee */
+/*
+.o-blog-listing .o-text-block .a-paragraph,
+.o-blog-listing .o-text-block .a-button{
+  font-size: 16px;
+}
+*/
+
+/*
+  Alpha3
+  ---------------------------------------------------------------------
+  16/21 --> 15/23
+*/
+.o-text-block .a-link,
+.o-text-block .a-button {
+  font-size: 15px; 
+  /*line-height: 21px;*/
+}
+.m-search {
+  font-size: 15px; 
+}
+
+/*@ COS_KR_Style_Guide_V2에 의거 삭제 / 2018.02.14 / mglee */
+/*
+.m-teaser.blog-teaser .a-heading-1:not(.fixed-size),
+.m-teaser.blog-teaser .a-paragraph:not(.fixed-size) {
+  font-size: 15px; 
+}
+*/
+
+.o-blog-listing .o-text-block .cta-section .a-link,
+.o-blog-listing .o-text-block .cta-section .a-button {
+  font-size: 15px; 
+  /*line-height: 21px;*/
+}
+@media (min-width: 768px) {
+  .o-product-information .o-form .title .a-paragraph {
+    font-size: 15px; 
+    /*line-height: 21px;*/
+  }
+}
+@media (min-width: 768px) {
+  .o-product-information .o-form .m-product-price .a-label {
+    font-size: 15px; 
+    /*line-height: 21px;*/
+  }
+}
+@media (min-width: 768px) {
+  .o-product-information .o-form .size-section .a-paragraph {
+    font-size: 15px; 
+    /*line-height: 21px;*/
+  }
+}
+.o-text-block .a-link,
+.o-text-block .a-button {
+  font-size: 15px; 
+  /*line-height: 21px;*/
+}
+[class^="a-"] .q-alpha3,
+[class^="m-"] .q-alpha3,
+[class^="o-"] .q-alpha3 {
+  font-size: 15px;
+  /*line-height: 21px;*/
+}
+
+/*
+  Alpha4
+  ---------------------------------------------------------------------
+  14/19 --> 13/21
+*/
+
+/*@ COS_KR_Style_Guide_V2에 의거 삭제 / 2018.02.14 / mglee */
+/*
+.m-teaser.blog-teaser .a-link {
+  font-size: 13px; 
+}
+*/
+
+.m-teaser.blog-teaser .a-link:not(.fixed-size) {
+  font-size: 13px; 
+  /*line-height: 19px;*/
+}
+.o-blog-text .a-paragraph {
+  font-size: 13px; 
+  /*line-height: 19px;*/
+}
+.o-product-information .o-form .title .a-paragraph {
+  font-size: 13px; 
+  /*line-height: 19px;*/
+}
+
+.o-product-information .o-form .m-product-price .a-label {
+  font-size: 13px; 
+  /*line-height: 19px;*/
+}
+.o-product-information .o-form .size-section .a-paragraph {
+  font-size: 13px; 
+  /*line-height: 19px;*/
+}
+.o-slider .swiper-pagination span {
+  font-size: 13px; 
+  /*line-height: 19px;*/
+  /*line-height: 16px;*/
+}
+.o-store-locator .store-tile .store-adress .topic,
+.o-store-locator .content .store-adress .topic {
+  font-size: 13px; 
+  /*line-height: 19px;*/
+}
+[class^="a-"] .q-alpha4,
+[class^="m-"] .q-alpha4,
+[class^="o-"] .q-alpha4 {
+  font-size: 13px; 
+  /*line-height: 19px;*/
+}
+
+
+
+/*
+  Subheadline1
+  ---------------------------------------------------------------------
+  11/14 --> 11/18
+*/
+.o-store-locator .store-tile .campaign-concepts .a-label,
+.o-store-locator .content .campaign-concepts .a-label {
+  font-size: 11px;
+}
+@media (min-width: 1151px) {
+  .m-bag .a-heading-3 {
+    font-size: 11px;
+  }
+}
+.m-cookie-message p {
+  font-size: 11px;
+  /*line-height: 18px;*/
+}
+@media (min-width: 1025px) {
+  .m-dropdown.filter-dropdown .placeholder {
+    font-size: 11px;
+    /*line-height: 16px;*/
+  }
+}
+.m-dropdown-filter .a-input {
+  font-size: 11px;
+  /*line-height: 16px;*/
+}
+.m-product-price {
+  font-size: 11px;
+  /*line-height: 13px;*/
+}
+.m-teaser.blog-teaser .a-label {
+  font-size: 11px;
+  /*line-height: 16px;*/
+}
+
+/*@ COS_KR_Style_Guide_V2에 의거 추가 / 2018.02.14 / mglee */
+.o-square .cell .text-content .a-heading-2{
+  font-size: 11px;
+}
+
+/*
+  Subheadline1-Uppercase example
+  ---------------------------------------------------------------------
+  10/13 --> 11/18
+*/
+.a-size-swatch .size-options.out-of-stock .tooltip-text {
+  font-size: 11px;
+}
+.m-bag .a-heading-3 {
+  font-size: 11px;
+  /*line-height: inherit;*/
+}
+@media (min-width: 768px) {
+  .m-cookie-message p {
+    font-size: 11px;
+  }
+}
+.m-hazmat .hazmat-label {
+  font-size: 11px;
+  /* @취급주의 표시 두줄이상에서 다닥붙음 13->17로 바꿈 / 2018.01.25 / bhkim */
+  line-height: 17px;
+}
+.m-notification .a-paragraph {
+  font-size: 11px;
+  /*line-height: 14px;*/
+}
+.o-header .back-to-top {
+  font-size: 11px;
+  /*line-height: 13px;*/
+}
+.o-navigation .back-to-top {
+  font-size: 11px;
+  /*line-height: 13px;*/
+}
+.o-payment-checkout .card-section.aci-section .wpwl-control.wpwl-control-cardNumber,
+.o-payment-checkout .card-section.aci-section .wpwl-control.wpwl-control-cvv,
+.o-payment-checkout .card-section.aci-section .wpwl-control.wpwl-control-expiry {
+  font-size: 11px;
+}
+.o-pickup-location .m-hazmat .hazmat-label {
+  font-size: 11px;
+  /*line-height: 13px;*/
+}
+.o-product .description .temp-marker .a-label,
+.o-product-cofs .description .temp-marker .a-label {
+  font-size: 11px;
+  /*line-height: 13px;*/
+}
+.o-product-information .o-form .temp-marker .a-label {
+  font-size: 11px;
+  /*line-height: 23px;*/
+}
+.example.fonts .description {
+  font-size: 11px;
+  /*line-height: 13px;*/
+}
+[class^="a-"] .q-sub-headline,
+[class^="m-"] .q-sub-headline,
+[class^="o-"] .q-sub-headline {
+  font-size: 11px;
+  /*line-height: 13px;*/
+}
+
+/*
+  Bodycopy1
+  ---------------------------------------------------------------------
+  13/18 --> 13/21
+*/
+.is-primary-secondary-common {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.is-primary {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.is-secondary {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.a-button.is-primary {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.a-button.is-secondary {
+  font-size: 13px;
+  /*line-height: 21px;*/
+  letter-spacing: 0.0825em;
+}
+@media (min-width: 768px) {
+  .a-size-swatch .size-options {
+    font-size: 13px;
+  }
+}
+.m-breadcrumb .a-heading-1 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.m-search .a-input {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.m-search .clear-button {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.m-search-results-not-found .a-paragraph {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.m-tablist li {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-404-error .main-wrapper .content .a-heading-1 {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-about-you .a-button {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-accordion .accordion-header .a-heading-3 {
+  /*@ 아코디언 폰트사이즈 13->12 로*/
+  font-size: 12px; 
+  /*line-height: 18px;*/
+}
+.o-accordion .accordion-inner-content .a-paragraph {
+  /*@ 아코디언 폰트사이즈 13->12 로*/
+  font-size: 12px;
+  /*line-height: 18px;*/
+}
+
+/*@ COS_KR_Style_Guide_V2에 의거 삭제 / 2018.02.14 / mglee */
+/*
+.o-blog-listing .o-text-block .a-paragraph {
+  font-size: 13px;
+}
+*/
+
+.o-card-box {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-cart .cart-items-heading,
+.o-cart .order-summary-heading {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-cart .order-summary-section .o-order-summary {
+  font-size: 13px;
+}
+.o-cart.is-empty .a-heading-2 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-cart.is-empty .a-button {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-cart-discount-code .a-button.add {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-change-password .a-heading-3 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-change-password .a-button.btn-cancel {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-checkout .checkout-content-section .section .section-heading .a-heading-2,
+.o-checkout .checkout-content-section .section .section-heading .heading-caption {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-checkout .order-summary-section .cart-items-heading {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-forgot-password-checkout .o-checkout .checkout-content-section .forgot-password-form .a-heading-2,
+.o-checkout-forgot-password-confirmation .o-checkout .checkout-content-section .forgot-password-form .a-heading-2 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-faq .o-list {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-forgot-password .forgot-password-form .o-form .a-heading-2 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-forgot-password-confirmation .confirmation-text-block .a-heading-1 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+@media (min-width: 1025px) {
+  .o-local-navigation .navigation .a-link {
+    font-size: 13px;
+    /*line-height: 18px;*/
+  }
+}
+.o-minicart .a-heading-2 {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-minicart .item-count {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-my-addresses .a-heading-1 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-my-details .a-heading-3 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-my-details .m-link-toggle .a-link {
+  font-size: 13px;
+  /*line-height: 23px;*/
+}
+.o-my-details .privacy-policy {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-my-details.summary .data-sections {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-my-details.summary .a-button.edit-button {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-my-details.summary .a-button.change-password-button {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-my-orders .a-heading-2 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-my-orders-empty .a-heading-3 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-my-orders-empty .orders-empty-text {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+@media (min-width: 768px) {
+  .o-my-page-navigation .o-list li {
+    font-size: 13px;
+    /*line-height: 24px;*/
+  }
+}
+
+/*@ 헤더영역은 OriginalSize - 주석으로 제거함 / 2018.01.16 / mglee */
+/*
+.o-navigation .sub-menu {
+  font-size: 13px;
+  line-height: 33px;
+}
+*/
+/*@ 헤더영역은 OriginalSize - 주석으로 제거함 / 2018.01.16 / mglee */
+/*
+.o-navigation .departments {
+  font-size: 13px;
+  line-height: 33px;
+}
+*/
+
+.o-navigation .categories .category-list {
+  font-size: 13px;
+  /*line-height: 33px;*/
+}
+.o-navigation .notification-message {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-newsletter-signup .a-heading-2 {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-newsletter-subscription-confirmation .text-section .a-heading-1 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-newsletter-subscription-confirmation .text-section .a-button:first-child {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-newsletter-subscription-validation-email .a-heading-1 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-newsletter-unsubscribe-confirmation .text-section .a-button {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-order .order-summary-info .order-heading .a-heading-2 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-order-details .a-heading-2 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.order-row-container .o-order-row .order-table .order-info {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.order-row-container .o-order-row .order-table .order-info .order-details {
+  /*font-size: 13px;*/
+  /*line-height: 18px;*/
+  /*font-size: 17px;*/
+}
+.o-payment {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-payment .a-heading-3 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-payment.no-cards .a-button {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-payment-checkout .bottom-section .a-button {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-payment-checkout.edit-address .a-heading-2 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-pickup-location .zip-search .a-button.is-primary {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-pickup-location .zip-search .a-button.is-primary:hover {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-pickup-location .toggle-box .toggle-link {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-product-filter .filter-title {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-product-information .o-form .product-description {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-product-sort .product-sort-title {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-quick-buy .right-panel .o-product-information .a-link,
+.o-quick-buy .right-panel .o-product-information .shipping {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-remove-confirm .a-heading-2 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-reset-password .o-form .a-heading-3 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-reset-password-confirmation .text-section .headingText {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-reset-password-confirmation .a-button {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+.o-search .search-results-found {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-search .a-input {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+@media (min-width: 768px) {
+  .o-search li:not(.no-result) {
+    font-size: 13px;
+  }
+}
+.o-search-suggestions .a-paragraph {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-seo-text .a-paragraph {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-sign-in-failed .a-heading-2 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-store-locator .store-tile .store-adress .a-label,
+.o-store-locator .store-tile .opening-hours .a-label,
+.o-store-locator .store-tile .exception-hours .a-label,
+.o-store-locator .content .store-adress .a-label,
+.o-store-locator .content .opening-hours .a-label,
+.o-store-locator .content .exception-hours .a-label {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-text-block .a-paragraph {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-verify-address .a-heading-2,
+.o-verify-address .a-heading-3 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+.o-verify-address .a-button {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+[class^="a-"] .q-body-copy-1,
+[class^="m-"] .q-body-copy-1,
+[class^="o-"] .q-body-copy-1 {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+[class^="a-"] .q-cta,
+[class^="m-"] .q-cta,
+[class^="o-"] .q-cta {
+  font-size: 13px;
+  /*line-height: 21px;*/
+}
+
+
+/*
+  Bodycopy2
+  ---------------------------------------------------------------------
+  12/17 --> 12/20
+*/
+.a-input {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.a-label {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.a-size-swatch .size-options {
+  /*font-size: 12px;*/ /*@ 사이즈박스의 폰트크기 조정 (PC 및 태블릿) / 2018.03.29 / mglee */
+}
+.m-bag {
+  font-size: 12px;
+  /*line-height: 15px;*/
+}
+.m-cart-addition .heading .a-heading-2 {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.m-cart-addition .cart-item-info {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.m-change-country-lightbox {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.m-checkbox {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.dropdown-example .a-heading-3,
+.dropdown-example-open .a-heading-3 {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.m-dropdown {
+  font-size: 12px;
+  /*line-height: 21px;*/
+}
+@media (min-width: 1025px) {
+  .m-dropdown.filter-dropdown.departments-filter:before {
+    font-size: 12px;
+  }
+}
+.m-dropdown-filter li {
+  font-size: 12px;
+  /*line-height: 17px;*/
+  /*line-height: 31px;*/
+}
+.m-filter-badge .a-label {
+  font-size: 12px;
+  /*line-height: 12px;*/
+}
+.m-free-tile .headline-preamble-wrapper p {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.m-free-tile .cta-wrapper .cta-link {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.m-informative-section p,
+.m-informative-section h3 {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.m-input .a-label {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.m-order-summary-row {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.m-radio-button .a-label.label-text {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-about-you .m-dropdown .description {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-about-you .m-input.input-country .a-link {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-add-element .o-add-element-button {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-address-box-add .o-form .m-dropdown .description {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-address-box-edit {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-address-box-edit .o-account-box .m-dropdown .description {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-cart-item .cart-item-info {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-checkout .checkout-content-section .section .section-heading .a-link {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-checkout .checkout-content-section .section .section-summary .summary-content {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-checkout .checkout-content-section .section .section-summary .a-heading-3 {
+  /*line-height: 18px;*/
+  font-size: 12px;
+}
+.o-checkout .order-summary-section .edit-cart-link {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-forgot-password-checkout .o-checkout .checkout-content-section .forgot-password-form .a-label,
+.o-checkout-forgot-password-confirmation .o-checkout .checkout-content-section .forgot-password-form .a-label {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-continue-as-guest .country-section,
+.o-continue-as-guest .policy-section {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-country-selector {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-delivery .delivery-heading .a-heading-2 {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-delivery .delivery-heading .a-paragraph {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-delivery .delivery-option .a-paragraph.option {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-delivery .m-radio-button p:nth-child(2) {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-delivery .delivery-notification .a-heading-3,
+.o-delivery .delivery-notification .m-checkbox {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-filter .m-dropdown.filter-dropdown .list-wrapper .options {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-footer .items .a-link {
+  font-size: 12px;
+  /*line-height: 26px;*/
+}
+.o-forgot-password .forgot-password-form .o-form .a-label.data {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-forgot-password .forgot-password-form .o-form .m-input .a-label {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-forgot-password-confirmation .confirmation-text-block .a-paragraph {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-header.is-checkout .back-to-shop .a-heading-3 {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-home-delivery .a-heading-2 {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-home-delivery .selected-address .a-paragraph {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-home-delivery .selected-address .a-paragraph.delivery-text,
+.o-home-delivery .selected-address .a-paragraph.main-address {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-home-delivery .selected-address .a-link.change-address {
+  font-size: 12px;
+}
+.o-home-delivery .home-delivery-heading.has-warning .warning-section {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-home-delivery .home-delivery-heading.has-warning .warning-section .a-paragraph {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+@media (min-width: 1025px) {
+  .o-home-delivery.is-changing-address .edit-block .o-address-box-edit.checkout .o-account-box .m-input {
+    font-size: 12px;
+    /*line-height: 17px;*/
+  }
+  .o-home-delivery.is-changing-address .a-heading-2,
+  .o-home-delivery.is-changing-address .delivery-change-text {
+    font-size: 12px;
+    /*line-height: 17px;*/
+  }
+}
+.o-home-delivery.is-changing-address .delivery-change-text {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-home-delivery .o-address-box-edit.checkout .input-country .a-link {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-local-navigation .navigation .a-link {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-minicart .summary-section .o-order-summary {
+  font-size: 12px;
+  /*line-height: 18px;*/
+}
+.o-minicart .summary-section .a-button.is-secondary {
+  font-size: 12px;
+  /*line-height: 21px;*/
+}
+.o-minicart.is-empty .empty-cart-text {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-my-addresses .a-heading-2 {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+
+.o-my-addresses .a-paragraph {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-my-details .sign-up,
+.o-my-details .policy-text {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-my-page-navigation .o-list li {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-newsletter-personalized .optional-label {
+  font-size: 12px;
+  /*line-height: 21px;*/
+}
+.o-newsletter-signup .a-paragraph.subscribe-agree {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-newsletter-signup .m-checkbox-age .a-label:last-child {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-newsletter-subscription-confirmation .text-section .a-paragraph {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-newsletter-subscription-validation-email .a-paragraph {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-newsletter-unsubscribe .o-form .a-paragraph {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-newsletter-unsubscribe .o-form .m-input .a-label {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-newsletter-unsubscribe-confirmation .text-section .a-paragraph {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-order-confirmation .receipt-section .additional-info,
+.o-order-confirmation .receipt-section .additional-text {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-order-confirmation .receipt-section .summary-text {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-order-confirmation .sign-up-section .my-account-button {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-order-confirmation .sign-up-section .email-duplicate-information,
+.o-order-confirmation .sign-up-section .session-timeout-information {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-order-confirmation .sign-up-section .email-duplicate-information .session-timeout-heading,
+.o-order-confirmation .sign-up-section .email-duplicate-information .email-duplicate-heading,
+.o-order-confirmation .sign-up-section .session-timeout-information .session-timeout-heading,
+.o-order-confirmation .sign-up-section .session-timeout-information .email-duplicate-heading {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-order-confirmation .order-summary-section span {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-order-confirmation .product-section .products-heading {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-order-confirmation .o-registration .o-registration-form .a-heading-2 {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-order-details {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-order-summary {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-payment-checkout {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-payment-checkout .card-section.aci-section .wpwl-control,
+.o-payment-checkout .card-section.aci-section .wpwl-control input {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-pickup-location .heading .a-heading-2 {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-pickup-location .no-pup-found {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-product-filter .filter-link {
+  font-size: 12px;
+  /*line-height: 12px;*/
+}
+.o-product-filter .a-link.js-clear {
+  font-size: 12px;
+  /*line-height: 12px;*/
+}
+.o-product-filter .total-info {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-product-sort .product-sort-link {
+  font-size: 12px;
+  /*line-height: 12px;*/
+}
+.o-quick-buy .right-panel .o-product-information .o-form .size-select .a-size-swatch .size-options {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-registration .o-registration-form {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-registration .o-registration-form .country-section-wrapper .a-label,
+.o-registration .o-registration-form .country-section-wrapper .a-link {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-remove-confirm .a-paragraph {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-sign-in .link-holder .a-link {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-sign-in-failed .a-paragraph {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-slider-cofs .slider-title {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+
+/*@ COS_KR_Style_Guide_V2에 의거 삭제 / 2018.02.14 / mglee */
+/*.o-square .cell .text-content .a-heading-2,*/
+
+.o-square .cell .text-content .a-paragraph,
+.o-square .cell .text-content .a-link {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+
+.o-verify-address .instructions {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+.o-verify-address .address-you-entered .a-link {
+  font-size: 12px;
+  /*line-height: 12px;*/
+}
+[class^="a-"] .q-body-copy-2,
+[class^="m-"] .q-body-copy-2,
+[class^="o-"] .q-body-copy-2 {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+[class^="a-"] .q-input,
+[class^="m-"] .q-input,
+[class^="o-"] .q-input {
+  font-size: 12px;
+  /*line-height: 17px;*/
+}
+
+/*@ COS_KR_Style_Guide_V2에 의거 추가 / 2018.02.14 / mglee */
+.m-teaser.blog-teaser .a-link {
+  font-size: 12px; 
+}
+
+/*
+  Bodycopy3
+  ---------------------------------------------------------------------
+  11/16 --> 11/18
+*/
+[class^="a-"] .q-body-copy-3,
+[class^="m-"] .q-body-copy-3,
+[class^="o-"] .q-body-copy-3 {
+  font-size: 11px;
+  /*line-height: 16px;*/
+}
+
+/*
+  다시 재정의
+  ---------------------------------------------------------------------
+  단순히 가이드 순으로 분류를 하다보니 frontend.min.css의 정의 '순서'를 지킨것은 아니다.
+  그러다보니, frontend.min.css에서 '재정의'를 하는 부분은 스타일 오류가 난다.
+  이는 이곳에서 다시 재정의해야한다.
+  뾰족한 수가 없으며, 그때그때 눈으로 보고 발견하면 이곳에서 재정의하는 수 밖에 없어보인다.
+*/
+/*@ .o-search .a-input / 2018.01.16 / mglee */
+.o-search .a-input {
+  font-size: 13px;
+  /*line-height: 18px;*/
+}
+
+@media (min-width: 768px) {
+  .o-search .a-input {
+    font-size: 20px;
+    /*line-height: 25px;*/
+  }
+}
+
+@media (min-width: 1151px) {
+  .o-search .a-input {
+    font-size: 18px;
+    /*line-height: 26px;*/
+  }
+}
+
+/* @ 2018.03.02 / mglee */
+@media (min-width: 768px) {
+  .o-product-information .o-form .title .a-paragraph {
+    font-size: 15px; 
+    /*line-height: 21px;*/
+  }
+}
+
+/* @ 2018.04.18 / mglee */
+.o-blog-listing .o-text-block .a-heading-1 {
+  font-size: 18px;
+}
+
+/* @ 2018.04.18 / mglee */
+.o-blog-listing .o-text-block .a-paragraph,
+.o-blog-listing .o-text-block .a-button{
+  font-size: 13px;
+}
+/*// @ 폰트사이즈, 라인하이트 재정의 */
+
+/*
+  컴포넌트용 영문 클래스
+    + 스퀘어 컴포넌트의 쉼표도 사이즈 정의해야함 / 2018.04.11
+    + 2/3/4 컴포넌트의 쉼표도 사이즈 정의해야함 / 2018.04.19
+  ---------------------------------------------------------------------
+*/
+@media (max-width: 767px){
+.q-peta-e, 
+.o-square .cell .text-content .a-link.q-peta-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-peta-e::after{font-size: 26px !important; line-height: 30px !important;}
+}
+@media (min-width: 768px){
+.q-peta-e, 
+.o-square .cell .text-content .a-link.q-peta-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-peta-e::after{font-size: 30px !important; line-height: 34px !important;}
+}
+@media (max-width: 767px){
+.q-giga-e, 
+.o-square .cell .text-content .a-link.q-giga-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-giga-e::after{font-size: 24px !important; line-height: 31px !important;}
+}
+@media (min-width: 768px){
+.q-giga-e, 
+.o-square .cell .text-content .a-link.q-giga-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-giga-e::after{font-size: 28px !important; line-height: 34px !important;}
+}
+.q-giga2-e, 
+.o-square .cell .text-content .a-link.q-giga2-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-giga2-e::after{font-size: 22px !important; line-height: 25px !important;}
+@media (max-width: 767px){
+.q-mega-e, 
+.o-square .cell .text-content .a-link.q-mega-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-mega-e::after{font-size: 20px !important; line-height: 26px !important;}
+}
+@media (min-width: 768px){
+.q-mega-e, 
+.o-square .cell .text-content .a-link.q-mega-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-mega-e::after{font-size: 24px !important; line-height: 30px !important;}
+}
+.q-alpha-e, 
+.o-square .cell .text-content .a-link.q-alpha-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-alpha-e::after{font-size: 20px !important; line-height: 26px !important;}
+.q-alpha2-e, 
+.o-square .cell .text-content .a-link.q-alpha2-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-alpha2-e::after{font-size: 18px !important; line-height: 23px !important;}
+.q-alpha3-e, 
+.o-square .cell .text-content .a-link.q-alpha3-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-alpha3-e::after{font-size: 16px !important; line-height: 21px !important;}
+.q-alpha4-e, 
+.o-square .cell .text-content .a-link.q-alpha4-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-alpha4-e::after{font-size: 14px !important; line-height: 19px !important;}
+.q-sub-headline-e, 
+.o-square .cell .text-content .a-link.q-sub-headline-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-sub-headline-e::after{font-size: 11px !important; line-height: 14px !important;}
+.q-body-copy-1-e, 
+.o-square .cell .text-content .a-link.q-body-copy-1-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-body-copy-1-e::after{font-size: 13px !important; line-height: 18px !important;}
+.q-body-copy-2-e, 
+.o-square .cell .text-content .a-link.q-body-copy-2-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-body-copy-2-e::after{font-size: 12px !important; line-height: 17px !important;}
+.q-body-copy-3-e, 
+.o-square .cell .text-content .a-link.q-body-copy-3-e::after, 
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-body-copy-3-e::after{font-size: 11px !important; line-height: 16px !important;}
+
+/*
+  컴포넌트용 한글 클래스
+    + 스퀘어 컴포넌트의 쉼표도 사이즈 정의해야함 / 2018.04.11
+    + 2/3/4 컴포넌트의 쉼표도 사이즈 정의해야함 / 2018.04.19
+  ---------------------------------------------------------------------
+*/
+@media (max-width: 767px){
+.q-peta, 
+.o-square .cell .text-content .a-link.q-peta::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-peta::after
+{font-size: 22px !important; line-height: 34px !important;}
+}
+@media (min-width: 768px){
+.q-peta, 
+.o-square .cell .text-content .a-link.q-peta::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-peta::after
+{font-size: 26px !important; line-height: 38px !important;}
+}
+@media (max-width: 767px){
+.q-giga, 
+.o-square .cell .text-content .a-link.q-giga::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-giga::after
+{font-size: 20px !important; line-height: 32px !important;}
+}
+@media (min-width: 768px){
+.q-giga, 
+.o-square .cell .text-content .a-link.q-giga::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-giga::after
+{font-size: 24px !important; line-height: 36px !important;}
+}
+.q-giga2, 
+.o-square .cell .text-content .a-link.q-giga2::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-giga2::after
+{font-size: 20px !important; line-height: 28px !important;}
+@media (max-width: 767px){
+.q-mega, 
+.o-square .cell .text-content .a-link.q-mega::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-mega::after
+{font-size: 18px !important; line-height: 28px !important;}
+}
+@media (min-width: 768px){
+.q-mega, 
+.o-square .cell .text-content .a-link.q-mega::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-mega::after
+{font-size: 22px !important; line-height: 32px !important;}
+}
+.q-alpha, 
+.o-square .cell .text-content .a-link.q-alpha::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-alpha::after
+{font-size: 18px !important; line-height: 26px !important;}
+.q-alpha2, 
+.o-square .cell .text-content .a-link.q-alpha2::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-alpha2::after
+{font-size: 16px !important; line-height: 25px !important;}
+.q-alpha3, 
+.o-square .cell .text-content .a-link.q-alpha3::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-alpha3::after
+{font-size: 15px !important; line-height: 23px !important;}
+.q-alpha4, 
+.o-square .cell .text-content .a-link.q-alpha4::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-alpha4::after
+{font-size: 13px !important; line-height: 21px !important;}
+.q-sub-headline, 
+.o-square .cell .text-content .a-link.q-sub-headline::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-sub-headline::after
+{font-size: 11px !important; line-height: 18px !important;}
+.q-body-copy-1, 
+.o-square .cell .text-content .a-link.q-body-copy-1::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-body-copy-1::after
+{font-size: 13px !important; line-height: 21px !important;}
+.q-body-copy-2, 
+.o-square .cell .text-content .a-link.q-body-copy-2::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-body-copy-2::after
+{font-size: 12px !important; line-height: 20px !important;}
+.q-body-copy-3, 
+.o-square .cell .text-content .a-link.q-body-copy-3::after,
+.o-grid-controller .content .column .m-free-tile .cta-wrapper .a-link.q-body-copy-3::after
+{font-size: 11px !important; line-height: 18px !important;}

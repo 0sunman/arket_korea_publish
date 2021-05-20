@@ -1,0 +1,1342 @@
+@charset "utf-8";
+/*
+    파일 개요
+    ---------------------------------------------------------------------
+    @ 범위 : (V) OFF | ( ) SIS
+    @ 목적 : 비패턴립 스타일 정의, 로그인/회원가입(멤버)를 위한 스타일
+    @ 작성 : IDR System - Publishing Team.
+    @ 최종 : 2018.04.18.16:52
+*/
+.tit {
+  /* @ 제목 폰트변경 / 2017.12.29 / bhkim */
+  font-size: 16px;
+  color: #444444;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 570px) {
+  .tit {
+    font-size: 16px;
+  }
+}
+.ly_tit_line {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.ly_tit_line h3 {
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+  /*font size -> 13*/
+  font-size: 13px;
+  padding-bottom: 7px;
+  margin-bottom: 0;
+}
+/*@ 노보더 / 2018.01.17 / mglee */
+.ly_tit_line h3.no-line {
+  border-bottom: 0;
+}
+
+/*@media screen and (max-width: 570px) {*/
+/*  .ly_tit_line h3 {*/
+/*    font-size: 16px;*/
+/*  }*/
+/*}*/
+.ly_tit_line h2 {
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 13px;
+  /*padding-bottom: 10px;*/
+  margin-bottom: 0;
+}
+@media screen and (max-width: 570px) {
+  .ly_tit_line h2 {
+    font-size: 16px;
+  }
+}
+.ly_tit_line .no_line {
+  border-bottom: none;
+}
+.ly_tit_line .no_line.center {
+  text-align: center;
+}
+.ly_tit_line .btn_tx {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+  color: #999999;
+  border: 0;
+  text-align: right;
+  padding-right: 0;
+  background-color: transparent;
+  text-decoration: none;/*@ 타이틀 라인 버튼 밑줄제거 / 2018.01.29 / bhkim */
+  padding: 0;/*@ 가려진정보보기 패딩 없앰 / 2018.01.17 / mglee */
+  color: #444;/*@ 폰트컬러 변경 / 2018.01.17 / mglee */
+  /*text-decoration: none;*//*@ 밑줄 없앰 / 2018.01.17 / mglee */ /*@ 밑줄 다시 생성(기본 가상계좌 관리 팝업-수정,삭제 버튼) / 2018.01.24 / mglee */
+}
+.popup_cont .ly_tit_line .btn_tx {
+  bottom: 5px;/*@ 팝업안에있는건 좀 다르다 / 2018.01.19 / mglee */
+  /*@ 타이틀 라인내 버튼 라인 제거 / 2018.01.29 / bhkim */
+  text-decoration: none;
+}
+/*@ 호버시 gray / 2018.01.25 / mglee */
+.popup_cont .ly_tit_line .btn_tx:hover {
+  color: #979797 !important;
+}
+
+@media screen and (max-width: 570px) {
+  .ly_tit_line .btn_tx {
+    font-size: 13px;
+  }
+}
+.logo_hyundai {
+  display: inline-block;
+  width: 113px;
+  height: 9px;
+  background: url("../images/cos/01/common/thehyundai.svg") no-repeat left top;
+  background-size: 100% auto;
+}
+.icon-jsns {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.icon-jsns + span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.icon-jsns.naver {
+  /*background-image: url('../images/cos/01/naver.png');*/
+  background-image: url('../images/cos/02/naver.svg');
+  background-size: contain;
+}
+.icon-jsns.facebook {
+  /*background-image: url('../images/cos/01/facebook.png');*/
+  background-image: url('../images/cos/02/facebook.svg');
+  background-size: contain;
+}
+.icon-jsns.google {
+  /*background-image: url('../images/cos/01/google.png');*/
+  background-image: url('../images/cos/02/googleplus.svg');
+  background-size: contain;
+}
+/*@ member join auto add 확정시 이미지교체 svg, 백그라운드 사이즈 제거요망 / 2018.01.01 / bhkim */
+.icon-jsns.email {
+  /*background-image: url('../images/cos/01/email.png');*/
+  background-image: url('../images/cos/02/email.svg');
+  background-size: contain;
+}
+.icon-jsns.kakao {
+  /*background-image: url('../images/cos/01/kakao.png');*/
+  background-image: url('../images/cos/02/kakao.svg');
+  background-size: contain;
+}
+
+/*@ s-autu-select 용 추가 2018.01.05 / bhkim */
+.s-auth-select .icon-jsns {
+  width: 20px;
+  height: 20px;
+  padding: 14px;
+  border: 1px #ccc solid;
+  background-size: 78%;
+  /*투명도 변경*/
+  /*opacity: 0.55;*/
+  /*border: 1px #aaa solid;*/
+}
+.s-auth-select .icon-jsns + span {
+  display: block;
+  line-height:18px;
+}
+.s-auth-select .icon-jsns.naver {
+  background-image: url('../images/cos/02/naver.svg');
+  background-size: 78%;
+}
+.s-auth-select .icon-jsns.facebook {
+  background-image: url('../images/cos/02/facebook.svg');
+  background-size: 78%;
+}
+.s-auth-select .icon-jsns.google {
+  background-image: url('../images/cos/02/googleplus.svg');
+  background-size: 78%;
+}
+.s-auth-select .icon-jsns.email {
+  background-image: url('../images/cos/02/email.svg');
+  background-size: 78%;
+}
+.s-auth-select .icon-jsns.kakao {
+  background-image: url('../images/cos/02/kakao.svg');
+  background-size: 78%;
+}
+
+.tb_chart {
+  width: 100%;
+}
+.tb_chart table {
+  width: 100%;
+  /*border: 1px solid #e5e5e5;*/
+  border-bottom: 1px solid #e5e5e5;
+  /*border: 1px solid #e5e5e5;*/
+}
+.tb_chart table caption {
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: bold; /* @ 회원가입부분 선택사항 타이틀캡션 볼드 20180402 bhkim*/
+}
+.tb_chart table thead th {
+  background-color: #f6f6f6;
+  /*color: #444444;*/
+  padding: 10px 15px;
+  font-weight: bold; /* @ 회원가입부분 테이블 제목 볼드 20180402 bhkim*/
+  /*border-left: 1px solid #e5e5e5;*/
+  text-align: left;
+}
+.tb_chart table tbody td {
+  /*border-left: 1px solid #e5e5e5;*/
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 15px;
+  text-align: left;
+}
+.tb_chart table tbody td,
+.tb_chart table tbody th {
+  /*color: #999999;*/
+}
+/*@ 가입폼 반응형태 삭제 20180403 bhkim */
+/*@media screen and (max-width: 570px) {*/
+/*  .ly_member .tb_chart table,*/
+/*  .ly_member .tb_chart table th,*/
+/*  .ly_member .tb_chart table td {*/
+/*    border: none;*/
+/*  }*/
+/*  .ly_member .tb_chart table thead {*/
+/*    display: none;*/
+/*  }*/
+/*  .ly_member .tb_chart table tbody tr {*/
+/*    border: 1px solid #e5e5e5;*/
+/*    margin: 5px 0;*/
+/*    display: block;*/
+/*  }*/
+/*  .ly_member .tb_chart table tbody td {*/
+/*    border-top: 1px solid #e5e5e5;*/
+/*    text-align: left;*/
+/*    display: table;*/
+/*    border-collapse: initial;*/
+/*    padding: 10px 0;*/
+/*    width: 100%;*/
+/*    vertical-align: middle;*/
+/*  }*/
+/*  .ly_member .tb_chart table tbody td:first-child {*/
+/*    border-top: none;*/
+/*  }*/
+/*  .ly_member .tb_chart table tbody td:before {*/
+/*    content: attr(data-title);*/
+/*    display: table-cell;*/
+/*    padding: 5px 0;*/
+/*    width: 36%;*/
+/*    height: 100%;*/
+/*    padding-left: 10px;*/
+/*    padding-right: 15px;*/
+/*  }*/
+/*}*/
+.ly_member {
+  width: 786px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.ly_member * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ly_member .center {
+  text-align: center;
+}
+.ly_member p {
+  margin: 0;
+}
+.ly_member ul {
+  padding: 0;
+  margin: 0;
+}
+.ly_member ul li {
+  list-style: none;
+}
+.ly_member.type2 .btn {
+  width: 190px;
+}
+.ly_member .txt {
+  margin-bottom: 20px;
+  /*@ member restyle / 2018.01.01 / bhkim */
+  text-align: center;
+  /*font-weight: bold;*/
+  /*@ 라인보톰 있어야 한다. => 제거 / 2018.01.15 / mglee */ 
+  /*border-bottom: 1px #ebebeb solid; */
+  /*padding-bottom: 15px;*/
+}
+.ly_member .txt.left {
+  text-align:left;
+}
+.ly_member .txt em {
+  font-style: normal;
+  /*color: #666666;*/
+  /*font-weight: bold;*/
+}
+.ly_member .txt .btn_link {
+  text-decoration: underline;
+  margin-left: 20px;
+}
+.ly_member .sub_txt em {
+  font-style: normal;
+  /*color: #666666;*/
+  /*font-weight: 900;*/
+  /*@ 비밀번호 변경완료에서 em 두껍게 / 2018.01.13 / mglee */
+}
+.ly_member .sub_txt span {
+  display: block;
+}
+/*.ly_member .ly_tit_line {*/
+/*  margin-top: 67px;*/
+/*}*/
+.ly_member .ly_tit_line > .form_lab {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media screen and (max-width: 570px) {
+  .ly_member .ly_tit_line > .form_lab {
+    position: relative;
+    text-align: right;
+  }
+}
+.ly_member .join_step {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+  margin: 20px 0 35px;
+}
+.ly_member .join_step li {
+  float: left;
+  width: 33.33333333%;
+  height: 37px;
+  /*line-height: 35px;*/ /* @ 회원가입 간편인증/가입정보입력/가입완료 상하 정렬 안맞음  / 2018.04.18 / mglee */
+  border-left: 1px solid #e5e5e5;
+  text-align: center;
+  font-size: 12px;
+  /* @ 회원가입 단계수정 2017.12.29 / bhkim */
+  color: #ccc;
+}
+
+/* @ 회원가입 간편인증/가입정보입력/가입완료 상하 정렬 안맞음 / 2018.04.18 / mglee */
+.ly_member .join_step li {line-height: 36px;}
+.os-android .ly_member .join_step li {line-height: 42px;}
+.os-mac .ly_member .join_step li {line-height: 42px;}
+
+.ly_member .join_step li:first-child {
+  border-left: 0;
+}
+.ly_member .join_step li.on {
+  background-color: #f6f6f6;
+  /* @ 회원가입 단계수정 2017.12.29 / bhkim */
+  color: #444;
+}
+@media screen and (max-width: 570px) {
+  .ly_member .join_step li {
+    font-size: 13px;
+  }
+}
+.ly_member .cont {
+  width: 78.98%;
+  margin: 0 auto;
+  padding-top: 18px;
+}
+.ly_member .cont .s-auth-select {
+  border-bottom: 0;
+}
+.ly_member .s-auth-select {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 25px;
+}
+.ly_member .s-auth-select .txt_info {
+  margin-bottom: 10px;
+}
+.ly_member .s-auth-select .txt_info em {
+  color: #666;
+  font-style: normal;
+}
+.ly_member .s-auth-select ul {
+  overflow: hidden;
+  width: 100%;
+}
+.ly_member .s-auth-select ul li {
+  float: left;
+  width: 33.33333333%;
+}
+.ly_member .s-auth-select ul li * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ly_member .s-auth-select ul li:first-child {
+  margin-left: 0;
+}
+.ly_member .s-auth-select ul li a {
+  display: inline-block;
+  width: 98.23%;
+  padding: 7px 20px;
+  border: 1px solid #dddddd;
+  font-size: 12px;
+  color: #9e9e9e;
+  text-decoration: none;
+}
+/*@media screen and (max-width: 570px) {*/
+/*  .ly_member .s-auth-select ul li a {*/
+/*    font-size: 13px;*/
+/*  }*/
+/*}*/
+.ly_member .tit_cont {
+  display: block;
+  font-size: 13px;
+  /*color: #666666;*/
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+@media screen and (max-width: 570px) {
+  .ly_member .tit_cont {
+    font-size: 12px;
+  }
+}
+.ly_member .form_group.email_form,
+.ly_member .form_group.email_form {
+  width: 100%;
+  padding-top: 20px;
+}
+.ly_member .btn_area {
+  text-align: center;
+  /* 멤버 일반 상단 여백 설정 */
+  margin-top: 40px;
+}
+.ly_member .btn_area.al_left {
+  text-align: left;
+}
+.ly_member .btn_area.line {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 30px;
+}
+.ly_member .btn_group {
+  display: table;
+  border-collapse: separate;
+  width: 100%;
+  margin-top: 25px;
+}
+.ly_member .btn_group li {
+  /*@ member btn restyle / 2018.01.01 / bhkim */
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.ly_member .btn_group li:first-child {
+  padding-left: 0;
+}
+.ly_member .btn_group li .btn {
+  width: 100%;
+  /*@ member btngroup restyle / 2018.01.01 / bhkim */
+  line-height: 40px;
+}
+.ly_member .cert-email .txt_info {
+  margin-bottom: 10px;
+}
+.ly_member .cert-email .btn_area .btn_action {
+  /*width: 59.35%;*/
+}
+.ly_member .txt_info.s {
+  line-height: 1.4;
+  margin-top: 25px;
+}
+.ly_member .txt_info.line {
+  margin-top: 25px;
+  /*border-top: 1px solid #e5e5e5;*/
+  padding-top: 12px;
+}
+.ly_member .txt_info.line a.link {
+  color: #666666;
+  /* @ 컨트롤 스크립트에서 강제로 underline 밑줄을 없앰 제거 (!important 추가) / 2017.12.22 / bhkim */
+  text-decoration: underline !important ;
+}
+.ly_member .txt_info.center {
+  /*좌측정렬로 변경*/
+  text-align: left;
+}
+.ly_member .txt_info span {
+  color: #666666;
+  vertical-align: -1px;
+}
+.ly_member .txt_info em {
+  color: #666;
+  font-style: normal;
+}
+.ly_member .ch {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.ly_member .ch label {
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.ly_member .ch span {
+  margin-right: 20px;
+  margin-bottom: 3px;
+  display: inline-block; /*@ sns 밑으로 구성 20180403 bhkim*/
+}
+.ly_member .ch span label {
+  margin-right: 0;
+}
+.ly_member .tb_edit {
+  width: 100%;
+}
+.ly_member .tb_edit table {
+  width: 100%;
+}
+.ly_member .tb_edit table tbody th:first-child {
+  width: 30%;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: top;
+}
+.ly_member .tb_edit table tbody td {
+  width: 70%;
+}
+.ly_member .tb_edit table tbody td .form_group,
+.ly_member .tb_edit table tbody td .form_group.email_form {
+  width: auto;
+}
+.ly_member .ly_tb_chart {
+  /*border-top: 1px solid #e5e5e5;*/
+  padding-top: 40px;
+}
+.ly_member .tx_agree {
+  color: #666;
+  text-align: center;
+  margin: 25px 0;
+}
+.ly_member .btn_join_action {
+  width: 367px;
+}
+.ly_member .txt_join {
+  /*안내문 마진 변경*/
+  margin-top: 16px;
+}
+.ly_member .txt_join em {
+  color: #666;
+  font-style: normal;
+}
+.ly_member .txt_join span {
+  display: block;
+}
+.ly_member .btn_go_home {
+  width: 190px;
+  margin: 30px auto 0;
+  display: block;
+}
+.ly_member .tx_bg_box {
+  /*@ member count connetion restyle / 2018.01.01 / bhkim */
+  /*margin-top: 25px;*/
+  margin-bottom: 20px;
+  /*background-color: #f6f6f6;*/
+  padding: 30px 10px 15px;
+  text-align: center;
+  border-bottom: 1px #ebebeb solid;
+}
+.ly_member .tx_bg_box p em {
+  font-style: normal;
+  color: #666;
+}
+.ly_member .login_box_area {
+  overflow: hidden;
+  margin: 0 0 30px;
+  position: relative;
+}
+.ly_member .login_box_area .box {
+  /*@ member count connetion restyle 2018.01.01 / bhkim */
+  /*border-top: 1px solid #e5e5e5;*/
+  /*padding: 25px 0;*/
+}
+.ly_member .login_box_area .box.join_link {
+  width: 46.5%;
+  padding-left: 5%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.ly_member .login_box_area .box .tx strong {
+  /*@ member count connetion restyle 2018.01.01 / bhkim */
+  display: block;
+  font-size: 14px;
+  /*color: #999999;*/
+  font-weight: normal;
+  padding-top: 10px;
+}
+@media screen and (max-width: 570px) {
+  .ly_member .login_box_area .box .tx strong {
+    font-size: 16px;
+  }
+}
+.ly_member .login_box_area .box > .btn {
+  margin-top: 15px;
+  width: 190px;
+}
+.ly_member .login_box_area .input_login .tb_edit.type1 table tbody th {
+  width: 20%;
+}
+.ly_member .login_box_area .input_login .tb_edit.type3 table tbody th {
+  width: 35%;
+}
+.ly_member .login_box_area .tb_edit table tbody th {
+  width: 22%;
+}
+.ly_member .login_box_area .tb_edit table tbody td {
+  width: auto;
+}
+.ly_member .login_box_area .tb_edit table tbody td .input_group {
+  width: 262px;
+}
+.ly_member .login_box_area .bt_list {
+  overflow: hidden;
+  margin-top: 35px;
+}
+.ly_member .login_box_area .bt_list .idpw_list {
+  float: left;
+  /*margin-right: 28px;*/
+  margin-right: 0;/* @ 로그인회원가입/로그인팝업 스타일 정의 / 2018.01.13 / mglee */
+  margin-top: 3px;
+}
+.ly_member .login_box_area .bt_list .idpw_list li {
+  display: inline-block;
+  margin-right: 10px;
+  letter-spacing: -1px;
+}
+.ly_member .login_box_area .bt_list .idpw_list li a {
+  /* @ 밑줄 cta 스타일 수정 / 2017.12.27 / bhkim */
+  /*text-decoration: underline;*/
+  /*border-bottom: 1px solid #444;*/ /* @ q-udln 단일화 작업 / 2018.03.31 / mglee */
+  /*padding-bottom: 1px;*/
+  /*padding-bottom: 3px;*/ /* @ 전시쪽처럼 비패턴립 페이지도 언더라인 더 벌어지게 / 2018.02.10 / mglee */ /* @ q-udln 단일화 작업 / 2018.03.31 / mglee */
+  
+  /*border-bottom: 1px solid #444;*/
+  /*padding-bottom: 3px;*/
+}
+.ly_member .login_box_area .bt_list .idpw_list li .tx {
+  margin-right: 20px;
+}
+.ly_member .login_box_area .bt_list .sns_list {
+  float: left;
+  overflow: hidden;
+  *zoom: 1;
+}
+.ly_member .login_box_area .bt_list .sns_list li {
+  float: left;
+  /*margin-right: 10px;*/
+  margin-right: 0;/* @ 로그인회원가입/로그인팝업 스타일 정의 / 2018.01.11 / mglee */
+  margin-left: 10px;/* @ 로그인회원가입/로그인팝업 스타일 정의 / 2018.01.11 / mglee */  
+  font-size: 11px;
+}
+
+.ly_member .login_box_area .bt_list .sns_list li:hover {
+  opacity: 0.7;
+}
+
+.ly_member .login_box_area .bt_list .sns_list li a {
+  display: table;
+  border-collapse: separate;
+  text-decoration: none;
+}
+.ly_member .login_box_area .bt_list .sns_list li .ly_ic {
+  display: table-cell;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #cccccc;
+  text-align: center;
+}
+.ly_member .login_box_area .bt_list .sns_list li .ly_ic .icon-jsns {
+  margin: 0 auto;
+  vertical-align: middle;
+  /* @ 로그인팝업 sns 이중 보더제거 / 2018.1.24 / bhkim */
+  border:none;
+}
+.ly_member .login_box_area .bt_list .sns_list li .t {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 9px;
+  display: none;
+}
+.ly_member .ly_line_txt {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 30px;
+  margin-top: 20px;
+}
+/* @데스크톱 사이즈 변경 365 / 2017.12.28 / bhkim */
+.ly_member.type2 {
+  /*width: 365px;*/
+  margin: 0 auto;
+  padding: 27px 0;
+  width: 290px;
+}
+.ly_member.type2 .box {
+  border-top: 0;
+}
+.ly_member .login_box_area.idpwbox .tb_edit {
+  border-bottom: 1px solid #e5e5e5;
+}
+.ly_member .login_box_area.idpwbox .tb_edit table th {
+  width: 25%;
+  vertical-align: top;
+  /*@ member id table restyle / 2018.01.01 / bhkim */
+  /*color: #999;*/
+}
+.ly_member .login_box_area.idpwbox .tb_edit table td .input_group {
+  width: 100%;
+}
+.ly_member .form_lab span {
+  margin-bottom: 10px;
+}.ly_member .form_lab span.txt_info {
+  color: #ccc;
+}
+.ly_member .login_box_area.idpwbox .tb_edit.br0 {
+  border-bottom: 0;
+}
+.ly_member .bg_box {
+  background-color: #f6f6f6;
+  padding: 30px;
+  margin: 30px 0;
+}
+.ly_member .bg_box .txt {
+  margin-bottom: 0;
+  word-break: keep-all;
+}
+.ly_member .bg_box .txt em, .ly_member .bg_box .txt.type1 em {
+  /*color: #666;*/
+  font-style: normal;
+  /*font-weight: bold;*/
+}
+.ly_member .bg_box .txt.type1 {
+  text-align: center;
+}
+.ly_member.type2 .bg_box .txt.type1 {
+  border-bottom: 1px #ebebeb solid; 
+  padding-bottom: 20px;
+}
+
+
+
+.ly_member .idpw_result {
+  /*@ member id search result restyle / 2018.01.01 / bhkim */
+  /*background-color: #f6f6f6;*/
+  padding: 20px 0px 20px;
+  margin-bottom: 20px;
+  margin-top: -16px;
+  border-bottom:1px #ebebeb solid;
+  border-top:1px #ebebeb solid;
+}
+
+.ly_member.type2 .idpw_result {
+  border: none;
+  padding-bottom: 0px;
+}
+.ly_member .idpw_result .tb_edit table {
+  width: 100%;
+}
+.ly_member .idpw_result .tb_edit table td {
+  /*color: #666;*/
+}
+.ly_member .idpw_result .id_list {
+  background-color: #fff;
+  /*@ member id search result restyle / 2018.01.01 / bhkim */
+  padding: 10px 0px 0px;
+  margin-top: 10px;
+}
+.ly_member .idpw_result .id_list p {
+  margin-top: 8px;
+}
+.ly_member .idpw_result .id_list p:first-child {
+  margin-top: 0;
+}
+.ly_member .idpw_result .id_list p label input {
+  margin-right: 10px;
+}
+
+.ly_member .idpw_result .id_list p label span {
+  color:#999;
+}
+.ly_member .idpw_result .tx_id em {
+  color: #666;
+  font-style: normal;
+}
+.ly_member .idpw_result .tx_b {
+  /*color: #666;*/
+  margin-top: 30px;
+}
+/*@ member id result restyle / 2018.01.01 / bhkim */
+.ly_member .idpw_result.center {
+  text-align: center;
+  padding: 27px 0 33px;
+}
+/*@ member id result restyle 2018.01.01 / bhkim */
+.ly_member .idpw_result.center p {
+  margin-bottom: -6px;
+}
+.input_group strong {
+  font-size: 14px;
+}
+.btn_full {
+  width: 100% !important;
+}
+
+
+/* pc 수정 탭부분 */
+  .ly_member {
+    width: 90%;
+  }
+  .ly_member .cont {
+    width: 88.57%;
+  }
+  .ly_member .m_mt0 {
+    /*margin-top: 0 !important;*/
+  }
+  .ly_member .tb_edit {
+    width: 100%;
+  }
+  .ly_member .tb_edit table tbody th:first-child {
+    display: table-row;
+    width: 100%;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: top;
+  }
+  .ly_member .tb_edit table tbody td {
+    width: 100%;
+    display: block;
+  }
+  .ly_member .login_box_area .box {
+    float: none;
+    width: 100%;
+  }
+  
+  .ly_member .login_box_area .box .tb_edit table {
+    width: 100%;
+  }  
+  
+  .ly_member .login_box_area .box .tb_edit table tr {
+   padding-top: 10px;
+   display: block;
+  }
+  
+  .ly_member .login_box_area .box .tb_edit table tr:first-child {
+   padding-top: 10px;
+  }
+  
+  
+  .ly_member .login_box_area .box .tb_edit table tbody td .input_group {
+    width: 100%;
+  }
+
+  .ly_member .login_box_area .box.join_link {
+    position: relative;
+    left: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+  .ly_member .login_box_area .box .btn {
+    width: 100%;
+    /*@ member lognin_box btn restyle / 2018.01.01 / bhkim */
+    line-height: 40px;
+  }
+  .ly_member .login_box_area .box .ly_line_txt {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .ly_member .login_box_area .bt_list {
+    /*margin-top: 9px;*/
+    margin-top: 25px;/* @ 아이디찾기비번찾기 + SNS 레이아웃 변경 / 2018.01.13 / mglee */
+    overflow:hidden;/* @ 아이디찾기비번찾기 + SNS 레이아웃 변경 / 2018.01.12 / mglee */
+  }
+  .ly_member.type2 .login_box_area .box.input_login .bt_list:last-child {
+    margin-top:16px;
+  }
+  .ly_member .login_box_area .bt_list .idpw_list {
+    /*float: none;*/
+    float:left;/* @ 아이디찾기비번찾기 + SNS 레이아웃 변경 / 2018.01.12 / mglee */
+    /*width: 100%;*/
+    width:auto;/* @ 아이디찾기비번찾기 + SNS 레이아웃 변경 / 2018.01.12 / mglee */
+    display: block;
+  }
+  .ly_member .login_box_area .bt_list .sns_list {
+    float: none;
+    float:right;/* @ 아이디찾기비번찾기 + SNS 레이아웃 변경 / 2018.01.12 / mglee */
+    display: block;
+    margin-top: 45px;
+    margin-top:0;/* @ 아이디찾기비번찾기 + SNS 레이아웃 변경 / 2018.01.12 / mglee */
+  }
+  .ly_member .login_box_area .bt_list .sns_list li .t {
+    /*display: table-cell;*/
+    display: none; /* @ SNS버튼 텍스트는 안보이게 한다 / 2018.01.12 / mglee */
+    vertical-align: middle;
+  }
+  .ly_member .idpw_result .tb_edit table tbody th:first-child {
+    display: table-cell;
+  }
+/* //pc 수정 탭부분 */
+
+/* pc 수정 모바일 부분 */
+  .ly_tit_line h2 {
+    display: block;
+    text-align: center;
+    border-bottom: 0;
+  }
+  .ly_member {
+    margin: 0 auto;
+    /* @데스크톱 사이즈 변경 290 / 2017.12.28 / bhkim */
+    padding: 27px 0;
+    width: 290px;
+  }
+  .ly_member .cont {
+    /*@컨텐츠 넓이 설정 100% 2017.12.29 / bhkim */
+    width: 100%;
+    padding-top: 16px;
+  }
+  .ly_member .s-auth-select ul li {
+    /*@ auto width 수정*/
+    /*width: 20%;*/ /*@ 네이버 아이콘 삭제 후 정렬은 중앙정렬로 좌우 꽉차게 정렬 / 2018.04.05 / mglee */
+    width: 25%; /*@ 네이버 아이콘 삭제 후 정렬은 중앙정렬로 좌우 꽉차게 정렬 / 2018.04.05 / mglee */
+    margin: 17px 0 20px;
+  }
+
+  .ly_member .s-auth-select ul li a {
+    width: 98%;
+    padding: 0;
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+  }  
+  /*@member auth ctn restyle / 2018.01.01 / bhkim */
+  .ly_member .s-auth-select ul li a.btn, .ly_member .s-auth-select ul li a.btn:hover  {
+    background-color: #fff;
+    border: none;
+    color: #444;
+    text-align: center;
+  }  
+  .ly_member .s-auth-select ul li a i {
+    vertical-align: middle;
+    margin-right: 0;
+  }
+  .ly_member .s-auth-select ul li a i:hover {
+    opacity: 0.7;
+    /*호버시 투명도 변경*/
+    /*opacity: 0.4;*/
+    /*border: 1px #777 solid;*/
+  }  
+  .ly_member .s-auth-select ul li a.btn i.icon-jsns.email.is_active {
+    background-color: #999;
+    background-image: url('../images/cos/02/email_w.svg');
+  }
+  
+  .ly_member .cert-email .email_form .email_id {
+    width: auto;
+  }
+  .ly_member .form_group .email_id {
+    /*width: 50% !important;*/
+  }
+  .ly_member .ly_tit_line {
+  /* @데스크탑 상단 컨텐츠 마진 38->0 / 2017.12.28 / bhkim */
+    /*margin-top: 38px;*/
+  }
+   .ly_member.type2 .ly_tit_line h2 {
+    margin-bottom: 20px;
+  } 
+  
+  .ly_member .ly_tit_line.center {
+    text-align: center;
+  }
+  .ly_member .ly_tb_chart .tb.tb_chart.mt30 {
+    padding-top: 30px;
+  }
+  .ly_member .tb_chart table tbody td {
+    padding: 10px 5px;
+  }
+  .ly_member .ch {
+    margin-bottom: 20px;
+  }
+  .ly_member .ch .type-checkbox {
+    margin-left: 20px;
+  }  
+  .ly_member .ch .type-checkbox:first-child {
+    margin-left: 0px;
+  }
+  .ly_member .ch > label:last-child {
+    margin-top: 10px;
+    display: block;
+  }
+  .ly_member .btn_join_action {
+    width: 100%;
+  }
+  .ly_member .ly_tb_chart {
+    padding-top: 30px;
+  }
+  .ly_member .txt_join {
+    text-align: center;
+  }
+  .ly_member .btn_go_home {
+    width: 100%;
+    /*@ member go home btn restyle / 2018.01.01 / bhkim */
+    line-height: 40px;
+  }
+  .ly_member.type2 {
+    /*width: 100%;*/
+  }
+  .ly_member .login_box_area {
+    margin-top: 0;
+  }
+  .ly_member .login_box_area.idpwbox .tb_edit {
+    border-bottom: 0;
+  }
+  .ly_member .login_box_area.idpwbox .tb_edit table tbody tr {
+    padding-top: 15px;
+    display: block;
+  }
+  .ly_member .login_box_area.idpwbox .tb_edit table tbody tr:first-child {
+    padding-top: 0px;
+  }
+  
+  .ly_member .login_box_area.idpwbox .box.input_login .txt {
+    padding-bottom: 15px;
+  }
+  
+  
+  .ly_member .login_box_area.idpwbox .tb_edit.br0 table tbody tr {
+    padding-top: 0px;
+  }  
+  .ly_member .login_box_area.idpwbox .tb_edit.br0 table tbody tr th {
+    color: #999;
+  }  
+  .ly_member .login_box_area.idpwbox .tb_edit.br0 table tbody tr:nth-child(3) {
+    padding-top: 5px;
+  } 
+  .ly_member .login_box_area.idpwbox .tb_edit.br0 table tbody tr td {
+   padding: 2px 0;
+  }   
+  
+  
+  .ly_member .idpw_result {
+    /*@ member id search result restyle / 2018.01.01 / bhkim */
+    /*padding: 20px;*/
+  }
+  .ly_member .idpw_result .tb_edit table tbody th:first-child {
+    display: table-cell;
+  }
+  .ly_member .bg_box {
+    background-color: transparent;
+    padding: 0;
+  }
+  /*.ly_member .bg_box .txt.type1 {*/
+  /*  text-align: left;*/
+  /*}*/
+  .ly_member .btn_area.line {
+    border-top: 0;
+    padding: 0;
+  }
+  .ly_member .btn_area .btn {
+    width: 100%;
+  }
+  .ly_member .txt .btn_link {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #959595;
+    display: block;
+    letter-spacing: 1px;
+    padding: 11px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 46%;
+    line-height: 1;
+  }
+  .ly_member .sub_txt {
+    display: inline-block;
+    text-align: center;
+  }
+  .ly_member.type2 .sub_txt {
+    display: inline-block;
+    text-align: left;
+  }
+  /*@ input_group inside btn / 2017.12.29 / bhim*/
+  .input_group .input_group_btn {
+    width: 100px;
+  } 
+  .input_group .input_group_btn .btn {
+    font-size: 12px;
+  }
+  
+/* //pc 수정 모바일 부분 */
+
+
+@media screen and (max-width: 980px) {
+  /* @탭용 사이즈 대략 적용 75% / 2017.12.28 / bhkim */
+  .ly_member {
+    /*width: 75%;*/ /*@ 탭, 모바일 사이즈 동일 20180403 bhkim*/
+  }
+  /* @탭용 사이즈 대략 적용 75% / 2017.12.28 / bhkim */
+  .ly_member.type2 {
+    /*width: 75%;*/ /*@ 탭, 모바일 사이즈 동일 20180403 bhkim*/
+  }
+  
+  .ly_member .cont {
+    /*width: 88.57%;*/
+  }
+  .ly_member .m_mt0 {
+    margin-top: 0 !important;
+  }
+  .ly_member .tb_edit {
+    width: 100%;
+  }
+  .ly_member .tb_edit table tbody th:first-child {
+    display: table-row;
+    width: 100%;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: top;
+  }
+  .ly_member .tb_edit table tbody td {
+    width: 100%;
+    display: block;
+  }
+  .ly_member .login_box_area .box {
+    float: none;
+    width: 100%;
+  }
+  .ly_member .login_box_area .box .tb_edit table {
+    width: 100%;
+  }
+  .ly_member .login_box_area .box .tb_edit table tbody td .input_group {
+    width: 100%;
+  }
+  .ly_member .login_box_area .box.join_link {
+    position: relative;
+    left: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+  .ly_member .login_box_area .box .btn {
+    width: 100%;
+  }
+  .ly_member .login_box_area .box .ly_line_txt {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .ly_member .login_box_area .bt_list { 
+    /*margin-top: 9px;*/ 
+    margin-top:20px; /* @ 로그인회원가입/로그인팝업 스타일 정의 / 2018.01.11 / mglee */
+  }
+  .ly_member .login_box_area .bt_list .idpw_list {
+    /*float: none;*/ 
+    float:left;/* @ 로그인회원가입/로그인팝업 스타일 정의 / 2018.01.11 / mglee */
+    /*width: 100%;*/ 
+    width:auto;/* @ 로그인회원가입/로그인팝업 스타일 정의 / 2018.01.11 / mglee */
+    display: block;
+  }
+  .ly_member .login_box_area .bt_list .sns_list {
+    /*float: none;*/ 
+    float:right;/* @ 로그인회원가입/로그인팝업 스타일 정의 / 2018.01.11 / mglee */
+    display: block;
+    /*margin-top: 45px; */ 
+    margin-top:0;/* @ 로그인회원가입/로그인팝업 스타일 정의 / 2018.01.11 / mglee */
+  }
+  .ly_member .login_box_area .bt_list .sns_list li .t {
+    display: table-cell;
+    vertical-align: middle;
+    display: none;/* @ 로그인회원가입/로그인팝업 스타일 정의 / 2018.01.11 / mglee */
+  }
+  .ly_member .idpw_result .tb_edit table tbody th:first-child {
+    display: table-cell;
+  }
+}
+@media screen and (max-width: 570px) {
+  .ly_tit_line h2 {
+    display: block;
+    text-align: center;
+    border-bottom: 0;
+  }
+  .ly_member {
+    margin: 0;
+    /* @ 모바일 사이즈 패딩 변경 0으로 / 2017.12.29 / bhkim */
+    padding: 0;
+    width: 100%;
+  }
+  .ly_member .cont {
+    width: 100%;
+    padding-top: 30px;
+  }
+  /*@member auth ctn restyle / 2018.01.01 / bhkim */
+  .ly_member .s-auth-select ul li {
+    /*width: 50%;*/
+    /*margin: 0;*/
+  }
+  .ly_member .s-auth-select ul li a {
+    width: 98%;
+    padding: 0;
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+  }
+  .ly_member .s-auth-select ul li a i {
+    vertical-align: middle;
+    margin-right: 0;
+  }
+  .ly_member .cert-email .email_form .email_id {
+    width: auto;
+  }
+  .ly_member .form_group .email_id {
+    /*width: 50% !important;*/
+  }
+  .ly_member .ly_tit_line {
+    /*margin-top: 32px;*/
+  }
+  .ly_member .ly_tit_line.center {
+    text-align: center;
+  }
+  .ly_member .tb_chart table tbody td {
+    padding: 15px 5px;
+  }
+  .ly_member .ch {
+    margin-bottom: 20px;
+  }
+  .ly_member .ch > label:last-child {
+    margin-top: 10px;
+    display: block;
+  }
+  .ly_member .btn_join_action {
+    width: 100%;
+  }
+  .ly_member .ly_tb_chart {
+    padding-top: 30px;
+  }
+  .ly_member .txt_join {
+    text-align: center;
+  }
+  .ly_member .btn_go_home {
+    width: 100%;
+  }
+  .ly_member.type2 {
+    width: 100%;
+  }
+  .ly_member .login_box_area {
+    margin-top: 0;
+  }
+  .ly_member .login_box_area.idpwbox .tb_edit {
+    border-bottom: 0;
+  }
+  .ly_member .idpw_result {
+    padding: 20px;
+  }
+  .ly_member .idpw_result .tb_edit table tbody th:first-child {
+    display: table-cell;
+  }
+  .ly_member .bg_box {
+    background-color: transparent;
+    padding: 0;
+  }
+  .ly_member .bg_box .txt.type1 {
+    /*text-align: left;*/
+    text-align: center;/*@ 비밀번호변경완료 페이지, 모바일일때도 센터정렬이어야 함 / 2018.01.24 / mglee */
+  }
+  .ly_member .btn_area.line {
+    border-top: 0;
+    padding: 0;
+  }
+  .ly_member .btn_area .btn {
+    width: 100%;
+  }
+  .ly_member .txt .btn_link {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #959595;
+    display: block;
+    letter-spacing: 1px;
+    padding: 11px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 46%;
+    line-height: 1;
+  }
+  .ly_member .sub_txt {
+    display: inline;
+  }
+}
+
+
+.ly_member .button_list {
+  overflow: hidden;
+  /*margin-left: -5px;*/
+  /*margin-right: -5px;*/
+  /*@ 좌우 버튼 마진설정 / 2018.01.08 / bhkim */
+  margin-top: 22px;
+  width: 100%;
+}
+.ly_member .button_list li {
+  float: left;
+  width: 50%;
+  padding: 0 5px;
+}
+.ly_member .button_list li:first-child {
+  padding-left: 0; 
+}
+.ly_member .button_list + .tx {
+  margin-top: 15px;
+}
+
+.ly_member.type2 .login_box_area.idpwbox .box.input_login .txt {
+  border-bottom: 1px #ebebeb solid;
+}
+
+.ly_member.type2 .login_box_area.idpwbox .box.input_login .button_list {
+  margin-top: 40px;
+}
+
+.ly_member.type2 .login_box_area.idpwbox .tb_edit .form_lab {
+  padding-top: 0;
+}
+.ly_member.type2 .login_box_area.idpwbox .btn {
+  width: 100%;
+}
+
+.ly_member .ly_tit_line.pt40 {
+  padding-top: 40px;
+}
+
+.ly_member .ly_tit_line.pt40 > .form_lab {
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  top: auto;
+}
+
+/*@ 회원가입 강조 스타일 추가 20180402 bhkim */
+.ly_member .m_bold {
+  font-weight: bold !important;
+}
+

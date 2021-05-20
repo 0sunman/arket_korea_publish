@@ -1,0 +1,1745 @@
+@charset "utf-8";
+/*
+    파일 개요
+    ---------------------------------------------------------------------
+    @ 범위 : (V) OFF | ( ) SIS
+    @ 목적 : 비패턴립 스타일 정의, 마이페이지(마이코스)를 위한 스타일
+    @ 작성 : IDR System - Publishing Team.
+    @ 최종 : 2018.04.04.17:50
+*/
+#account-nav .mm_sort {
+  margin-bottom: 25px;
+}
+#account-nav .mm_sort h3 {
+  color: #b2b2b2;
+  font-size: 12px;
+}
+@media screen and (max-width: 570px) {
+  #account-nav .mm_sort h3 {
+    font-size: 13px;
+  }
+}
+#account-nav .mm_sort ul {
+  padding-left: 10px;
+}
+#account-nav .mm_sort.selected h3 {
+  color: #767676;
+}
+#account-nav .mm_sort.selected li.active a {
+  color: #767676;
+}
+#my-account:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*.ly_mypage {*/
+/*  padding-top: 30px;*/
+/*}*/
+.ly_mypage h2 {
+  /*@ mypage headding 13px / 2018.01.04 / bhkim */
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .ly_mypage h2 {
+    /*@ mypage mobile headding 13px / 2018.01.04 / bhkim */
+    font-size: 13px;
+    margin-bottom: 9px;
+  }
+}
+.ly_mypage a {
+  text-decoration: none;
+}
+.ly_mypage p {
+  margin: 0;
+}
+.ly_mypage ul {
+  margin: 0;
+  padding: 0;
+}
+.ly_mypage ul li {
+  list-style: none;
+}
+.ly_mypage .ly_tit_line h3 {
+  margin: 0;
+  /*color: #999999;*/
+}
+.ly_mypage .ly_tit_line h3 span {
+  font-size: 12px;
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage .ly_tit_line h3 span {
+    font-size: 13px;
+  }
+}
+.ly_mypage .tit_m {
+  display: none;
+}
+.ly_mypage .tit_m h3 {
+  margin-top: 0;
+}
+.ly_mypage .btn_tx_group {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /*@ 주문배송상세조회 cta 위치수정 / 2018.01.10 / bhkim */
+  top: 0;
+}
+
+.ly_mypage .btn_tx_group .btn_tx {
+  position: relative;
+}
+.ly_mypage .btn_tx_group .btn_tx:hover {
+  /*@ 타이틀 라인 버튼 밑줄제거 / 2018.01.29 / bhkim */
+  text-decoration: none;
+  opacity: 0.7;
+}
+.ly_mypage .btn_group li {
+  display: inline-block;
+  margin-left: 50px;
+}
+.ly_mypage .btn_group li:first-child {
+  margin-left: 0;
+}
+.ly_mypage .my_box {
+  padding-bottom: 40px;
+}
+.ly_mypage .my_box.line {
+  border-bottom: 1px solid #e5e5e5;
+}
+.ly_mypage .my_box.bt_line {
+  padding-top: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+/*@ 마이박스 좁은버전 / 2018.01.16 /mglee */
+.ly_mypage .my_box.narrow {
+  width: 290px;
+}
+/*@ 마이박스 좁은버전 - 팝업도 되야 / 2018.01.18 /mglee */
+.popup_cont .my_box.narrow {
+  width: 290px;
+}
+
+/*@ 마이박스 좁은버전-모바일 / 2018.01.18 /mglee */
+@media (max-width: 767px) {
+.ly_mypage .my_box.narrow {
+    width: 100%;
+  }  
+}
+
+
+
+
+.ly_mypage .my_box.narrow table{
+  width: 100%;
+}
+
+.ly_mypage .my_box .tx_nodata {
+  margin-top: 20px;
+}
+.ly_mypage .tx em {
+  font-style: normal;
+  color: #666;
+}
+.ly_mypage .ly_btn {
+  margin-top: 40px;
+}
+.ly_mypage .ly_btn .btn {
+  margin-top: 0;
+}
+.ly_mypage .btn {
+  width: 190px;
+  /*@ 주문 취소 버튼 마진 변경 / 2018.01.17 / bhkim*/
+  margin-top: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ly_mypage .btn-full {
+  width: 100%;
+}
+.ly_mypage .my_login {
+  /*border-top: 1px solid #e5e5e5;*//*@ 상단 보더 제거 / 2018.01.17 / mglee */
+  /*margin-top: 30px;*//*@ 상단 마진 제거 / 2018.01.17 / mglee */
+}
+.ly_mypage .my_login .tb_edit {
+  /*width: 322px;*/
+  width: auto;/*@ 인풋텍스트가 삐쳐나옴. / 2018.01.17 / mglee */
+  /*margin-top: 20px;*//*@ 상단 마진 제거 / 2018.01.17 / mglee */
+}
+.ly_mypage .my_login .tb_edit table th {
+  /*width: 63px;*/
+  width: auto;
+  vertical-align: top;
+  /*padding-top: 8px;*/
+  padding-top: 24px;/*@ TR과 TR사이 간격을 좀 더 크게 / 2018.01.17 / mglee */
+  padding-top: 17px;/*@ TR과 TR사이 간격을 좀 좁힘 / 2018.01.18 / mglee */
+  color: #999;
+  font-size: 12px;/*@ TH 디자인 가이드 바뀜 / 2018.01.18 / mglee */
+  color: #444;/*@ TH 디자인 가이드 바뀜 / 2018.01.18 / mglee */
+}
+.ly_mypage .my_login .tb_edit table th label.gray{
+  color: #a9a9a9;
+}
+.ly_mypage .my_login .tb_edit table td {
+  padding: 7px 0;
+  padding-top: 5px;/* @ 폼 제목 내용 사이 간격 좁힘 / 2018.01.18 / mglee */
+  padding-top: 1px;/* @ 폼 제목 내용 사이 간격 더 좁힘 / 2018.01.18 / mglee */
+}
+.ly_mypage .my_login .tb_edit table td .btn {
+  margin-top: 0;
+  /*line-height: 15px;*//*@ 버튼 크기 조절 / 2018.01.17 / mglee */  
+  /*line-height: 23px;*//*@ 버튼 크기 조절 / 2018.01.17 / mglee */  
+  line-height: 19px;/*@ 버튼 라인하이트 상하 조절 / 2018.01.18 / mglee */  
+  width: 100px;/*@ 버튼 width 190은 너무 크다 / 2018.01.17 / mglee */  
+  padding-left: 0;/*@ 버튼 양옆 패딩은 없어야 한다 / 2018.01.17 / mglee */  
+  padding-right: 0;
+  font-size: 12px;/*@ 폰트사이즈 줄이자 / 2018.01.17 / mglee */  
+}
+
+/*@ 변경하기, 취소하기 버튼 왼쪽 간격 / 2018.01.17 / mglee */
+.ly_mypage .my_login .tb_edit table th .txt_btn {
+  margin-left: 20px; 
+}
+/*@ 변경하기, 취소하기 버튼 왼쪽 간격 -모바일일땐 우측으로 붙인다 / 2018.01.18 / mglee */
+@media (max-width: 767px) {
+  .ly_mypage .my_login .tb_edit table th .txt_btn {
+    float: right;
+    margin-left: 0;   
+  }
+  
+  /*@ 언더라인 일괄 작업 후 놓쳤던 부분 수정 / 2018.04.04 / mglee */
+  .ly_mypage .my_login .tb_edit table th .q-udln {
+    float: right;
+    margin-left: 0;   
+  }
+  
+}
+
+
+
+/*@ 인풋텍스트와 보조보톰버튼 사이 간격 / 2018.01.17 / mglee */
+.ly_mypage .my_login .tb_edit table .form_group{
+  /*margin-top: 15px;*/
+  margin-top: 5px;/*@ 라벨(제목)과 하단 인풋 사이 간격 / 2018.01.17 / mglee */
+}
+.ly_mypage .my_login .tb_edit table .form_group.email_form{
+  /*margin-top: 0px;*//*@ 라벨(제목)과 하단 인풋 사이 간격 / 2018.01.17 / mglee */
+}
+
+/*@ 체크박스를 둘러싸는 랩퍼 / 2018.01.17 / mglee */
+.ly_mypage .my_login .tb_edit table .form_lab_wrap{
+  margin-top: 15px;
+}
+
+/*@ 첫번째 버튼의 왼쪽 간격은 필요없다. / 2018.01.17 /mglee */
+.ly_mypage .my_login .tb_edit table td .form_group .form_btn:first-child{
+  padding-left: 0;
+  background: red;
+}
+.ly_mypage .my_edit .tb_edit {
+  width: auto;
+  margin-top: 20px;
+}
+.ly_mypage .my_edit .tb_edit table th {
+  width: 90px;
+  vertical-align: top;
+  padding-top: 8px;
+}
+.ly_mypage .my_edit .tb_edit table td {
+  padding: 7px 0;
+}
+.ly_mypage .my_edit .tb_edit table td .input_group_btn {
+  width: auto;
+}
+.ly_mypage .my_edit .tb_edit table td .btn {
+  margin-top: 0;
+  width: auto;
+}
+.ly_mypage .refund_form .input_group {
+  /*@ 레이아웃 넓이 변경 340으로 / 2018.01.29 / bhkim */
+  width: 340px;
+}
+.ly_mypage .refund_form .input_group .input_group_btn {
+  width: 80px !important;
+}
+.ly_mypage .refund_form .input_group .input_group_btn .btn {
+  width: 100% !important;
+}
+.ly_mypage .refund_form.mycontent .btn_tx_group.hide {
+  display: none;
+}
+.ly_mypage .refund_form.mycontent .btn_tx_group.hide.open {
+  display: block;
+}
+.ly_mypage .refund_form.mycontent .my_box .tx_nodata,
+.ly_mypage .refund_form.mycontent .my_box .ly_edit,
+.ly_mypage .refund_form.mycontent .my_box .tb_edit {
+  display: none;
+}
+.ly_mypage .refund_form.mycontent .my_box .tx_nodata.open,
+.ly_mypage .refund_form.mycontent .my_box .ly_edit.open,
+.ly_mypage .refund_form.mycontent .my_box .tb_edit.open {
+  display: block;
+}
+.ly_mypage .tx_tooltip {
+  border: 0;
+  padding: 0;
+  font-size: 12px;
+  vertical-align: top;
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage .tx_tooltip {
+    font-size: 13px;
+  }
+}
+.ly_mypage .od_detail {
+  margin-bottom: 30px;
+}
+/*@ 마이페이지 pc 폰트 커짐 제거 / 2018.01.10 / bhkim */ /*@ 마이페이지 모바일 폰트 커짐 제거 / 2018.01.10 / bhkim */
+/*.ly_mypage .od_detail .od_num {*/
+/*  font-size: 14px;*/
+/*}*/
+@media screen and (max-width: 570px) {
+  .ly_mypage .od_detail .od_num {
+    font-size: 16px;
+  }
+}
+.ly_mypage .od_detail .tip2:before {
+  content: "?";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  color: #444;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.ly_mypage .od_detail .tip2 .icon,
+.ly_mypage .od_detail .tip2 .ic_comm {
+  position: absolute !important;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  text-indent: -100%;
+}
+/*@ 마이페이지 주문상세조회 마진 제거 / 2018.01.10 / bhkim */
+/*.ly_mypage .od_detail .tx_od_list {*/
+/*  margin-top: 10px;*/
+/*}*/
+.ly_mypage .od_detail .tx_od_list li {
+  font-size: 12px;
+  vertical-align: top;
+}
+/*@ 마이페이지 모바일 폰트 커짐 제거 / 2018.01.10 / bhkim */
+/*@media screen and (max-width: 570px) {*/
+/*  .ly_mypage .od_detail .tx_od_list li {*/
+/*    font-size: 13px;*/
+/*  }*/
+/*}*/
+.ly_mypage .od_detail .tx_od_list li.form_group .input_group {
+  /*width: 100px;*/ /*@ 주문배송상세 보기 화면에서 "주문내역 숨김"링크 옆 (?) 아이콘이 IE에서 다음줄에 표시됨.(크롬에서는 정상 표시) / 2018.03.13 / mglee */
+  width: 150px; /*@ 주문배송상세 보기 화면에서 "주문내역 숨김"링크 옆 (?) 아이콘이 IE에서 다음줄에 표시됨.(크롬에서는 정상 표시) / 2018.03.13 / mglee */
+}
+.ly_mypage .od_detail .tx_od_list li.form_group .etc_option .tip-contents {
+  margin-top: 0;
+}
+.ly_mypage .od_detail .tx_od_list li .option {
+  /*@ 툴팁 스타일 변경 / 2018.01.10 / bhkim */
+  /*text-decoration: underline;*/
+  /*border-bottom: 1px #444 solid;*/ /* @ 주문배송 상세조회 페이지에 라인 두줄 링크 있음 / 2018.02.10 / mglee */
+}
+.ly_mypage .od_detail .tx_od_list .tip-contents .article .describe {
+  line-height: 1.8;
+}
+.ly_mypage .od_detail .tx_od_list .tip-contents .btn {
+  width: 100%;
+  height: 38px;
+}
+.ly_mypage .od_detail .tx_od_list .tip-contents .btn.second {
+  margin-top: 10px;
+}
+.ly_mypage .list_check {
+  /*overflow: hidden;*/
+  /*padding: 0;*/
+  /*margin: 0;*/
+  /*list-style: none;*/
+  /*margin-bottom: 24px;*/
+  /* checkbox, radio */
+}
+/*.ly_mypage .list_check li {*/
+/*  float: left;*/
+/*  margin-left: 13px;*/
+/*}*/
+/*.ly_mypage .list_check li:first-child {*/
+/*  margin-left: 0;*/
+/*}*/
+.ly_mypage .list_check input[type="checkbox"],
+.ly_mypage .list_check input[type="radio"],
+.ly_mypage .list_check input[type="checked"] {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  opacity: 0;
+}
+.ly_mypage .list_check input[type="checkbox"] + label,
+.ly_mypage .list_check input[type="radio"] + label,
+.ly_mypage .list_check input[type="checked"] + label {
+  /*display: inline-block;*/
+  /*text-align: right;*/
+  /*vertical-align: middle;*/
+  /*background-color: #fff;*/
+  /*font-size: 12px;*/
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage .list_check input[type="checkbox"] + label,
+  .ly_mypage .list_check input[type="radio"] + label,
+  .ly_mypage .list_check input[type="checked"] + label {
+    /*font-size: 13px;*/
+  }
+}
+.ly_mypage .list_check input[type="checkbox"] + label span,
+.ly_mypage .list_check input[type="radio"] + label span,
+.ly_mypage .list_check input[type="checked"] + label span {
+  cursor: pointer;
+}
+.ly_mypage .list_check input[type="checkbox"] + label:active,
+.ly_mypage .list_check input[type="radio"] + label:active,
+.ly_mypage .list_check input[type="checked"] + label:active {
+  /*text-decoration: underline;*/
+}
+.ly_mypage .list_check input[type="checkbox"]:checked + label,
+.ly_mypage .list_check input[type="radio"]:checked + label,
+.ly_mypage .list_check input[type="checked"]:checked + label {
+  /*text-decoration: underline;*/
+}
+.ly_mypage .tab_cnt {
+  display: none;
+}
+.ly_mypage .tab_cnt.active {
+  display: block;
+}
+.ly_mypage .tx_point {
+  /*주문취소 부분 마진 제거 / 2018.01.17 / bhkim */
+  margin-top: 10px;
+  font-size: 12px;
+  color: #DA441B;
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage .tx_point {
+    font-size: 13px;
+  }
+}
+.ly_mypage .tx_list {
+  margin-top: 30px;
+}
+.ly_mypage .tx_list li {
+  font-size: 11px;
+  margin-bottom: 25px; /*@ 리스트와 리스트사이 간격 좀 더 좁혀야 / 2018.01.24 / bhkim */
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage .tx_list li {
+    font-size: 12px;
+  }
+}
+.ly_mypage .tb_list {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  table-layout: fixed;
+  word-break: break-all;
+}
+.ly_mypage .tb_list * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ly_mypage .tb_list thead th {
+  background-color: #f8f8f8;
+  padding: 8px 20px;
+  font-weight: normal;
+  /*@ 테이블 제목줄 좌측정렬 / 2018.01.18 / bhkim */
+  text-align: left;
+}
+.ly_mypage .tb_list thead th:first-child {
+  width: 42%;
+}
+.ly_mypage .tb_list thead th.col1 {
+  width: 21.21%;
+  text-align: left;
+}
+.ly_mypage .tb_list thead th.col2 {
+  width: 39.18%;
+  text-align: left;
+}
+.ly_mypage .tb_list thead th.cell_left {
+  text-align: left;
+}
+.ly_mypage .tb_list thead th.cell_right {
+  text-align: right;
+}
+.ly_mypage .tb_list tbody tr:first-child td {
+  border-top: 0;
+}
+.ly_mypage .tb_list tbody td {
+  line-height: 1.7;
+  padding: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+.ly_mypage .tb_list tbody td.cell_left {
+  text-align: left;
+  padding-left: 0;
+}
+.ly_mypage .tb_list tbody td.cell_right {
+  text-align: right;
+}
+.ly_mypage .tb_list tbody td a {
+  text-decoration: none;
+}
+.ly_mypage .tb_list tbody td .btn_link {
+  /*@ btn_link btn 수정 / 2019.01.09 / bhkim */
+  display: inline-block;
+  text-decoration: underline;
+}
+.ly_mypage .tb_list tbody td .txt span {
+  display: block;
+}
+/*@ 마이페이지 금액 우측정렬 변경 / 2018.01.25 / bhkim */
+.ly_mypage .tb_list tbody td.td_price {
+  text-align: right;
+/*@ 마이페이지 금액 내용 우측정렬 변경 / 2018.01.25 / bhkim */
+}.ly_mypage .tb_list tbody td.td_price .txt {
+  display: inline-block;
+  text-align: right;
+}
+.ly_mypage .tb_list tbody td.td_state1,
+.ly_mypage .tb_list tbody td.td_state2 {
+  /*@ 마이페이지 주문수량, 취소수량 좌측정렬 변경 / 2018.01.25 / bhkim */
+  /*text-align: center;*/
+}
+.ly_mypage .tb_list tbody td.tb_txt_full {
+  padding-left: 0;
+  padding-right: 0;
+}
+.ly_mypage .tb_list.tb_order_list tbody td.td_quantity1,
+.ly_mypage .tb_list.tb_order_list tbody td.td_quantity2 {
+  /*@ 마이페이지 주문수량, 취소수량 좌측정렬 변경 / 2018.01.25 / bhkim */
+  /*text-align: center;*/
+}
+.ly_mypage .tb_list.tb_order_list tbody td.td_quantity1 .t_m,
+.ly_mypage .tb_list.tb_order_list tbody td.td_quantity2 .t_m {
+  display: none;
+}
+.ly_mypage .tb_list.tb_order_list tbody td.td_quantity1 .txt {
+  padding-left: 19px;
+}
+/*@ 주문 취소 취소수량 버튼 패턴립 재설정 / 2018.01.17 / bhkim */
+.ly_mypage .tb_list.tb_order_list tbody td.td_quantity2 .o-cart-item {
+  border-bottom: none;
+  padding: 0px;
+  /*height: 19px;*/
+}
+@media (max-width: 767px) {
+  .ly_mypage .tb_list.tb_order_list tbody td.td_quantity2 .o-cart-item {
+    padding: 5px 15px 0 0;
+  }
+}
+.ly_mypage .tb_list.tb_order_list tbody td.td_price .txt span:last-child {
+  color: #ff7744;
+}
+.ly_mypage .tb_list.tb_receipt thead th:first-child {
+  width: 19%;
+}
+.ly_mypage .tb_list.tb_receipt thead th:last-child {
+  width: 25%;
+}
+.ly_mypage .tb_list.tb_receipt tbody td {
+  /*@ 마이페이지 영수증리스트 좌측정렬 / 2018.01.18 / bhkim */
+  /*text-align: center;*/
+}
+.ly_mypage .tb_list.tb_receipt tbody td:first-child {
+  text-align: left;
+}
+.ly_mypage .tb_list.tb_balance thead th {
+  width: 15%;
+  text-align: left;
+}
+.ly_mypage .tb_list.tb_balance thead th:nth-child(2) {
+  width: 20%;
+}
+.ly_mypage .tb_list.tb_balance thead th:nth-child(3) {
+  width: 30%;
+}
+.ly_mypage .tb_list.tb_balance thead th:last-child {
+  width: 10%;
+  text-align: center;
+}
+.ly_mypage .tb_list.tb_balance tbody td:last-child {
+  width: 10%;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .ly_mypage .tb_list.tb_balance tbody tr {
+    display: block;
+    padding: 10px 0 !important;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+  }
+  .ly_mypage .tb_list.tb_balance tbody td {
+    padding: 0;
+    float: left;
+  }
+  .ly_mypage .tb_list.tb_balance tbody td.td_date {
+    padding-top: 0;
+  }
+  .ly_mypage .tb_list.tb_balance tbody td.td_date .txt:after {
+    content: "|";
+    margin-right: 5px;
+    padding-left: 5px;
+    font-size: 11px;
+    vertical-align: 1px;
+  }
+  .ly_mypage .tb_list.tb_balance tbody td:nth-child(2) {
+    width: 50%;
+  }
+  .ly_mypage .tb_list.tb_balance tbody td:nth-child(3) {
+    width: 60%;
+  }
+  .ly_mypage .tb_list.tb_balance tbody td:last-child {
+    text-align: right;
+    width: 40%;
+  }
+  .ly_mypage .tb_list.tb_balance tbody td span {
+    display: inline !important;
+  }
+}
+.ly_mypage .order_info {
+  overflow: hidden;
+  display: table;
+  border-collapse: separate;
+}
+.ly_mypage .order_info .image {
+  display: table-cell;
+  vertical-align: top;
+  width: 36px;
+}
+.ly_mypage .order_info .image a {
+  display: block;
+  width: 52px;
+}
+.ly_mypage .order_info .txt {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 20px;
+}
+.ly_mypage .inner_list {
+  overflow: hidden;
+  margin: 0 0 23px;
+  padding: 0;
+}
+.ly_mypage .inner_list li {
+  float: left;
+}
+.ly_mypage .inner_list li a {
+  font-size: 12px;
+  color: #d1d1d1;
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage .inner_list li a {
+    font-size: 13px;
+  }
+}
+.ly_mypage .inner_list li .tx_symbol {
+  color: #d1d1d1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.ly_mypage .inner_list li.active a {
+  color: #767676;
+}
+.ly_mypage .ly_box_wrap {
+  /*float: left;*/
+  width: 100%;
+  /* @주문취소 결재금액 마진제거 / 2018.01.17 / bhkim */
+  /*margin-top: 30px;*/
+  zoom: 1;
+}
+.ly_mypage .ly_box_wrap:before {
+  content: '';
+  display: block;
+}
+.ly_mypage .ly_box_wrap:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+  /*반품 결재금액 마진제거 / 2018.01.17 / bhkim */
+.ly_mypage .ly_box_wrap.col_wrap {
+  margin-top: 30px;
+}
+
+/*@ 주문취소  취소사유 수정 / 2018.01.17 / bhkim */
+.ly_mypage .ly_box_wrap.last {
+  margin-top: 30px;
+}
+.ly_mypage .ly_box_wrap.last .ly_tit_line {
+  margin-bottom: 20px;
+}
+/*@ 주문취소  취소사유 에러문구 간격 수정 / 2018.02.07 / bhkim */
+.ly_mypage .ly_box_wrap.last .ly_slt {
+   margin-bottom: 30px;
+}
+.ly_mypage .ly_box_wrap.last .ly_slt .input_group {
+  /*@ 레이아웃 넓이 변경 340으로 / 2018.01.29 / bhkim */
+  width: 340px;
+}
+/*@ 주문취소  취소사유 에러문구 간격 수정 / 2018.02.07 / bhkim */
+.ly_mypage .ly_box_wrap.last .ly_slt .tx_point {
+  margin: 10px 0;
+}
+@media screen and (max-width: 767px) {
+  .ly_mypage .ly_box_wrap.last .ly_slt .input_group {
+    width: 100%;
+  }
+}
+
+.ly_mypage .ly_box_wrap .ly_tit_line h3 {
+  /*color: #999;*/
+}
+.ly_mypage .ly_box_wrap .my_box {
+  float: left;
+  width: 45%;
+  margin-top: 0;
+  /*@ 주문배송상세보기 테이블 간격수정 / 2018.01.10 / bhkim */
+  padding-bottom: 34px;
+}
+  /*@ 반품신청시 결제 테이블 100% / 2018.01.18 / bhkim */
+.ly_mypage.order_change .ly_box_wrap .my_box {
+  width: 100%;
+}
+
+.ly_mypage .ly_box_wrap .my_box:nth-child(even) {
+  float: right;
+}
+.ly_mypage .ly_box_wrap .my_box .ly_body {
+  margin-top: 14px;
+  /*주문취소 결재 높이 제거 / 2018.01.17 / bhkim */
+  min-height: 100px;
+}
+.ly_mypage.ly_edit .ly_box_wrap .my_box .ly_body {
+  margin-top: 14px;
+  /*주문취소 결재 높이 제거 / 2018.01.17 / bhkim */
+  min-height: auto;
+}
+.ly_mypage .ly_box_wrap .my_box .tb_txt table tbody th,
+.ly_mypage .ly_box_wrap .my_box .tb_txt table tbody td {
+  /*@ 주문상세조회 테이블 간격수정 / 2018.01.10 / bhkim */
+  padding: 2px 0 14px;
+  vertical-align: top;
+}
+/*@ 주문취소만 금약 우측정렬 / 2018.01.17 / bhkim */
+.ly_mypage .ly_box_wrap .my_box.ly_edit .ly_body .tb_txt table tbody td.td_price {
+  text-align: right;
+}
+
+/*@ 주문상세조회 th color / 2018.01.10 / bhkim */
+.ly_mypage .ly_box_wrap .my_box .tb_txt table tbody th {
+  color: #999;
+}
+
+.ly_mypage .ly_box_wrap .my_box .tb_txt table tbody td.al_right {
+  text-align: right;
+}
+.ly_mypage .ly_box_wrap .my_box .tb_txt.type01 table tbody th,
+.ly_mypage .ly_box_wrap .my_box .tb_txt.type01 table tbody td {
+  padding: 7px 0;
+}
+.ly_mypage .ly_box_wrap .bank_head {
+  margin-top: 20px;
+}
+.ly_mypage .ly_box_wrap .bank_head .section_title + .section_title {
+  padding-left: 25px;
+}
+.ly_mypage .ly_box_wrap .bank_section {
+  margin-top: 10px;
+  display: none;
+}
+.ly_mypage .ly_box_wrap .bank_section.open {
+  display: block;
+}
+.ly_mypage .ly_box_wrap .bank_section .refund_form {
+  display: none;
+}
+.ly_mypage .ly_box_wrap .bank_section .refund_form.open {
+  display: block;
+}
+.ly_mypage .ly_box_wrap .bank_section .btn {
+  margin-top: 0;
+}
+.ly_mypage .od_etc {
+  /*@ 비회원 주문조회용 영수증 버튼 스타일수정 / 2018.01.17 / bhkim */
+  /*margin-bottom: 20px;*/
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+.ly_mypage .od_etc .btn {
+  float: left;
+  width: auto;
+  margin: 0;
+  padding: 8px;
+}
+.ly_mypage .od_etc .bt_list {
+  float: right;
+  overflow: hidden;
+  /*@ 비회원 주문조회용 영수증 버튼 스타일수정 / 2018.01.17 / bhkim */
+  margin-top: -9px;
+}
+.ly_mypage .od_etc .bt_list li {
+  float: left;
+  margin-left: 20px;
+}
+.ly_mypage .od_etc .btn_tx {
+  color: #999999;
+  font-size: 12px;
+  border: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage .od_etc .btn_tx {
+    font-size: 13px;
+  }
+}
+.ly_mypage.order_change .tit_m {
+  /*@ 모바일에서 타이틀 안보이여 할거 같다 / 2018.01.17 / bhkim */
+  display: none;
+}
+.ly_mypage.order_change .od_detail .od_num {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage.order_change .od_detail .od_num {
+    font-size: 13px;
+  }
+}
+.ly_mypage.order_change .od_detail .tx_od_list {
+  margin-top: 0;
+}
+.ly_mypage.order_change .ly_box_wrap {
+  /*@ 반품 결제정보 마진 제거 / 2018.01.17 / bhkim */
+  /*padding-bottom: 60px;*/
+  margin-top: 0;
+  float: none;
+}
+.ly_mypage.order_change .ly_box_wrap .my_box .ly_body {
+  min-height: auto;
+}
+.ly_mypage.order_change .ly_box_wrap .my_box .ly_body table tbody td.td_price {
+  text-align: right;
+}
+.ly_mypage.order_change .ly_box_wrap .my_box .ly_body .tx_list {
+  margin-top: 20px;
+}
+.ly_mypage.order_change .ly_slt {
+  margin-top: 30px;
+}
+.ly_mypage.order_change .ly_slt .input_group {
+  width: 400px;
+}
+.ly_mypage .ly_slt .tx_point,
+.ly_mypage.order_change .ly_slt .tx_point {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.ly_mypage.order_change .ly_slt .tx {
+  margin-top: 10px;
+}
+.ly_mypage.order_change .ly_slt .tx span {
+  display: inline-block;
+  width: 88px;
+}
+.ly_mypage.ly_survey .txt {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 70px;
+}
+.ly_mypage.ly_survey .txt strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage.ly_survey .txt {
+    font-size: 13px;
+  }
+  .ly_mypage.ly_survey .txt strong {
+    font-size: 16px;
+  }
+}
+.ly_mypage.ly_survey .tx {
+  margin-bottom: 5px;
+}
+.ly_mypage.ly_survey .tx_list li {
+  font-size: 12px;
+  color: #666;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 17px;
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage.ly_survey .tx_list li {
+    font-size: 13px;
+  }
+}
+.ly_mypage.ly_survey .tx_list li:after {
+  content: "※";
+  display: block;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ly_mypage.ly_survey .tx_list li span {
+  display: block;
+  color: #999;
+}
+.ly_mypage.ly_survey .input_group {
+  vertical-align: bottom;
+}
+.ly_mypage.ly_survey .input_group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.ly_mypage.ly_survey .input_group .cell {
+  display: table-cell;
+  vertical-align: bottom;
+}
+.ly_mypage.ly_survey .input_group .cell:first-child {
+  width: 88.10%;
+}
+.ly_mypage.ly_survey .input_group .tx_byte {
+  font-size: 12px;
+  color: #d1d1d1;
+  pad-left: 5px;
+  vertical-align: bottom;
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage.ly_survey .input_group .tx_byte {
+    font-size: 13px;
+  }
+}
+.ly_mypage.ly_survey .input_group .tx_byte em {
+  color: #999;
+  font-style: normal;
+}
+.ly_mypage .survey_list {
+  width: 500px;
+  margin-bottom: 35px;
+}
+.ly_mypage .survey_list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.ly_mypage .survey_list li {
+  float: left;
+  width: 50%;
+  margin-top: 12px;
+}
+.ly_mypage.ly_withdrawal .sns_list {
+  margin-top: 28px;
+}
+.ly_mypage.ly_withdrawal .sns_list li {
+  margin-top: 8px;
+}
+.ly_mypage.ly_withdrawal .sns_list li:first-child {
+  margin-top: 0;
+}
+.ly_mypage.ly_withdrawal .sns_list li .ly_ic {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  border: 1px solid #cccccc;
+  text-align: center;
+  margin-right: 0;
+}
+.ly_mypage.ly_withdrawal .sns_list li .ly_ic i {
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.ly_mypage.ly_withdrawal .sns_list li .t {
+  display: inline-block;
+  width: 80px;
+  padding-left: 10px;
+}
+.ly_mypage.ly_withdrawal .sns_list li span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage.ly_withdrawal .sns_list li span {
+    font-size: 13px;
+  }
+}
+.ly_mypage.ly_withdrawal .sns_list li .tx_link {
+  text-decoration: underline;
+  font-size: 12px;
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage.ly_withdrawal .sns_list li .tx_link {
+    font-size: 13px;
+  }
+}
+.ly_mypage.ly_withdrawal .tx_list li {
+  font-size: 12px;
+  color: #666;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 4px;
+  color: #999;
+}
+.ly_mypage.ly_withdrawal .tx_list li:after {
+  content: "※";
+  display: block;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ly_mypage.ly_withdrawal .tx_list li span {
+  display: block;
+  color: #999;
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage.ly_withdrawal .tx_list li {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /*#my-account {*/
+  /*  width: 100%;*/
+  /*}*/
+  /*#my-account .account-content {*/
+  /*  margin: 0;*/
+  /*  margin-top: -28px;*/
+  /*}*/
+  .ly_mypage.order_change .tit_m {
+    display: block;
+  }
+  .ly_mypage .od_detail {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .ly_mypage {
+    overflow: inherit;
+  }
+  .ly_mypage .web {
+    display: none;
+  }
+  .ly_mypage .mo {
+    display: block;
+  }
+  .ly_mypage .tit_m {
+    display: none;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .ly_mypage .list_check {
+    display: block;
+    /*margin-bottom: 45px;*/
+    /*width: 284px;*/
+  }
+  .ly_mypage .list_check li {
+    margin-left: 12px;
+  }
+  /*.ly_mypage .list_check input[type="checkbox"] + label,*/
+  /*.ly_mypage .list_check input[type="radio"] + label,*/
+  /*.ly_mypage .list_check input[type="checked"] + label {*/
+  /*  padding: 0 11px;*/
+  /*}*/
+  /*.ly_mypage .tx_nodata {*/
+  /*  text-align: center;*/
+  /*  padding: 10px 0;*/
+  /*}*/
+  .ly_mypage .od_detail {
+    position: relative;
+  }
+  .ly_mypage .od_detail .od_etc {
+    position: absolute;
+    /*@ mypage 부분btn_link 추가 / 2018.01.18 / bhkim */
+    top: 9px;
+    right: 0;
+    top: -28px;
+    margin-bottom: 0;
+  }
+  .ly_mypage .od_detail .od_etc .btn {
+    color: #999999;
+    padding: 0;
+    text-decoration: underline;
+    border: 0;
+  }
+  .ly_mypage .od_detail .od_etc .bt_list {
+    display: none;
+  }
+  .ly_mypage .od_detail .od_num {
+    font-size: 12px;
+  }
+  .ly_mypage .od_detail .tx_od_list {
+    margin-top: 0;
+  }
+  .ly_mypage .ly_box_wrap .my_box {
+    width: 48%;
+  }
+  .ly_mypage .tb_list thead th {
+    padding: 10px 5px;
+    letter-spacing: -0.6px;
+  }
+  .ly_mypage .tb_list thead th.col1 {
+    width: 19%;
+  }
+  .ly_mypage .tb_list thead th.col2 {
+    width: 42%;
+  }
+  .ly_mypage .tb_list tbody td {
+    padding: 10px 5px;
+    letter-spacing: -0.3px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .ly_mypage .ly_box_wrap .my_box {
+    float: none;
+    width: 100%;
+  }
+  .ly_mypage.order_change .tit_m {
+    /*@ 마이페이지 모바일용 타이틀 주석 / 2018.01.30 / bhkim */
+    display: none;
+  }
+  .ly_mypage .tx_od_list .etc_option {
+    display: none;
+  }
+  .ly_mypage.order_change .ly_box_wrap .my_box:nth-child(even) {
+    float: none;
+    margin-top: 20px;
+  }
+  .ly_mypage .list_check {
+    /*display: block;*/
+    /*margin: 0 auto 45px;*/
+    /*width: 284px;*/
+  }
+  .ly_mypage .list_check li {
+    /*margin-left: 12px;*/
+  }
+  .ly_mypage .list_check input[type="checkbox"] + label,
+  .ly_mypage .list_check input[type="radio"] + label,
+  .ly_mypage .list_check input[type="checked"] + label {
+    /*padding: 0 11px;*/
+  }
+  .ly_mypage .ly_btn {
+    margin-top: 30px;
+  }
+  .ly_mypage .btn {
+    width: 100%;
+  }
+  .ly_mypage .my_login {
+    margin-top: 25px;
+  }
+  .ly_mypage .my_login .tb_edit {
+    margin-top: 10px;
+  }
+  .ly_mypage .tb_list {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 0;
+  }
+  .ly_mypage .tb_list thead {
+    display: none;
+  }
+  .ly_mypage .tb_list tbody tr {
+    position: relative;
+    display: block;
+  }
+  .ly_mypage .tb_list tbody td {
+    display: block;
+    padding: 20px 0;
+    border-top: 0;
+  }
+  .ly_mypage .tb_list tbody td.td_date {
+    margin-top: -1px;
+    padding: 20px 0 0;
+  }
+  .ly_mypage .tb_list tbody td.td_date .txt span:last-child {
+    /*@ 마이페이지 영수증 리스트 출력 버튼 오른쪽으로 / 2018.01.30 / bhkim */
+    /*display: block;*/
+  }
+  .ly_mypage .tb_list tbody td.td_date .txt span .btn_link {
+    display: inline-block;
+    width: 75px;
+  }
+  .ly_mypage .tb_list tbody td.td_price {
+    display: none;
+  }
+  .ly_mypage .tb_list tbody td .txt span {
+    display: inline-block;
+    margin-right: 10px;
+  }  
+  .ly_mypage .tb_list tbody td .order_info .txt span {
+    padding-top: 10px;
+  }  
+  
+  
+  /*@ 주문조회 모바일 화면에서 간격 수정 / 2018.01.18 / bhkim */
+  .ly_mypage .tb_list tbody td .txt a.txt_btn {
+    margin-right: 10px;
+  }
+  .ly_mypage .tb_list tbody td .order_info .txt span {
+    display: block;
+  }
+  .ly_mypage .tb_list tbody td.td_state1 {
+    /*border-top: 1px solid #e5e5e5 !important;*/
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+    padding: 10px 0;
+    margin-top: -40px;
+  }
+  .ly_mypage .tb_list tbody td.td_state1 .txt {
+    /*@ 주문조회 모바일 화면에서 간격 수정 / 2018.01.18 / bhkim */
+    margin-left: 88px;
+    position: relative;
+  }
+  .ly_mypage .tb_list tbody td.td_state1 .btn_link {
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  /*@ 주문조회 모바일 화면에서 간격 수정 / 2018.01.18 / bhkim */
+  .ly_mypage .tb_list tbody td.td_state1 .txt a.txt_btn {
+    float: right;
+    padding-right: 0;
+    padding-top: 3px;
+    margin-right: 0;
+  }
+  .ly_mypage .tb_list tbody td.td_state2 {
+    position: absolute;
+    top: 6px;
+    right: 0px;
+  }
+  .ly_mypage .tb_list.tb_order_list tbody tr {
+    position: relative;
+  }
+  .ly_mypage .tb_list.tb_order_list tbody td.order_info {
+    dispaly: table-row;
+  }
+    
+  /*@ 주문취소 상품이미지 재설정 / 2018.02.01 / bhkim */
+  .ly_mypage .tb_list.tb_order_list .order_info .image a img {
+    width: 68px;
+    position: absolute;
+  }
+    
+  .ly_mypage .tb_list.tb_order_list tbody td.td_quantity1 {
+    /*border-top: 1px solid #e5e5e5;*/
+    text-align: left;
+    padding: 10px 0 5px;
+    padding-left: 87px;
+    /*@ 마이페이지 리스트 가감버튼 이동 / 2018.01.31 / bhkim*/
+    /*position: absolute;*/
+    /*bottom: 62px;*/
+    /*left: 8px;*/
+    margin-top: -33px;
+  }
+  
+  .ly_mypage .tb_list.tb_order_list tbody td.td_quantity1 .t_m {
+    display: inline-block;
+  }
+  .ly_mypage .tb_list.tb_order_list tbody td.td_quantity1 .txt {
+    display: inline-block;
+    padding-left: 0;
+  }
+  .ly_mypage .tb_list.tb_order_list tbody td.td_quantity1 .txt span {
+    display: inline-block;
+  }
+  /*@ 마이페이지 리스트 가감버튼 이동 / 2018.01.31 / bhkim */
+  .ly_mypage .tb_list.tb_order_list tbody td.td_quantity2 {
+    /*position: absolute;*/
+    /*left: 88px;*/
+    /*bottom: 37px;*/
+    text-align: left;
+    padding: 0;
+    margin-left: 87px;
+  }  
+  .ly_mypage .tb_list.tb_order_list tbody td.td_quantity2 .t_m, .ly_mypage .tb_list.tb_order_list tbody td.td_quantity2 .o-cart-item {
+    display:table-cell;
+  }
+  .ly_mypage .tb_list.tb_order_list tbody td.td_quantity2 .o-cart-item {
+    padding-left: 10px;
+  }
+  
+  .ly_mypage .tb_list.tb_order_list tbody td.td_price {
+    border-bottom: 1px solid #e5e5e5;
+    right: 0;
+    bottom: 9px;
+    display: block;
+    padding: 0 0 10px;
+    /*@ 마이페이지 리스트 금액 우측으로 이동 / 2018.01.31 / bhkim */
+    text-align: right;
+    margin-top: 0;
+  }
+  .ly_mypage .tb_list.tb_order_list tbody td.td_price .txt {
+    text-align: right;
+    line-height: 16px;
+  }
+  .ly_mypage .tb_list.tb_order_list tbody td.td_price .txt span {
+    display: block;
+  }
+  .ly_mypage .tb_list.tb_order_list tbody td.td_price .txt span:last-child {
+    color: #ff7744;
+  }
+  .ly_mypage .my_box .tb_list tbody tr {
+    /*@ 마이페이지 리스트 마진제거 / 2018.01.31 / bhkim */ 
+    /*padding-top: 50px;*/
+  }
+  .ly_mypage .my_box .tb_list tbody tr:first-child,
+  .ly_mypage .my_box .tb_list tbody tr.sub_lst {
+    padding-top: 0;
+  }
+  .ly_mypage .my_box .tb_list tbody tr:first-child td.td_state2,
+  .ly_mypage .my_box .tb_list tbody tr.sub_lst td.td_state2 {
+    /*@ 모바일에서 주문취소 버튼 정렬 / 2018.01.31 / bhkim */
+    top: 0px;
+  }
+  .ly_mypage .my_box .tb_list tbody td.td_state2 {
+    /*@ 모바일에서 주문취소 버튼 정렬 / 2018.01.31 / bhkim */
+    top: 0px;
+  }
+  .ly_mypage .od_detail + .my_box .tb_list tbody tr {
+    padding-top: 0;
+  }
+  .ly_mypage .od_detail + .my_box .tb_list tbody td.td_state2 {
+    top: 6px;
+  }
+  .ly_mypage .order_info .image {
+    width: 68px;
+  }
+  .ly_mypage .order_info .image a {
+    width: 68px;
+  }
+
+  .ly_mypage .ly_box_wrap .my_box {
+    width: 100%;
+    float: none;
+    /*주문취소 모바일에서 마진제거 / 2018.01.17 / bhkim */
+    /*margin-top: 75px;*/
+  }
+  .ly_mypage .ly_box_wrap .my_box:first-child {
+    margin-top: 0;
+  }
+  .ly_mypage .ly_box_wrap .my_box:nth-child(odd),
+  .ly_mypage .ly_box_wrap .my_box:nth-child(even) {
+    float: none;
+  }
+  .ly_mypage .ly_box_wrap .my_box .ly_body {
+    height: auto;
+  }
+  .ly_mypage .ly_box_wrap .my_box .ly_tit_line .btn_tx_group .btn_tx {
+    text-decoration: underline;
+  }
+  .ly_mypage .ly_tit_line .btn_tx_group .btn_tx {
+    /*@ 모바일에서 타이틀 옆 버튼 밑줄 제거 / 2018.01.31 / bhkim */
+    /*text-decoration: underline;*/
+  }
+  .ly_mypage .refund_form .input_group {
+    width: 100%;
+  }
+  .ly_mypage .refund_form .input_group .input_group_btn {
+    width: 30%;
+  }
+  .ly_mypage.order_change .ly_box_wrap .my_box:nth-child(even) {
+    float: none;
+    margin-top: 10px;
+  }
+  .ly_mypage.order_change .ly_box_wrap .my_box:nth-child(even) .ly_body {
+    margin-top: 0;
+  }
+  .ly_mypage.order_change .ly_box_wrap.last {
+    padding-bottom: 15px;
+  }
+  .ly_mypage.order_change .ly_slt .input_group {
+    width: 100%;
+  }
+  .ly_mypage .btn_group {
+    display: table;
+    border-collapse: separate;
+  }
+  .ly_mypage .btn_group li {
+    display: table-cell;
+    width: 5%;
+    vertical-align: top;
+    padding-left: 2%;
+  }
+  .ly_mypage .btn_group li:first-child {
+    margin-left: 0;
+  }
+  .ly_mypage.ly_survey .my_box .tx {
+    font-size: 12px;
+  }
+  .ly_mypage .survey_list {
+    width: 100%;
+  }
+  .ly_mypage .survey_list li {
+    float: none;
+    width: 100%;
+  }
+  .ly_mypage.ly_withdrawal .sns_list li {
+    display: table;
+    width: 100%;
+  }
+  .ly_mypage.ly_withdrawal .sns_list li span.t {
+    width: 70px;
+    display: table-cell;
+  }
+  .ly_mypage.ly_withdrawal .sns_list li span.ly_ic {
+    display: table-cell;
+    border: none;
+  }
+  .ly_mypage.ly_withdrawal .sns_list li span.ly_ic .icon-jsns {
+    border: 1px #ccc solid;
+    width: 30px;
+    height: 30px;
+  }
+  .ly_mypage.ly_withdrawal .sns_list li span:nth-child(3) {
+    display: table-cell;
+    width: auto;
+    word-break: break-all;
+    padding: 0 10px;
+  }
+  .ly_mypage.ly_withdrawal .sns_list li a.tx_link {
+    width: 50px;
+    display: table-cell;
+  }
+}
+@media screen and (max-width: 570px) {
+  .ly_mypage .tit_m {
+    /*@ mypage sub headding off  / 2018.01.04 / bhkim */
+    display: none;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .ly_mypage .tit_m h3 {
+    margin-top: 70px;
+  }
+}
+
+/*@ 마이페이지 탭이상에서 너무 좁아 70% 임의 설정 / 2018.01.09 / bhkim */
+@media (min-width: 768px){
+  .ly_mypage.o-my-orders {
+      width: 70%;
+  }
+}
+/*@ 기간별 보기 위치 설정 / 2018.01.09 / bhkim */
+.ly_mypage .o-product-sort {
+  top: 0;
+}
+.ly_mypage .multi_sort {
+  float: right;
+}
+.ly_mypage .multi_sort .o-product-sort {
+  float: left;
+}
+@media screen and (min-width: 1025px) {
+  .ly_mypage .multi_sort .o-product-sort {
+    top: -30px;
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ly_mypage .multi_sort .o-product-sort.state {
+    top: 3px;
+    right: 70px; 
+    padding-right: 5px;
+  }
+  .ly_mypage .multi_sort .o-product-sort.date {
+    top: 3px;
+    right: 0px; 
+    padding-right: 5px;
+  }
+}
+
+.ly_mypaget .od_detail .tx_od_list{
+  padding-top: 10px; 
+}
+.ly_mypage .od_detail .tx_od_list li {
+  padding: 9px 0px;
+}
+.ly_mypage .od_detail .tx_od_list li > span {
+  color: #999;
+}
+.ly_mypage .od_detail .tx_od_list li .tip1 {
+  margin-left: 10px;
+}
+
+
+
+/* @ 마이페이지 부분 버튼 재설정 / 2018.1.17 / bhkim */
+.ly_mypage .button_list {
+  overflow: hidden;
+  margin-top: 22px;
+  margin-top: 0;/*@ 마진탑 없어야 할듯? / 2018.1.18 / mglee */
+  width: 100%;
+}
+.ly_mypage .button_list li {
+  float: left;
+  width: 50%;
+  padding: 0 5px;
+}
+.ly_mypage .button_list li:first-child{
+  float: left;
+  padding-left: 0px;
+}
+/* @ 마이페이지 부분 버튼 재설정 / 2018.1.29 / bhkim */
+.ly_mypage .button_list li:last-child{
+  float: right;
+  padding-right: 0px;
+}
+.ly_mypage .button_list .button_list + .tx {
+  margin-top: 15px;
+}
+.ly_mypage .button_list .btn {
+  margin: 15px 0 0;
+  width: 100%;
+}
+.ly_mypage .my_box .button_list {
+  width: 340px;
+}
+/* @ 마이페이지 부분 버튼 재설정 / 2018.1.29 / bhkim */
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .ly_mypage .my_box .button_list {
+    width: 100%;
+  }
+}
+/*@ 반품 회수요청지 상단 마진 / 2018.01.17 / bhkim */
+.ly_mypage .delivery_head {
+    padding-top: 13px
+}
+/*@ 반품 회수요청지 상단 마진 / 2018.01.17 / bhkim */
+.ly_mypage .delivery_section.open {
+  margin-bottom: 30px;
+}
+/*@ 반품 반품 취소사유 상단 마진 / 2018.01.17 / bhkim */
+.ly_mypage.order_change .ly_box_wrap.last {
+  padding-top: 30px;
+}
+/*@ 반품 취소사유 상단 마진 / 2018.01.17 / bhkim */
+.ly_mypage.order_change .ly_box_wrap.last .ly_slt {
+  margin-top: 20px;
+}
+/*@ 비회원 주문취소 취소사요 마진 / 2018.01.17 / bhkim */
+.ly_mypage .my_box.refund_form  {
+  padding-bottom: 0px;
+} 
+/*@ 비회원 주문취소 취소사요 마진 / 2018.01.17 / bhkim */
+.ly_mypage .my_box.refund_form .ly_edit.my_edit .tb_edit {
+  margin-top: 10px;
+} 
+
+/*@ - / 2018.01.18 / mglee */
+.ly_mypage .form_group{
+  width: 100%;
+}
+
+/*@ 텍스트인풋 버튼 나란히 버튼 너비 조절 / 2018.01.18 / mglee */
+.ly_mypage .input_group{
+  /*width: auto;*/
+  width: 180px;/*@ 회원정보변경-휴대폰번호 인풋 우측에 맞춤 / 2018.01.18 / mglee */
+}
+/*@ 텍스트인풋 FULL version / 2018.01.18 / mglee */
+.ly_mypage .input_group.full-width{
+  width: 100%;
+}
+
+/*@ 텍스트인풋 버튼 나란히 버튼 너비 조절_모바일 태블릿일 경우 / 2018.01.18 / mglee */
+/*mobile*/
+@media (min-width: 0px) and (max-width: 767px) {
+  /*
+  .ly_mypage .input_group{
+    width: 100%;
+  }
+  .ly_mypage .input_group>input[type=text]{
+    width: 100%;
+  }  
+  .ly_mypage .input_group>input[type=password]{
+    width: 100%;
+  }    
+  .ly_mypage .input_group>input[type=number]{
+    width: 100%;
+  }      
+  */
+  .ly_mypage .my_login .tb_edit table .form_group{
+  }
+  .ly_mypage .input_group{
+    width: calc(100% - 110px);
+  }
+  
+  .ly_mypage .my_login .tb_edit table td .btn{
+    margin-top: 0;
+  } 
+  .form_group .phone_form + .form_btn{
+    padding-left:10px;
+    margin-top:0;
+    width:100px;
+  }  
+  .form_group .phone_form + .form_btn + .form_lab{
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+  .form_group .form_btn, .form_group .form_txt{
+    padding-left:10px;
+  }  
+  
+}
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*
+  .ly_mypage .input_group{
+    width: 100%;
+  }
+  .ly_mypage .input_group>input[type=text]{
+    width: 100%;
+  }  
+  .ly_mypage .input_group>input[type=password]{
+    width: 100%;
+  }    
+  .ly_mypage .input_group>input[type=number]{
+    width: 100%;
+  } 
+  */
+  
+  
+}
+.ly_mypage .input_group .form_control{
+  /*width: 180px;*/
+  /*width: 100%;*/
+}
+
+/*@ 라디오버튼 스타일 조정  / 2018.01.18 / mglee */
+.form_lab_wrap .form_lab{
+  padding-top: 15px;
+}
+.form_lab_wrap .form_lab:first-child{
+  padding-top: 0;
+}
+
+/*@ 결재수단 변경 팝업 총금액 위치 조정  / 2018.01.18 / bhkim */
+.popup_cont.ly_order.iframe .ly_edit .total_bank {
+  padding-bottom: 20px;
+}
+
+/*@ 불만사항 적는 텍스트 인풋은 매우 넓다 / 2018.01.18 / mglee */
+.ly_mypage .input_group.full-width{
+  width: 100%;
+}
+.ly_mypage .input_group.full-width .form_control{
+  width: 100%;
+}
+.ly_mypage .input_group.full-width .cell:last-child{
+  width: 104px;
+}
+
+/*@ BYTE 뉴스타일 / 2018.01.18 / mglee */
+/*@ BYTE 뉴스타일 / 2018.01.24 / mglee */
+.ly_mypage .input_group.full-width .tx_byte{
+  color:#ccc;
+  float:right;
+}
+.ly_mypage .input_group.full-width .tx_byte>em{
+  font-style: normal;
+  color:#444;
+}
+.ly_mypage.o-my-orders .ly_order.narrow .ly_edit.od-section.open .delivery_head {
+  border-bottom: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.ly_mypage.o-my-orders .ly_order.narrow .delivery_section.delivery-list.open li {
+  margin-top: 5px;
+  padding-bottom: 24px;
+  border-bottom: 1px #ebebeb solid;
+}
+.ly_mypage.o-my-orders .ly_order.narrow .delivery_section.delivery-list.open li:last-child {
+  border-bottom: none;
+}
+
+/*@ 세금계산서 출력 재로그인 버튼 마진수정 / 2018.01.19 / bhkim */
+.ly_mypage .my_box.narrow .ly_btn {
+  margin-top: 28px;
+}
+/*@ 주문배송상세조회 타이틀라인 버튼 밑줄제거 / 2018.01.29 / bhkim */
+.ly_mypage .ly_tit_line .btn_tx_group .txt_btn {
+  border-bottom: none;
+}
+/*@ 회원정보 변경 정보동의 마진 설정 / 2018.01.30 / bhkim */
+.ly_mypage .tb_edit .data_info > .input_group {
+  margin: 15px 0;
+}
+/*@ 마이페이지 타블렛 정렬 / 2018.01.31 / bhkim */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ly_mypage.ly_edit .ly_box_wrap .my_box .ly_body {
+    min-height: auto;
+  }
+}
+/*@ 마이페이지 모바일 정렬 / 2018.01.31 / bhkim */
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .ly_mypage.ly_edit .ly_box_wrap .my_box .ly_body {
+    min-height: auto;
+    height: auto; /*@ 주문상세 모바일에 높이 조절 / 2018.02.06 / bhkim */
+  }
+  .ly_mypage.o-my-orders .tb_list.tb_receipt td {
+    padding: 5px 0;
+  }
+  .ly_mypage.o-my-orders .tb_list.tb_receipt td.td_date {
+    padding-top: 20px ;
+  }
+}
+/*@ 마이페이지 테이블 금액부분 제목 우측 정렬 / 2018.01.31 / bhkim */
+.ly_mypage .tb_list.tb_order_list th:last-child {
+  text-align: right;
+}
+/*@ 체크아웃/마이페이지 배송지 정보 리스트 라디오 버튼 제거 / 2018.02.06 / bhkim */
+.ly_mypage.o-my-orders .ly_order.narrow .delivery_section.delivery-list label.type-radio {
+  cursor: default;
+  padding-left: 3px;
+}
+.ly_mypage.o-my-orders .ly_order.narrow .delivery_section.delivery-list label.type-radio:before,
+.ly_mypage.o-my-orders .ly_order.narrow .delivery_section.delivery-list label.type-radio:after {
+  visibility: hidden;
+}
+
+/*@ q-udln 과 같이 쓸경우 txt_btn 밑줄 제거 / 18.03.19 / bhkim*/
+button.txt_btn.q-udln,
+input.txt_btn.q-udln,
+a.txt_btn.q-udln {
+  border-bottom: 0;  
+}

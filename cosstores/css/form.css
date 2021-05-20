@@ -1,0 +1,2542 @@
+@charset "utf-8";
+/*
+    파일 개요
+    ---------------------------------------------------------------------
+    @ 범위 : (V) OFF | ( ) SIS
+    @ 목적 : 비패턴립 스타일 정의
+    @ 작성 : IDR System - Publishing Team.
+    @ 최종 : 2018.04.23.16:08
+*/
+
+/* 레이아웃 */
+table {
+  font-size: 12px;
+}
+
+/*@ mobile font size same / 2018.01.04 / bhkim */
+/*@media screen and (max-width: 570px) {*/
+/*  table {*/
+/*    font-size: 13px;*/
+/*  }*/
+/*}*/
+/* 레이아웃 */
+
+/*@ aos checkout add / 2018.01.06 / bhkim */
+.order_wrapper {
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+.order_wrapper .left-wrapper,
+.order_wrapper .right-wrapper {
+  width: 100%;
+  display: inline-block;
+}
+.order_wrapper .left-wrapper {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+.order_wrapper .right-wrapper {
+  padding-right: 4px;
+  padding-left: 4px;
+  position: relative;
+  width: 100%;
+  margin-top: 37px;
+}
+@media (min-width: 768px) {
+  .order_wrapper .left-wrapper {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 1025px) {
+  .order_wrapper .left-wrapper {
+    width: 62.5%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 8.33334%;
+    float: left;
+  }
+  .order_wrapper .right-wrapper {
+    width: 29.16667%;
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-top: 0;
+  }
+  .order_wrapper .right-wrapper.order_finish {
+    position: absolute;
+    top: 37px;
+  }
+}
+/* 주문관련 */
+.ly_order {
+  font-size: 12px;
+  line-height: 17px;
+}
+.ly_order h1.title {
+  /*font-weight: bold;*/
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  /*text-align: center;*/
+  padding: 14px 0 30px;
+}
+.ly_order h2.title {
+  /*font-weight: bold;*/
+  font-size: 13px;
+  line-height: 20px;
+  display: inline-block;
+}
+.ly_order h2.sub_title,
+.ly_order .sub_title {
+  /*font-weight: bold;*/
+  font-size: 12px;
+  line-height: 18px;
+  /*padding-bottom: 10px;*/
+  margin-bottom: 0px;
+  /*color: #999;*/
+}
+.ly_order .ly_header {
+  border-bottom: 1px solid #ebebeb;
+  padding: 18px 0 19px;
+}
+.ly_order .right-wrapper .ly_header {
+  margin-bottom: 0;
+}
+.ly_order .section_title {
+  font-size: 11px;
+}
+@media (min-width: 320px) {
+  .ly_order h1.title {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 34px 0;
+  }
+  .ly_order.create-order .left-wrapper .od-section:first-child .tb_txt td .btns {
+    top: -52px;
+    /*@ 주문서 고객정보 이름 수정버튼 위치 / 2018.01.08 / bhkim */
+    display: inline;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1025px) {
+  .ly_order h1.title {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 2px 0 14px;
+  }
+  .ly_order h2.title {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .ly_order .ly_header {
+    padding: 16px 0 6px;
+    margin-bottom: 10px;
+  }
+}
+.ly_order .order_ok .ly_header {
+  margin-top: 50px;
+}
+.ly_order .order_ok .col_wrap {
+  overflow: hidden;
+}
+.ly_order .order_ok .col_wrap .ti_txt,
+.ly_order .order_ok .col_wrap .txt {
+  display: block;
+}
+.ly_order .order_ok .col_wrap .ly_edit {
+  margin-top: 0;
+}
+.ly_order .order_ok .col_wrap .left {
+  float: left;
+  width: 45%;
+}
+.ly_order .order_ok .col_wrap .right {
+  float: right;
+  width: 45%;
+}
+.ly_order .order_ok .col_wrap .tb_txt th,
+.ly_order .order_ok .col_wrap .tb_txt td {
+  padding: 5px 0;
+  vertical-align: top;
+}
+.ly_order .order_ok .ctrl_bottom {
+  margin-top: 60px;
+}
+.ly_order .order_ok .ctrl_bottom .btn {
+  width: 190px;
+  margin-left: 20px;
+}
+.ly_order .order_ok .ctrl_bottom .btn:first-child {
+  margin-left: 0;
+}
+.ly_order .phone-text {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .ly_order .phone-text {
+    display: inline-block;
+  }
+}
+.ly_order .headerlist,
+.ly_order .productRows {
+  border-bottom: 1px solid #ebebeb;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  letter-spacing: 0;
+}
+.ly_order .headerlist {
+  font-size: 0;
+}
+.ly_order .headerlist li {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+  display: inline-block;
+  padding: 7px 0;
+}
+.ly_order .productRows {
+  position: relative;
+  list-style: none;
+  padding: 3px 0;
+}
+.ly_order .productRows li {
+  margin: 4px 0;
+  position: relative;
+}
+.ly_order .productRows li > div {
+  font-size: 12px;
+}
+@media screen and (max-width: 767px) {
+  .ly_order .productRows li > div {
+    font-size: 13px;
+  }
+}
+.ly_order .productRows .image {
+  left: 0;
+  position: absolute;
+  width: 80px;
+}
+@media screen and (max-width: 767px) {
+  .ly_order .productRows .image {
+    width: 56px;
+  }
+}
+.ly_order .productRows .image img {
+  max-width: none;
+  width: 100%;
+}
+.ly_order .productRows .product-title {
+  padding: 0 0 0 50px;
+}
+.ly_order .productRows .product-title a,
+.ly_order .productRows .product-title span {
+  display: block;
+  letter-spacing: 1px;
+}
+.ly_order .productRows .product-title a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  color: inherit;
+  background: transparent;
+  border: none;
+  color: #000000;
+  padding: 0;
+  width: auto;
+  border-bottom: 1px transparent solid;
+}
+.ly_order .productRows .product-title a:hover {
+  /*border-color: #979797;*/
+}
+/*@ 주문서 hazmat 위치수정 / 2018.01.06 / bhkim */
+.ly_order .productRows .m-hazmat {
+  margin-left: 96px;
+}
+.ly_order .productRows .m-hazmat .hazmat-label {
+  margin-left: -64px;
+  font-size: 11px;
+  line-height: 17px;
+}
+.ly_order .order-product .productRows {
+  border-top: 1px solid #ebebeb;
+  border-bottom: none;
+  padding: 0;
+}
+.ly_order .order-product .productRows li {
+  padding-top: 10px;
+  margin: 0;
+  border-bottom: 1px solid #ebebeb;
+  padding: 20px 0 14px;
+}
+.ly_order .order-product .productRows li:first-child {
+  border-top: none;
+}
+.ly_order .order-product .productRows li > div {
+  padding-left: 96px;
+}
+@media screen and (max-width: 767px) {
+  .ly_order .order-product .productRows li > div {
+    padding-left: 72px;
+  }
+  .ly_order .productRows .m-hazmat {
+    margin-left: 72px;
+  }
+.ly_order .productRows .m-hazmat .hazmat-label {
+    margin-left: -40px;
+  }
+}
+.ly_order .order-product .productRows li .image {
+  padding-left: 0;
+}
+.ly_order .order-product .productRows li .item-price .txt_ti,
+.ly_order .order-product .productRows li .total-price .txt_ti {
+  display: none;
+}
+.ly_order .order-product .productRows li .item-size {
+  margin-top: 20px;
+}
+.ly_order .order-product .productRows li .item-size .txt_ti,
+.ly_order .order-product .productRows li .item-color .txt_ti,
+.ly_order .order-product .productRows li .quantity .txt_ti {
+  width: 60px;
+  display: inline-block;
+}
+.ly_order .order-product .productRows li .total-price {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 10px;
+}
+.ly_order .order-product .productRows li .total-price .cell {
+  display: table;
+  width: 100%;
+}
+.ly_order .order-product .productRows li .total-price .cell .phone-text,
+.ly_order .order-product .productRows li .total-price .cell .price {
+  display: table-cell;
+}
+.ly_order .order-product .productRows li .total-price .cell .price {
+  text-align: right;
+}
+.ly_order .order-product .delivery-mess {
+  height: auto;
+  padding: 7px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+.ly_order .order-product .cart-sum {
+  padding-top: 20px;
+  /*border-top: 1px solid #ebebeb;*/
+}
+.ly_order .order-product .cart-sum .discount {
+  color: #f28860;
+}
+.ly_order .order-product .cart-sum .cell {
+  padding-bottom: 10px;
+  vertical-align: top;
+}
+.ly_order .order-product .cart-sum .total .cell {
+  border-top: 1px solid #ebebeb;
+  padding-top: 16px;
+}
+.ly_order .order-product .m-informative-section {
+  margin-top: 30px;
+}
+.ly_order .promo-mess,
+.ly_order .delivery-mess {
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 1px solid #ebebeb;
+  display: table;
+  width: 100%;
+  height: 50px;
+}
+.ly_order .promo-mess .txt,
+.ly_order .delivery-mess .txt {
+  display: table-cell;
+  vertical-align: middle;
+}
+.ly_order .promo-mess em,
+.ly_order .delivery-mess em {
+  color: #ff00cc;
+  font-weight: normal;
+  font-style: normal;
+}
+.ly_order .promo-mess .txt,
+.ly_order .promo-mess .price,
+.ly_order .promo-mess .remove {
+  display: table-cell;
+  vertical-align: middle;
+}
+.ly_order .promo-mess .price {
+  width: 11.65%;
+  text-align: center;
+}
+.ly_order .promo-mess .remove {
+  width: 10.89%;
+  text-align: center;
+}
+.ly_order .delivery-mess .txt {
+  text-align: center;
+}
+.ly_order .cart-sum .div-table {
+  font-size: 12px;
+  line-height: 18px;
+}
+.ly_order .cart-sum .price {
+  text-align: right;
+}
+.ly_order .cart-sum .btn {
+  padding: 11px 0;
+  height: 44px;
+  width: 100%;
+}
+.ly_order .delivery_head {
+  /*@ 배송지 제목 패딩 수정 - 주문서에도 영향 / 2018.01.08 / bhkim */
+  padding-top: 2px;
+  padding-bottom: 10px;
+  border-bottom: 1px #ebebeb solid;
+}
+.ly_order .delivery_head .section_title {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-left: 30px;
+}
+.ly_order .delivery_head .section_title:first-child {
+  margin-left: 0;
+}
+.ly_order .delivery_head .section_title input {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.ly_order .delivery_section {
+  display: none;
+}
+.ly_order .delivery_section.open {
+  display: block;
+  padding-top: 10px;
+}
+
+.ly_order.iframe .delivery_section.open {
+  padding-top: 0px;
+}
+
+.ly_order .delivery_section .ly_edit {
+  margin-top: 10px;
+}
+.ly_order .delivery_section .ly_btn {
+  margin-top: 20px;
+}
+.ly_order .delivery_section .ly_btn .btn {
+  width: 47%;
+  line-height: 1;
+  margin-right: 6px;
+}
+.ly_order .delivery-list ul,
+.ly_order .delivery-list li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ly_order .delivery-list li {
+  padding-top: 20px;
+}
+.ly_order .delivery-list li:first-child {
+  padding-top: 0px;
+}
+
+
+.ly_order .delivery-list li .type-radio,
+.ly_order .delivery-list li .label_group {
+  display: block;
+}
+.ly_order .delivery-list li input {
+  vertical-align: -2px;
+}
+.ly_order .delivery-list .label_group {
+  vertical-align: top;
+}
+.ly_order .delivery-list .label_group .head {
+  /*@ 배송지 수정 버튼 안나오는 문제 수정 / 2018.01.08 / bhkim */
+  padding-bottom: 10px;
+  /*overflow: hidden;*/
+}
+.ly_order .delivery-list .label_group .head .btns {
+  /*@ 배송지 수정 버튼 안나오는 문제 수정 / 2018.01.08 / bhkim */
+  /*float: right;*/
+  /*width: 100px;*/
+  text-align: right;
+  display: inline;
+}
+.ly_order .delivery-list .label_group span {
+  /*@ 마이페이지 배송지 변경 수정 / 2018.01.10 / bhkim */
+  display: block;
+  padding-bottom: 0;
+}
+.ly_order .delivery-list .label_group .phone, .ly_order .delivery-list .label_group .address {
+  /*@ 마이페이지 배송지 변경 수정 / 2018.01.10 / bhkim */
+  display: block;
+  color: #999;
+}
+.ly_order .delivery-list .label_group .phone + .phone:before {
+  /*@ 마이페이지 배송지 변경 수정 / 2018.01.10 / bhkim */
+  /*content: "| ";*/
+}
+.ly_order .delivery-list .label_group .name {
+  /*@ 배송지 헤더 마진 수정 / 2018.01.08 / bhkim */
+  margin-right: 20px;
+  font-weight: normal;
+}
+.ly_order .delivery-list .edit_section .label_group .head .btns {
+  float: none;
+  text-align: left;
+  width: auto;
+}
+.ly_order .delivery-list .edit_section label {
+  display: block;
+}
+.ly_order .delivery-list .ly_btn, .ly_order .delivery_section .ly_btn {
+  padding-bottom: 20px;
+  width: 350px;
+}
+.ly_order .ly_send_messag {
+  margin-top: 30px;
+  max-width: 340px;
+  width: 100%;
+}
+.ly_order .ly_send_messag .form_lab {
+  padding-top: 30px;
+}
+
+.ly_order .ly_send_messag .send-message .cell {
+    display: block;
+    padding: 0;
+}
+.ly_order .ly_send_messag .send-message .cell.byte {
+    width: 100%;
+    margin-top: 10px;
+    padding-right: 0;
+}
+
+.ly_order .ly_send_messag .send-message .cell.byte .txt-byte {
+    position: static;
+    text-align: right;
+    -webkit-transform: translate(0, 5px);
+    -moz-transform: translate(0, 5px);
+    -ms-transform: translate(0, 5px);
+    -o-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+}
+
+
+  /*.input_group.send-message .cell {*/
+  /*  display: block;*/
+  /*  padding: 0;*/
+  /*}*/
+  /*.input_group.send-message .cell.byte {*/
+  /*  width: 100%;*/
+  /*  margin-top: 10px;*/
+  /*  padding-right: 0;*/
+  /*}*/
+
+
+.ly_order .ly_send_messag .send-message .m-dropdown {
+  padding-bottom: 0;
+}
+.ly_order .ly_send_messag .send-message .m-dropdown .placeholder {
+  padding-bottom: 3px;
+}
+.ly_order .ly_edit {
+  vertical-align: top;
+}
+.ly_order .ly_edit h2.title {
+  position: relative;
+}
+.ly_order .ly_edit .ly_header {
+  position: relative;
+  border-bottom: 1px solid #ebebeb;
+  /* 2017.09.27 장바구니 바로가기 추가 */
+  padding: 16px 0 6px;
+  margin-bottom: 10px;
+}
+.ly_order .ly_edit .ly_header a.toggle {
+  display: none;
+}
+.ly_order .ly_edit .ly_header span.go_basket {
+  float: right;
+  padding-top: 5px;
+}
+@media (max-width: 1024px) {
+  .ly_order .ly_edit .ly_header span.go_basket {
+    display: none;
+  }
+}
+.ly_order .ly_edit.order-product .productRows {
+  border-top: none;
+}
+.ly_order .ly_edit .tb_txt th {
+  display: none;
+}
+.ly_order .ly_edit .od-section-body {
+  /*padding-left: 4px;*/
+  padding-right: 4px;
+}
+.ly_order .ly_edit .od-section-body .delivery-mess {
+  display: none;
+}
+.ly_order .ly_edit .promo_group .th_ti,
+.ly_order .ly_edit .promo_group .promo_name {
+  margin-right: 10px;
+}
+.ly_order .desc-content-wrap {
+  margin-top: 30px;
+}
+.ly_order .desc-content-wrap .desc-content {
+  color: #999;
+}
+.ly_order .desc-content-wrap .tit {
+  font-size: 12px;
+  color: #999;
+  font-weight: normal;
+  /*@ 결제수단 변경 스타일변경 / 18.01.11 / bhkim */
+  line-height: 20px;
+}
+.ly_order .desc-content-wrap .tit:before {
+  content: "";
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 19px;
+  width: 15px;
+  overflow: hidden;
+  background: url(../images/cos/02/lock.svg) no-repeat;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.ly_order .desc-content-wrap p {
+  margin: 0;
+}
+.ly_order .desc-content-wrap a {
+  /*@ 결제수단 변경 스타일변경 / 2018.01.11 / bhkim */
+  /*color: #000;*/
+  /*border-bottom: 1px #444 solid;*/
+}
+.ly_order .ordersheet-box {
+  padding-top: 20px;
+  display: inline-block
+}
+.ly_order .ordersheet-box .agree {
+  margin-top: 10px;
+}
+.ly_order .ordersheet-box .agree:first-child {
+  margin-top: 0;
+}
+.ly_order .ordersheet-box .agree label input {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.ly_order .ordersheet-box .agree a {
+  /*@ 내용보기 밑으로 / 2018.01.29 / bhkim*/
+  display: table;
+  *display: inline;
+  *zoom: 1;
+  color: inherit;
+  background: transparent;
+  border: none;
+  /*color: #000000;*/
+  padding: 0;
+  width: auto;
+  /*border-bottom: 1px transparent solid;*/
+  /*border-color: #5d5d5d;*/
+  padding-top: 10px;
+}
+.ly_order .ordersheet-box .agree a:hover {
+  border-color: #979797;
+}
+.ly_order .ordersheet-box .order-check-number {
+  margin-top: 10px;
+  /*background: #f1f1f1;*/
+  padding: 15px 0px;
+}
+.ly_order .ordersheet-box .order-check-number .tooltip-cont {
+  top: -20px;
+  left: 170px;
+  width: 200px;
+  margin-left: 20px;
+}
+.ly_order .ordersheet-box .order-check-number .form_wrap {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 0;
+  vertical-align: middle;
+}
+.ly_order .ordersheet-box .order-check-number .form_control {
+  position: static;
+  /*background: #fff;*/
+  width: 210px;
+  padding: 0 10px;
+  margin-left: 5px;
+}
+.ly_order .ordersheet-box .order-check-number .txt {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.ly_order .ordersheet-box .ctrl {
+  padding-top: 20px;
+}
+.ly_order .ordersheet-box .ctrl .btn {
+  width: 340px;
+  line-height: 40px;
+}
+.ly_order .btns a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  /*color: inherit;*/
+  background: transparent;
+  /*border: none;*/
+  /*color: #000000;*/
+  padding: 0;
+  width: auto;
+  /*border-bottom: 1px transparent solid;*/ /*@ 개인계정 연결관리와 동일합니다. 수정,삭제 링크 / 2018.03.15 / mglee */
+  /*border-color: #444;*/ /*@ 개인계정 연결관리와 동일합니다. 수정,삭제 링크 / 2018.03.15 / mglee */
+   /*@ 배송지 수정 버튼 수정 / 2018.01.08 / bhkim */
+  /*line-height: 13px;*/
+  line-height: 17px; /* @ 전시쪽처럼 비패턴립 페이지도 언더라인 더 벌어지게 / 2018.02.10 / mglee */
+  padding-top: 2px;
+}
+.ly_order .btns a:hover {
+  /*border-color: #979797;*/
+  opacity: 0.7;
+}
+.ly_order .btns a + a {
+  margin-left: 20px;
+  position: relative;
+}
+.ly_order .btns a + a:before {
+ /*@ 배송지 수정 버튼 수정 / 2018.01.08 / bhkim */
+  /*content: "";*/
+  /*position: absolute;*/
+  /*top: 2px;*/
+  /*left: -14px;*/
+  /*display: block;*/
+  /*border-left: 1px solid #979797;*/
+  /*height: 10px;*/
+}
+@media screen and (max-width: 980px) {
+  .ly_order .you-may {
+    margin-right: -15px;
+  }
+  .ly_order .you-may ul {
+    margin-left: -15px;
+  }
+  .ly_order .you-may li {
+    float: left;
+    width: 25%;
+    padding-left: 15px;
+  }
+  .ly_order .empty-cart .item {
+    margin-bottom: 0;
+  }
+  .ly_order .empty-cart .h2 {
+    padding-bottom: 60px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ly_order .promo-mess,
+  .ly_order .delivery-mess {
+    padding: 18px 0;
+    font-size: 13px;
+  }
+  .ly_order .promo-mess {
+    position: relative;
+    padding-top: 50px;
+  }
+  .ly_order .promo-mess .txt {
+    padding-left: 10px;
+  }
+  .ly_order .promo-mess .price {
+    width: auto;
+    text-align: right;
+    padding-left: 5px;
+    white-space: nowrap;
+  }
+  .ly_order .promo-mess .remove {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: auto;
+    height: auto;
+    display: block;
+  }
+  .ly_order .promo-mess + .delivery-mess {
+    margin-top: 0;
+    border-top: none;
+  }
+  .ly_order .delivery-mess {
+    border-top: 1px solid #ebebeb;
+    margin-top: 30px;
+  }
+  .ly_order .delivery_section {
+    display: none;
+  }
+  .ly_order .delivery_section.open {
+    display: block;
+  }
+  .ly_order .delivery_section .tb_edit tr:first-child,
+  .ly_order .delivery_section .tb_edit .form_wrap {
+    overflow: visible;
+  }
+  .ly_order .delivery_section .tb_edit .form_group,
+  .ly_order .delivery_section .tb_edit .form_group.email_form {
+    width: 100%;
+    display: block;
+  }
+  .ly_order .delivery_section .tb_edit .form_group .email_id,
+  .ly_order .delivery_section .tb_edit .form_group .input_group {
+    width: 100%;
+  }
+  .ly_order .delivery_section .tb_edit .form_group.option_info .etc_option,
+  .ly_order .delivery_section .tb_edit .form_group .input_group + .input_group.mo_lab {
+    padding-top: 0;
+    position: absolute;
+    top: -23px;
+    right: 0;
+    width: auto;
+  }
+  .ly_order .delivery_section .tb_edit .form_group .input_group.send-message {
+    position: static;
+    display: block;
+    padding-bottom: 5px;
+  }
+  .ly_order .delivery_section .tb_edit .form_group .input_group.send-message .cell {
+    display: block;
+    padding: 0;
+  }
+  .ly_order .delivery_section .tb_edit .form_group .input_group.send-message .cell:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .ly_order .delivery_section .tb_edit .form_group .input_group.send-message .cell.byte {
+    width: 100%;
+    margin-top: 10px;
+    padding-right: 0;
+  }
+  .ly_order .delivery_section .tb_edit .form_group .input_group.send-message .cell.byte .txt-byte {
+    position: static;
+    text-align: right;
+    -webkit-transform: translate(0, 5px);
+    -moz-transform: translate(0, 5px);
+    -ms-transform: translate(0, 5px);
+    -o-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+    float: right;
+  }
+  .ly_order .delivery_section .tb_edit .form_group .input_group + .input_group {
+    padding-bottom: 5px;
+  }
+  .ly_order .delivery_section .tb_edit .form_group + .form_lab {
+    width: 100%;
+  }
+  .ly_order .delivery_section .ly_edit {
+    margin-top: 10px;
+  }
+  .ly_order .delivery_section .ly_btn {
+    margin-top: 20px;
+    /*@ 모바일에서 배송지 버튼 100% 수정 / 2018.01.19 / bhkim */
+    width: 100%;
+  }
+  .ly_order .delivery_section .ly_btn .btn {
+    width: 160px;
+  }
+  .ly_order .delivery-list li {
+    padding-bottom: 10px;
+    /*@ 배송지 정보 마진수정 / 2018.01.08 / bhkim */
+    /*border-top: 1px solid #ebebeb;*/
+  }
+  .ly_order .delivery-list li:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+  .ly_order .delivery-list .tb_edit {
+    padding-top: 0;
+  }
+  .ly_order .delivery-list .ly_list {
+    margin-top: 20px;
+  }
+  .ly_order .delivery-edit .tb_edit {
+    /*@ 배송지 정보 마진수정 / 2018.01.08 / bhkim */
+    /*padding-top: 23px;*/
+  }
+  .ly_order .delivery-edit.new_edit {
+    margin-top: 20px;
+  }
+  .ly_order .cart-sum .div-table {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .ly_order .ly_send_messag .form_wrap {
+    padding-top: 0;
+  }
+  .ly_order .ly_send_messag .form_wrap .input_group.send-message {
+    position: static;
+    margin-bottom: 5px;
+  }
+  .ly_order .ly_send_messag .form_wrap .input_group.send-message .cell.byte {
+    padding-right: 60px;
+    position: relative;
+    margin-top: 35px;
+  }
+  .ly_order .ly_send_messag .form_wrap .input_group.send-message .cell.byte .txt-byte {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+}
+@media screen and (max-width: 570px) {
+  .ly_order .you-may {
+    margin-right: -10px;
+  }
+  .ly_order .you-may ul {
+    margin-left: -10px;
+  }
+  .ly_order .you-may li {
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+  }
+  .ly_order .empty-cart {
+    overflow: hidden;
+  }
+  .ly_order h1.title + .ly_edit {
+    margin-top: -10px;
+  }
+  .ly_order .order_ok {
+    position: relative;
+    padding-bottom: 80px;
+  }
+  .ly_order .order_ok .col_wrap .ti_txt,
+  .ly_order .order_ok .col_wrap .txt {
+    display: inline-block;
+  }
+  .ly_order .order_ok .col_wrap .ti_txt {
+    width: 120px;
+  }
+  .ly_order .order_ok .col_wrap .left,
+  .ly_order .order_ok .col_wrap .right {
+    float: none;
+    width: 100%;
+  }
+  .ly_order .order_ok .ctrl_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+  .ly_order .order_ok .ctrl_bottom .btn {
+    width: 40%;
+    margin-left: 2%;
+  }
+  .ly_order .order_ok .ctrl_bottom .btn:first-child {
+    margin-left: 0;
+  }
+  .ly_order .delivery_section .ly_btn .btn {
+    width: 100%;
+  }
+  /*@ 모바일에서 배송지 버튼 마진수정 / 2018.01.19 / bhkim */
+  .ly_order .delivery_section .ly_btn .second {
+    margin-bottom: 10px;
+  }
+  .ly_order .delivery-list li {
+    padding: 10px 0 0 0;
+  }
+  .ly_order .delivery-list li:first-child {
+    padding-top: 0;
+  }
+  .ly_order .ly_edit .ly_header {
+    /*padding: 10px 0 10px;*/
+    padding: 16px 0 6px;
+    margin-bottom: 10px;
+  }
+  .ly_order .ly_edit .ly_header a.toggle {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /*@ 모바일 제목 클릭시 슬라이드 토글 버튼 사용안함 / 2018.02.12 / bhkim */
+    display: none;
+  }
+  .ly_order .ly_edit .ly_header a.toggle .ic_comm {
+    position: absolute !important;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    text-indent: -100%;
+  }
+  .ly_order .ly_edit .ly_header a.toggle:before {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    background: url("../images/cos/01/enlarge.svg") no-repeat 0 0;
+    background-size: 100% auto;
+  }
+  .ly_order .ly_edit.open .ly_header a.toggle:before {
+    background-position: 0 bottom;
+    background-size: 100% auto;
+  }
+  .ly_order .ly_edit .ly_body {
+    position: relative;
+  }
+  .ly_order .ordersheet-box .order-check-number .form_control {
+    width: 100%;
+  }
+  .ly_order .ordersheet-box .ctrl .btn {
+    width: 100%;
+  }
+
+}
+/* 주운완료 */
+.o-order-confirmation .ly_order .ly_header {
+  /*text-align: center;*/
+}
+.o-order-confirmation .ly_order .left-wrapper .cart-sum {
+  display: block;
+  /*@ 주문완료 결제 부분 마진 설정 2018.01.08 / bhkim */
+  margin-left: 332px;
+  width: auto;
+}
+@media screen and (max-width: 767px) {
+  .o-order-confirmation .ly_order .left-wrapper .cart-sum {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.o-order-confirmation .ly_order .right-wrapper .od-section-body .ly_header {
+  border-bottom: none;
+  text-align: left;
+  padding: 13px 0 0px;
+  margin-bottom: 0;
+}
+.o-order-confirmation .ly_order .right-wrapper .od-section-body .ly_header .sub_title {
+  padding: 0;
+  color: #999;
+  border-bottom: none;
+}
+.o-order-confirmation .ly_order .right-wrapper .col_wrap,
+.o-order-confirmation .ly_order .right-wrapper .ly_body {
+  padding: 0px 0;
+}
+.o-order-confirmation .ly_order .right-wrapper .ly_edit [class^="tb_"] {
+  padding-top: 0;
+}
+.o-order-confirmation .ly_order .right-wrapper .ly_edit + .ly_edit {
+  margin-top: 10px;
+}
+.o-order-confirmation .ly_order .right-wrapper .tb_txt th,
+.o-order-confirmation .ly_order .right-wrapper .tb_txt td {
+  padding: 0;
+}
+.o-order-confirmation .ly_order .right-wrapper .col_wrap .ti_txt {
+  display: none;
+}
+@media screen and (max-width: 570px) {
+  .o-order-confirmation .ly_order .ly_header {
+    text-align: left;
+  }
+}
+/* // @ aos checkout add / 2018.01.06 / bhkim */
+
+@media screen and (max-width: 767px) {
+  .ly_cart h1.title {
+    border-bottom: 1px solid #ebebeb;
+  }
+}
+.ly_cart .headerlist .item {
+  text-align: left;
+}
+@media screen and (max-width: 980px) {
+  .ly_cart .headerlist li {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ly_cart .headerlist {
+    display: none;
+  }
+}
+.ly_cart .cart-list .item,
+.ly_cart .cart-list .product-title {
+  width: 44.59%;
+}
+.ly_cart .cart-list .quantity {
+  width: 19.44%;
+}
+.ly_cart .cart-list .quantity .qty-select,
+.ly_cart .cart-list .quantity .txt {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .ly_cart .cart-list .quantity .cnt-ctrl {
+    display: none;
+  }
+  .ly_cart .cart-list .quantity .qty-select {
+    display: block;
+  }
+}
+.ly_cart .cart-list .item-price {
+  width: 13.43%;
+}
+.ly_cart .cart-list .total-price {
+  width: 11.65%;
+  white-space: nowrap;
+}
+.ly_cart .cart-list .remove {
+  width: 10.89%;
+  line-height: 0;
+}
+.ly_cart .cart-list .productRows li {
+  height: 60px;
+  font-size: 0;
+}
+.ly_cart .cart-list .productRows li > div {
+  display: inline-table;
+  height: 100%;
+  vertical-align: middle;
+}
+.ly_cart .cart-list .productRows li > div .cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.ly_cart .cart-list .productRows li .product-title .cell {
+  text-align: left;
+}
+.ly_cart .cart-list .productRows li.soldout .product-title a,
+.ly_cart .cart-list .productRows li.soldout .item-price .price,
+.ly_cart .cart-list .productRows li.soldout .total-price .price {
+  text-decoration: line-through;
+}
+.ly_cart .cart-list .productRows li.soldout .quantity .cnt-ctrl {
+  display: none;
+}
+.ly_cart .cart-list .productRows li.soldout .quantity .txt {
+  display: block;
+  text-transform: uppercase;
+}
+.ly_cart .cart-list .productRows .price {
+  display: inline-block;
+}
+.ly_cart .cart-list .cart-sum {
+  float: right;
+  width: 260px;
+}
+.ly_cart .cart-list .cart-sum .div-table {
+  margin: 6px 0 9px;
+}
+.ly_cart .cart-list .cart-sum .cell {
+  padding-bottom: 5px;
+}
+.ly_cart .cart-list .cart-sum .btn {
+  margin: 3px 0 0;
+  margin-bottom: 20px;
+}
+.ly_cart .cart-list .promo-wrapper {
+  float: left;
+  padding-top: 10px;
+}
+.ly_cart .cart-list .promo-wrapper .title {
+  padding: 5px 10px 6px 0;
+}
+.ly_cart .cart-list .promo-wrapper .input-group {
+  position: relative;
+  padding-right: 65px;
+  display: inline-block;
+}
+.ly_cart .cart-list .promo-wrapper .input-group .small {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+}
+.ly_cart .cart-list .promo-wrapper .field-validation-error {
+  padding: 3px 0 0;
+}
+.ly_cart .cart-list .login-register-wrapper {
+  min-height: auto;
+}
+@media screen and (max-width: 767px) {
+  .ly_cart .cart-list .productRows {
+    border-bottom: none;
+  }
+  .ly_cart .cart-list .productRows li {
+    height: auto;
+    line-height: 19px;
+    margin: 15px 0 0;
+    min-height: 100px;
+    position: relative;
+  }
+  .ly_cart .cart-list .productRows li > div {
+    display: block;
+  }
+  .ly_cart .cart-list .productRows li > div .cell {
+    display: block;
+    text-align: left;
+  }
+  .ly_cart .cart-list .productRows li .product-title {
+    padding-right: 20px;
+    letter-spacing: .65px;
+  }
+  .ly_cart .cart-list .productRows li.soldout .quantity .qty-select {
+    display: none;
+  }
+  .ly_cart .cart-list .productRows .product-title,
+  .ly_cart .cart-list .productRows .item-price,
+  .ly_cart .cart-list .productRows .quantity {
+    width: 100%;
+    padding: 0 0 0 82px;
+  }
+  .ly_cart .cart-list .productRows .quantity .qty-select {
+    position: absolute;
+    bottom: 54px;
+    left: 82px;
+    width: 100%;
+  }
+  .ly_cart .cart-list .productRows .quantity .txt {
+    position: absolute;
+    bottom: 60px;
+    left: 82px;
+    width: 100%;
+  }
+  .ly_cart .cart-list .productRows .quantity .txt:before {
+    content: "수량";
+    margin-right: 10px;
+  }
+  .ly_cart .cart-list .productRows .item-price {
+    padding-bottom: 30px;
+  }
+  .ly_cart .cart-list .productRows .total-price {
+    width: 100%;
+    margin-top: 34px;
+    padding: 7px 0 7px 82px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .ly_cart .cart-list .productRows .total-price .cell {
+    display: table;
+    border-collapse: separate;
+    width: 100%;
+  }
+  .ly_cart .cart-list .productRows .total-price .cell .phone-text,
+  .ly_cart .cart-list .productRows .total-price .cell .price {
+    display: table-cell;
+  }
+  .ly_cart .cart-list .productRows .total-price .cell .price {
+    text-align: right;
+  }
+  .ly_cart .cart-list .productRows .remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+  }
+  .ly_cart .cart-list .cart-sum {
+    float: none;
+    width: 100%;
+    padding: 10px 0 20px;
+  }
+  .ly_cart .cart-list .cart-sum .cell {
+    padding-bottom: 0;
+  }
+  .ly_cart .cart-list .cart-sum .btn {
+    margin: 15px 0 0;
+  }
+  .ly_cart .cart-list .promo-wrapper {
+    float: none;
+  }
+  .ly_cart .cart-list .promo-wrapper .title {
+    padding: 0 0 5px;
+  }
+  .ly_cart .cart-list .promo-wrapper .input-group {
+    padding-right: 65px;
+    display: block;
+  }
+  .ly_cart .cart-list .promo-wrapper .input-group .promo-text {
+    width: 100%;
+  }
+  .ly_cart .cart-list .promo-wrapper .field-validation-error {
+    padding: 3px 0 0;
+  }
+}
+/* 입력 테이블 */
+.ly_edit {
+  position: relative;
+}
+.ly_edit + .ly_edit {
+  margin-top: 50px;
+}
+.ly_edit table {
+  width: 100%;
+}
+.ly_edit caption {
+  position: absolute !important;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  text-indent: -100%;
+  position: static !important;
+}
+.ly_edit .form_group label input {
+  vertical-align: middle;
+}
+.ly_edit .form_group.option_info .etc_option .tip-contents {
+  width: 280px;
+  top: 0;
+  left: 100%;
+  margin-top: -30px;
+  margin-left: 10px;
+}
+.ly_edit .etc_btn {
+  margin-top: 30px;
+}
+.ly_edit .etc_btn .btn {
+  width: 150px;
+}
+.ly_edit .tb_txt th,
+.ly_edit .tb_info th {
+  text-align: left;
+  font-weight: normal;
+}
+.ly_edit .tb_txt th,
+.ly_edit .tb_info th,
+.ly_edit .tb_txt td,
+.ly_edit .tb_info td {
+  padding: 5px 0;
+}
+.ly_edit .tb_info table {
+  /*padding-top: 10px;*/
+  border-collapse: inherit;
+}
+
+.ly_edit .tb_info th {
+ /*@ mypage 반품상세 팝업 레이아웃 수정 / 2018.1.10 / bhkim */
+  color: #999;
+  margin-bottom: -18px;
+}
+.ly_edit .tb_info th,
+.ly_edit .tb_info td {
+  padding: 20px 10px 0 0;
+  vertical-align: top;
+  /*@ mypage 반품상세 팝업 레이아웃 수정 / 2018.01.10 / bhkim */
+  display: block;
+}
+@media screen and (max-width: 570px) {
+  .ly_edit .form_group.option_info {
+    position: relative;
+  }
+  .ly_edit .form_group.option_info .etc_option {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    width: auto;
+  }
+  .ly_edit .tb_edit th,
+  .ly_edit .tb_edit td {
+    display: block;
+  }
+  .ly_edit .tb_edit th {
+    padding-top: 15px;
+    width: 100%;
+  }
+  .ly_edit .tb_edit .mobil_cell {
+    display: table;
+    border-collapse: separate;
+    width: 100%;
+  }
+  .ly_edit .tb_edit .mobil_cell th,
+  .ly_edit .tb_edit .mobil_cell td {
+    display: table-cell;
+    padding-top: 15px;
+  }
+  .ly_edit .tb_edit .mobil_cell th .data_info,
+  .ly_edit .tb_edit .mobil_cell td .data_info {
+    padding-top: 0;
+  }
+  .ly_edit .tb_edit .mobil_cell th {
+    width: 40%;
+  }
+}
+.ly_edit .tb_edit th,
+.input_login .tb_edit th {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: top;
+  /* @ 아이디 블럭 테이블 얼라인조정 11->5 / 2017.12.21 / bhkim */
+  padding-top: 5px;
+  width: 100%;
+  display: block;
+}
+.ly_edit .tb_edit td,
+.input_login .tb_edit td {
+  padding: 5px 0;
+  display: block;
+}
+.ly_edit .tb_edit td .data_info,
+.input_login .tb_edit td .data_info {
+  /*padding-top: 5px;*/ /* @ 폼 제목 내용 사이 간격 좁힘 / 2018.01.18 / mglee */
+  display: block;
+}
+.ly_edit .tb_edit td .data_info .data_form.phone-change .form_group + .form_group,
+.input_login .tb_edit td .data_info .data_form.phone-change .form_group + .form_group {
+  margin-top: 20px;
+}
+.ly_edit .tb_edit td.td_txt,
+.input_login .tb_edit td.td_txt {
+  padding-top: 11px;
+}
+.ly_edit .tb_edit.no_form th,
+.input_login .tb_edit.no_form th,
+.ly_edit .tb_edit.no_form td,
+.input_login .tb_edit.no_form td {
+  padding: 5px 0;
+}
+@media screen and (max-width: 570px) {
+  .ly_edit .tb_edit th,
+  .input_login .tb_edit th,
+  .ly_edit .tb_edit td,
+  .input_login .tb_edit td {
+    display: block;
+  }
+  .ly_edit .tb_edit th,
+  .input_login .tb_edit th {
+    padding-top: 15px;
+    width: 100%;
+  }  
+  .ly_edit .tb_edit th:first-child,
+  .input_login .tb_edit th:first-child {
+    padding-top: 5px;
+  }
+  
+  .ly_edit .tb_edit .mobil_cell,
+  .input_login .tb_edit .mobil_cell {
+    display: table;
+    border-collapse: separate;
+    width: 100%;
+  }
+  .ly_edit .tb_edit .mobil_cell th,
+  .input_login .tb_edit .mobil_cell th,
+  .ly_edit .tb_edit .mobil_cell td,
+  .input_login .tb_edit .mobil_cell td {
+    display: table-cell;
+    padding-top: 15px;
+  }
+  .ly_edit .tb_edit .mobil_cell th .data_info,
+  .input_login .tb_edit .mobil_cell th .data_info,
+  .ly_edit .tb_edit .mobil_cell td .data_info,
+  .input_login .tb_edit .mobil_cell td .data_info {
+    padding-top: 0;
+  }
+  .ly_edit .tb_edit .mobil_cell th,
+  .input_login .tb_edit .mobil_cell th {
+    width: 40%;
+  }
+}
+/* 리스트 테이블 */
+.ly_list table {
+  width: 100%;
+}
+.ly_list caption {
+  position: absolute !important;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  text-indent: -100%;
+  position: static !important;
+}
+.ly_list .tb_lst thead th {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  font-weight: normal;
+}
+.ly_list .tb_lst tbody th,
+.ly_list .tb_lst tbody td {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+.ly_list .btn_link.gray {
+  color: #767676;
+}
+.ly_list .tb_list .txt_data + .btn_link {
+  margin-top: 10px;
+}
+.ly_list .tb_list .txt_data + .btn_link.gray {
+  margin-top: 0;
+}
+.ly_list .tb_list .btn_link.gray + .btn_link {
+  margin-top: 10px;
+}
+.ly_list .tb_list .btn_link.gray + .btn_link.gray {
+  margin-top: 0;
+}
+/* 결제 */
+.ly_payment {
+  padding-top: 10px;
+}
+.ly_payment ul,
+.ly_payment li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ly_payment label input {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.ly_payment .mo {
+  display: none;
+}
+.ly_payment .payment_section {
+  padding-top: 10px;
+}
+.ly_payment .payment_section .section_title {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.ly_payment .payment_lst,
+.ly_payment .payment-detail,
+.ly_payment .credit-body > ul > li {
+  display: none;
+}
+.ly_payment .payment_lst.open,
+.ly_payment .payment-detail.open,
+.ly_payment .credit-body > ul > li.open {
+  display: block;
+}
+.ly_payment .selectboxit-container {
+  width: auto !important;
+  display: none;
+}
+.ly_payment .selectboxit-container.open {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.ly_payment .payment_lst {
+  position: relative;
+  border-top: 1px solid #ebebeb;
+  margin-top: 5px;
+  padding-top: 30px;
+}
+
+/*@ 주문서 결제 부분 할부선택 스타일 수정iframe 포함 / 2018.01.29 / bhkim*/
+.ly_payment .payment_lst .ui-selectmenu-menu .ui-menu,
+.popup_cont.iframe .ly_payment .payment_lst .ui-selectmenu-menu .ui-menu {
+    width: 100% !important;
+}
+.ly_payment .payment_lst .ui-selectmenu-menu .div-table,
+.popup_cont.iframe .ly_payment .payment_lst .ui-selectmenu-menu .div-table {
+  width: auto;
+}
+.ly_payment .payment_lst .ui-selectmenu-menu .div-table li,
+.popup_cont.iframe .ly_payment .payment_lst .ui-selectmenu-menu .div-table li {
+  display: block;
+  padding: 0;
+}
+.popup_cont.iframe .ly_payment .payment_lst .ui-selectmenu-menu .ui-menu {
+  max-height: 200px;
+}
+@media screen and (max-width: 570px) {
+  .ly_payment .payment_lst .ui-selectmenu-menu .div-table {
+    width: 100%;
+  }
+  .ly_payment .payment_lst .ui-selectmenu-menu .div-table li {
+    display: block;
+    padding: 0;
+  }
+}
+/*@ //주문서 결제 부분 할부선택 스타일 수정 / 2018.01.29 / bhkim*/
+
+.ly_payment .payment_lst .item .payment_title {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+.ly_payment .payment_lst .item + .item .payment_title {
+  left: 189px;
+}
+.ly_payment .payment_lst .item .payment-detail {
+  margin-top: 10px;
+  background: #f1f1f1;
+  padding: 15px 30px;
+}
+
+.payment-detail .type-radio:before
+ {
+  background-color: #fff;
+}
+
+.payment-detail .box_white .type-radio:before {
+    background-color: #e7e7e7;
+}
+
+
+
+/*@ 주문결제 스타일 변경 / 2018.01.11 / bhkim*/
+.ly_payment .payment_lst .item .payment-detail .head .title, 
+.ly_payment .payment_lst .item .payment-term-select .title {
+  font-weight: normal;
+}
+.ly_payment .payment_lst .item .credit-radio,
+.ly_payment .payment_lst .item .bank-select {
+  overflow: hidden;
+}
+.ly_payment .payment_lst .item .credit-radio li,
+.ly_payment .payment_lst .item .bank-select li {
+  float: left;
+  min-width: 14.28571429%;
+  width: 120px;
+  padding: 10px 5px 0 0;
+}
+.ly_payment .payment_lst .item .credit-radio li {
+  min-height: 42px;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .ly_payment .payment_lst .item .credit-radio li {
+    min-height: 45px;
+  }
+}
+.ly_payment .payment_lst .item .credit-radio .type-credit {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+}
+.ly_payment .payment_lst .item .credit-radio .type-credit .row {
+  display: table-row;
+  padding: 0;
+}
+.ly_payment .payment_lst .item .credit-radio .type-credit .cell {
+  display: table-cell;
+}
+.ly_payment .payment_lst .item .credit-radio .type-credit .radio,
+.ly_payment .payment_lst .item .credit-radio .type-credit .lab_group {
+  display: table-cell;
+  vertical-align: top;
+}
+.ly_payment .payment_lst .item .credit-radio .type-credit .lab_group {
+  padding-left: 5px;
+  padding-top: 2px;
+  line-height: 1.2;
+}
+.ly_payment .payment_lst .item .credit-radio .type-credit .lab_group .name,
+.ly_payment .payment_lst .item .credit-radio .type-credit .lab_group .desc {
+  display: inline-block;
+}
+/*@ 주문서 결제분 청구할인 수정 / 2018.01.11 / bhkim*/
+.ly_payment .payment_lst .item .credit-radio .type-credit .lab_group .desc {
+  color: #f28860;
+}
+.ly_payment .payment_lst .payment-term-select .title {
+  padding-right: 20px;
+}
+.ly_payment .payment_lst .payment-term-select .select-ui {
+  min-width: 100px;
+}
+.ly_payment .payment_lst .radio-set,
+.ly_payment .payment_lst .cash-receipts,
+.ly_payment .payment_lst .radio-set li,
+.ly_payment .payment_lst .cash-receipts li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.ly_payment.ly_receipt .payment_lst .cash-receipts-wrap .cash-receipts {
+    float: right;
+    width: 100%;
+    padding: 12px 0px;
+}
+.ly_payment.ly_receipt .payment_lst .cash-receipts-wrap .cr-form {
+  width:340px;
+}
+.ly_payment.ly_receipt .payment_lst .cash-receipts-wrap .input_group {
+    float: right;
+    width: 340px;
+    padding: 12px 0px;
+}
+
+
+.ly_payment .payment_lst .radio-set *,
+.ly_payment .payment_lst .cash-receipts *,
+.ly_payment .payment_lst .radio-set li *,
+.ly_payment .payment_lst .cash-receipts li * {
+  vertical-align: middle;
+}
+.ly_payment .payment_lst .radio-set li,
+.ly_payment .payment_lst .cash-receipts li {
+  padding-left: 20px;
+}
+.ly_payment .payment_lst .radio-set li:first-child,
+.ly_payment .payment_lst .cash-receipts li:first-child {
+  padding-left: 0;
+}
+.ly_payment .payment_lst .credit-body .box_white {
+  padding-bottom: 10px;
+}
+.ly_payment .payment_lst .credit-body .box_white .bank-depositor {
+  padding-bottom: 10px;
+}
+.ly_payment .payment_lst .credit-body .payment-term-select,
+.ly_payment .payment_lst .credit-body .label-wrap,
+.ly_payment .payment_lst .credit-body .radio-set {
+  padding-bottom: 10px;
+}
+.ly_payment .payment_lst .credit-body .payment-term-select .radio-set {
+  padding-bottom: 0;
+}
+.ly_payment .payment_lst .bank-depositor label,
+.ly_payment .payment_lst .cash-receipts-wrap label,
+.ly_payment .payment_lst .bank-depositor strong,
+.ly_payment .payment_lst .cash-receipts-wrap strong,
+.ly_payment .payment_lst .bank-depositor .head,
+.ly_payment .payment_lst .cash-receipts-wrap .head {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  /*width: 70px;*/
+  /*color: #666;*/
+  vertical-align: middle;
+  font-weight: normal;
+}
+.ly_payment .payment_lst .bank-depositor .form_group,
+.ly_payment .payment_lst .cash-receipts-wrap .form_group {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+.ly_payment .payment_lst .bank-depositor .input_group,
+.ly_payment .payment_lst .cash-receipts-wrap .input_group {
+  display: inline-table;
+  width: 250px;
+}
+.ly_payment .payment_lst .bank-depositor .bank-info,
+.ly_payment .payment_lst .cash-receipts-wrap .bank-info,
+.ly_payment .payment_lst .bank-depositor .cr-form,
+.ly_payment .payment_lst .cash-receipts-wrap .cr-form {
+  margin-top: 10px;
+}
+.ly_payment .payment_lst .bank-depositor .bank-info:first-child,
+.ly_payment .payment_lst .cash-receipts-wrap .bank-info:first-child,
+.ly_payment .payment_lst .bank-depositor .cr-form:first-child,
+.ly_payment .payment_lst .cash-receipts-wrap .cr-form:first-child {
+  margin-top: 0;
+}
+.ly_payment .payment_lst .bank-depositor .txt,
+.ly_payment .payment_lst .cash-receipts-wrap .txt {
+  padding-left: 10px;
+  color: #999;
+}
+.ly_payment .payment_lst .bank-depositor .cash-receipts label,
+.ly_payment .payment_lst .cash-receipts-wrap .cash-receipts label {
+  width: auto;
+}
+.ly_payment .payment_lst .bank-depositor .cr-form,
+.ly_payment .payment_lst .cash-receipts-wrap .cr-form {
+  display: none;
+}
+.ly_payment .payment_lst .bank-depositor .cr-form.open,
+.ly_payment .payment_lst .cash-receipts-wrap .cr-form.open {
+  display: block;
+}
+.ly_payment .payment_lst .bank-depositor .payment-term-select {
+  padding-top: 10px;
+}
+.ly_payment .payment_lst .bank-depositor .payment-term-select label {
+  width: auto;
+}
+.ly_payment .payment_lst .bank-depositor + .payment-term-select {
+  padding-top: 0px;
+}
+.ly_payment .payment_lst .bank-depositor + .payment-term-select .title {
+  display: inline-block;
+  width: 130px;
+}
+.ly_payment .payment_lst .bank-depositor + .payment-term-select.mo + .label-wrap {
+  padding-top: 0px;
+}
+.ly_payment .payment_lst .tlist {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.ly_payment .payment_lst .tlist li {
+  /*@ 주문서결제 스타일 수정 / 2018.01.11 / bhkim*/
+  /*padding-left: 130px;*/
+}
+.ly_payment .payment_lst .tlist li:before {
+  content: "※ ";
+}
+.ly_payment .payment_lst .payment-amount .tlist li {
+  padding-left: 0;
+}
+.ly_payment .payment_lst .payment-detail .payment-detail {
+  display: block;
+}
+.ly_payment .payment_lst .payment-detail .payment-detail {
+  border-top: 1px solid #ebebeb;
+  background: #f1f1f1;
+  padding: 15px 30px 0;
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-top: 15px;
+}
+.ly_payment .payment_lst .payment-detail .payment-detail .tit {
+  font-size: 12px;
+  color: #666;
+}
+@media screen and (max-width: 570px) {
+  .ly_payment .payment_lst .payment-detail .payment-detail .tit {
+    font-size: 13px;
+  }
+}
+.ly_payment .payment_lst .payment-detail .payment-detail p {
+  margin: 0;
+}
+.ly_payment .payment_lst .payment-detail .payment-detail a {
+  color: #666;
+  /*border-bottom: 1px #666 solid;*/
+}
+.ly_payment .payment_lst .box_white {
+  background: #fff;
+  padding: 20px 25px;
+}
+.ly_payment .payment_lst .box_white .etc_option {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.ly_payment .payment_lst .box_white .etc_option .tooltip-cont {
+  top: -20px;
+  left: 100%;
+  width: 200px;
+  margin-left: 20px;
+}
+.ly_payment .payment_lst .box_white .etc_option .tooltip-cont.lg {
+  width: 400px;
+}
+.ly_payment .payment_lst .box_white .etc_option .tooltip-cont .tooltip-tit + p {
+  margin-top: 15px;
+}
+.ly_payment .payment_lst div + .box_white {
+  margin-top: 10px;
+}
+.ly_payment .payment_lst .box_white {
+  margin-top: 10px;
+}
+.ly_payment .payment_lst .box_white .box_white {
+  margin-top: 0;
+  margin-left: -25px;
+  margin-right: -25px;
+  padding-bottom: 0;
+  border-top: 1px solid #ebebeb;
+}
+.ly_payment .payment_lst .ly_btn {
+  margin-top: 10px;
+}
+.ly_payment.ly_receipt .payment_lst {
+  /*border-bottom: 1px solid #ebebeb;*/
+  border-top: none;
+  margin-top: 0;
+  /*padding-bottom: 30px;*/
+}
+@media screen and (max-width: 980px) {
+  .ly_payment .web {
+    display: none;
+  }
+  .ly_payment .mo {
+    display: block;
+  }
+  .ly_payment .payment_section {
+    padding-top: 0;
+  }
+  .ly_payment .payment_section .section_title {
+    display: none;
+  }
+  .ly_payment .payment_lst {
+    border-top: none;
+    display: block;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .ly_payment .payment_lst .item {
+    margin-top: 10px;
+  }
+  .ly_payment .payment_lst .item .payment_title {
+    position: static;
+    top: auto;
+    left: auto;
+  }
+  .ly_payment.ly_receipt .payment_lst {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .ly_payment .payment_lst .payment-term-select .title {
+    display: block;
+    padding-right: 0;
+  }
+  .ly_payment .payment_lst .radio-set li {
+    display: block;
+    padding-left: 0;
+    padding-top: 10px;
+  }
+  .ly_payment .payment_lst .box_white .etc_option .tooltip-cont.lg {
+    width: 90%;
+  }
+  .ly_payment .payment_lst .ly_btn {
+    margin-top: 10px;
+  }
+  .ly_payment .payment_lst .ly_btn .btn {
+    width: 100%;
+  }
+  .ly_payment .payment_lst .bank-depositor label,
+  .ly_payment .payment_lst .cash-receipts-wrap label,
+  .ly_payment .payment_lst .bank-depositor strong,
+  .ly_payment .payment_lst .cash-receipts-wrap strong,
+  .ly_payment .payment_lst .bank-depositor .head,
+  .ly_payment .payment_lst .cash-receipts-wrap .head {
+    display: block;
+    width: auto;
+    margin-bottom: 10px;
+  }
+  .ly_payment .payment_lst .bank-depositor .input_group,
+  .ly_payment .payment_lst .cash-receipts-wrap .input_group {
+    display: table;
+    border-collapse: separate;
+    width: 100%;
+  }
+  .ly_payment .payment_lst .bank-depositor .bank-info,
+  .ly_payment .payment_lst .cash-receipts-wrap .bank-info,
+  .ly_payment .payment_lst .bank-depositor .cr-form,
+  .ly_payment .payment_lst .cash-receipts-wrap .cr-form {
+    margin-top: 10px;
+  }
+  .ly_payment .payment_lst .bank-depositor .bank-info:first-child,
+  .ly_payment .payment_lst .cash-receipts-wrap .bank-info:first-child,
+  .ly_payment .payment_lst .bank-depositor .cr-form:first-child,
+  .ly_payment .payment_lst .cash-receipts-wrap .cr-form:first-child {
+    margin-top: 0;
+  }
+  .ly_payment .payment_lst .bank-depositor .txt,
+  .ly_payment .payment_lst .cash-receipts-wrap .txt {
+    padding-left: 0;
+  }
+  .ly_payment .payment_lst .bank-depositor .cash-receipts label,
+  .ly_payment .payment_lst .cash-receipts-wrap .cash-receipts label {
+    width: auto;
+    margin-bottom: 0;
+  }
+  .ly_payment .payment_lst .bank-depositor .cash-receipts li,
+  .ly_payment .payment_lst .cash-receipts-wrap .cash-receipts li {
+    display: block;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  .ly_payment .payment_lst .bank-depositor .cash-receipts li:first-child,
+  .ly_payment .payment_lst .cash-receipts-wrap .cash-receipts li:first-child {
+    margin-top: 0;
+  }
+  .ly_payment .payment_lst .tlist li {
+    padding-left: 0;
+  }
+}
+/* 결제처리중 - 모바일에서만 보임 */
+.ly_mobile_page {
+  /*background: red;*/
+  background: #fff;
+  border: none;
+  color: #999;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.ly_mobile_page,
+.ly_mobile_page * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ly_mobile_page .mo_header {
+  /*@ 모바일 결제대기 헤더 영역 크게 / 2018.01.26 / bhkim*/
+  margin: 25px 0;
+}
+.ly_mobile_page .mo_header .title {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+.ly_mobile_page .mo_header .back-button {
+  position: absolute;
+  z-index: 203;
+  left: 25px;
+  top: 25px;
+  height: 18px;
+  width: 16px;
+  background: url('../images/cos/01/device-sprite.png') no-repeat 0 -173px;
+}
+.ly_mobile_page .mo_body {
+  padding: 20px 25px 25px;
+}
+.ly_mobile_page .mo_body .top_mess {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.ly_mobile_page .mo_body .div_section {
+  margin-top: 40px;
+  line-height: 1.5;
+}
+.ly_mobile_page .mo_body .div_section p {
+  line-height: 1.5;
+  margin: 0;
+}
+.ly_mobile_page .mo_body .div_section .btn {
+  width: 100%;
+}
+.ly_mobile_page .mo_body .div_section .txt_ti {
+  margin-bottom: 10px;
+}
+.ly_mobile_page .mo_body .div_section .txt {
+  font-size: 12px;
+  margin: 5px 0 0;
+}
+/* 위시리스트 */
+#wishlist-container .shareWishlist {
+  text-transform: uppercase;
+}
+#wishlist-container .mess_info {
+  padding-left: 15px;
+}
+#wishlist-container .product_sort {
+  display: table;
+  border-collapse: separate;
+  width: 100%;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+#wishlist-container .product_sort,
+#wishlist-container .product_sort * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#wishlist-container .product_sort .left_form,
+#wishlist-container .product_sort .right_form {
+  display: table-cell;
+  vertical-align: middle;
+}
+#wishlist-container .product_sort .right_form {
+  text-align: right;
+  width: 250px;
+}
+#wishlist-container #product-list {
+  margin-top: 4px;
+  width: 100%;
+}
+#wishlist-container .priceWrap .price {
+  display: table;
+  margin: 0 auto;
+}
+#wishlist-container .item {
+  padding-bottom: 25px;
+  position: relative;
+}
+#wishlist-container .item > * {
+  font-size: 12px;
+  letter-spacing: 0.65px;
+}
+#wishlist-container .products .item .image-container {
+  display: block;
+  margin: 0;
+  z-index: 0;
+}
+#wishlist-container .products .item .info {
+  margin: 20px 0 10px;
+  min-height: 73px;
+}
+#wishlist-container .products .item .name {
+  line-height: 14px;
+  margin: 0 0 5px;
+}
+#wishlist-container .item.sold-out .colorBox,
+#wishlist-container .item.sold-out img {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  opacity: 0.5;
+}
+#wishlist-container .btn {
+  width: 100%;
+}
+#wishlist-container .products .item.sold-out {
+  color: #d2d2d2;
+}
+#wishlist-container .products .item.sold-out .info a {
+  color: #d2d2d2;
+}
+#wishlist-container .products .item.sold-out del {
+  color: #d2d2d2;
+}
+#wishlist-container .products .item.sold-out del:after {
+  background: #d2d2d2;
+}
+#wishlist-container .products .item.sold-out .SalePrice {
+  color: #f07373;
+}
+#wishlist-container .products .item .priceWrap {
+  margin: 0 0 3px;
+}
+#wishlist-container .products .item del:after {
+  top: 8px;
+}
+.touch #wishlist-container .products .item del:after {
+  top: 7px;
+}
+#wishlist-container .item .colorBox {
+  border: 1px solid #ebebeb;
+  margin: 0;
+}
+#wishlist-container .item .close-dialog {
+  background-position: -900px 0;
+  display: none;
+  z-index: 2;
+}
+#wishlist-container .item:hover .close-dialog {
+  background-position: 22px -1230px;
+  display: block;
+}
+.touch #wishlist-container .item .close-dialog {
+  background-position: 22px -1230px;
+  display: block;
+}
+#wishlist-container .shareWishlist.phone-only,
+.shareWishlist .cosSharePinterest {
+  display: none;
+}
+#wishlist-container .item .sizeLabel {
+  margin: 0 0 0 5px;
+  position: relative;
+  top: -2px;
+}
+#wishlist-container .products .item .btn {
+  font-size: 13px;
+  line-height: 14px;
+  margin: 5px 0 10px;
+  padding: 11px 0;
+}
+#wishlist-container .products .item .btn.sold-out-btn {
+  border-color: #e9e9e9;
+  color: #cacaca;
+  cursor: default;
+}
+#order-history-container,
+#order-list .order {
+  border-bottom: 1px solid #ebebeb;
+}
+#wishlist-container .products .item .btn.sold-out-btn:active {
+  background: #fff;
+}
+#wishlist-container .shareWishlist {
+  font-size: 11px;
+  margin: 0 0 5px;
+}
+#wishlist-container .shareWishlist.not-phone {
+  margin-bottom: 10px;
+}
+#wishlist-container .shareWishlist a {
+  color: #999;
+}
+#wishlist-container .empty-wishlist h3 {
+  margin: 0;
+}
+@media screen and (max-width: 1120px) {
+  #wishlist-container #product-list {
+    padding-right: 3.5%;
+    width: 96.5%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #wishlist-container #product-list {
+    padding-right: 2%;
+    width: 98%;
+  }
+  #wishlist-container .shareWishlist {
+    display: inline-block;
+  }
+  #wishlist-container .item .sharePop .close-dialog {
+    display: none;
+  }
+}
+@media screen and (max-width: 980px) {
+  #wishlist-container .mess_info {
+    padding-left: 0;
+  }
+  #wishlist-container .product_sort {
+    padding-left: 0;
+  }
+  #wishlist-container #product-list {
+    width: 100%;
+  }
+  #wishlist-container .empty-wishlist {
+    padding-right: 31%;
+  }
+  #wishlist-container .empty-wishlist h3 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  #wishlist-container .mess_info {
+    padding-left: 25px;
+  }
+  #wishlist-container .product_sort {
+    padding-left: 25px;
+  }
+  #wishlist-container #product-list {
+    padding-right: 0;
+    width: 100%;
+  }
+  #wishlist-container #product-list .products {
+    margin-left: 0;
+  }
+  #wishlist-container #product-list .products .item {
+    width: 50%;
+  }
+  #wishlist-container #account-nav {
+    width: 20.2%;
+  }
+  #my-account #wishlist-container .account-content {
+    margin-right: 19px;
+  }
+  #wishlist-container .shareWishlist {
+    padding-left: 5%;
+  }
+  #wishlist-container .empty-wishlist {
+    padding-right: 23%;
+  }
+}
+@media screen and (max-width: 570px) {
+  #wishlist-container .mess_info {
+    padding-left: 10px;
+  }
+  #wishlist-container .product_sort {
+    padding-left: 10px;
+  }
+  #wishlist-container #product-list,
+  #wishlist-container .empty-wishlist {
+    padding-right: 0;
+  }
+  #my-account #wishlist-container .account-content {
+    width: 100%;
+  }
+  #wishlist-container #account-nav,
+  #wishlist-container #product-list {
+    width: 100%;
+  }
+  #my-account #wishlist-container .account-content {
+    margin-right: 0;
+    position: relative;
+  }
+  #wishlist-container .shareWishlist {
+    text-align: center;
+    font-size: 13px;
+  }
+  #wishlist-container .shareWishlist a,
+  #wishlist-container .shareWishlist > a {
+    font-size: 13px;
+  }
+  #wishlist-container .shareWishlist.phone-only {
+    display: block;
+  }
+  #wishlist-container .username {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: -15px;
+  }
+}
+/* 회원정보 변경 */
+.member_info + .ly_tit_line {
+  margin-top: 40px;
+}
+.member_info .ly_edit {
+  padding-top: 10px;
+}
+.member_info .ly_edit .th_w {
+  width: 150px;
+}
+.member_info .ly_edit .data_info {
+  padding-bottom: 20px;
+}
+.member_info .ly_edit .data_info .data_txt span + .txt_btn {
+  margin-left: 10px;
+}
+.member_info .ly_edit .data_info .data_form .txt_btn + .form_group {
+  margin-top: 10px;
+}
+.member_info .ly_edit .data_info .data_form .form_group.email_form {
+  width: 400px;
+}
+.member_info .ly_edit .data_info .data_form .form_group .input_group,
+.member_info .ly_edit .data_info .data_form .form_group .email_id {
+  width: 250px;
+}
+.member_info .ly_edit .data_info .data_form .form_group .form_btn:first-child {
+  padding-left: 0;
+}
+.member_info .ly_edit .data_info .form_group {
+  margin-top: 10px;
+}
+.member_info .ly_edit .data_info .form_group .btn {
+  width: auto;
+  margin-top: 0;
+}
+.member_info .ly_edit .data_info .form_group .btn + .btn {
+  margin-left: 15px;
+}
+.member_info .ly_edit .data_info .input_group label + label {
+  margin-left: 20px;
+}
+.member_info .form_lab .txt_info:before {
+  content: "※ ";
+}
+.member_info .form_lab a.txt_btn {
+  text-decoration: underline;
+}
+.member_info.bottom {
+  padding-top: 20px;
+}
+@media screen and (max-width: 570px) {
+  .member_info .ly_edit .data_info .data_form .form_group {
+    width: 100%;
+  }
+  .member_info .ly_edit .data_info .data_form .form_group.email_form {
+    width: 100%;
+  }
+  .member_info .ly_edit .data_info .data_form .form_group .input_group {
+    width: 100%;
+  }
+  .member_info .ly_edit .data_info .data_form .form_group .phone_form + .form_btn {
+    margin-top: 10px;
+  }
+  .member_info .ly_edit .data_info .data_form .form_group .phone_form + .form_btn + .form_lab {
+    position: static;
+    top: 0;
+  }
+  .member_info .ly_edit .data_info .data_form .form_group .email_id {
+    width: 60%;
+  }
+  .member_info .ly_edit .data_info .data_form .form_group .form_btn {
+    padding-left: 0;
+    width: 100%;
+  }
+  .member_info .ly_edit .data_info .data_form .form_group .form_btn .btn {
+    width: 100%;
+  }
+}
+/* 2017.08.25 주문서작성 주문고객 table */
+.infoCol {
+  width: 155px;
+}
+/* 2017.08.22 이메일버튼 패딩수정 */
+@media screen and (max-width: 480px) {
+  .selectboxit-text {
+    text-indent: 0px;
+    padding: 0px 16px 0 5px;
+  }
+  .selectboxit-arrow-container:after {
+    right: 4px;
+  }
+  .infoCol {
+    width: 95px;
+  }
+}
+.policy-style-cont ul,
+.policy-style-cont ol {
+  list-style-type: none;
+  padding: 0 0 0 20px;
+}
+.policy-style-cont dl dd {
+  margin: 0 0 0 20px;
+}
+.policy-style-cont .tos-box h2 {
+  font-size: 13px;
+  /* @ 정책 안내서 제목 볼드 수정 / 2018.04.23 / bhkim */
+  font-weight: bold;
+  color: #444;
+  margin: 25px 0 10px;
+}
+.policy-style-cont .tos-box .table-wrap {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.policy-style-cont .tos-box .table-wrap th {
+  text-align: center;
+  font-weight: 400;
+}
+.policy-style-cont .tos-box .table-wrap th,
+.policy-style-cont .tos-box .table-wrap td {
+  padding: 3px 7px;
+  word-break: break-all;
+  vertical-align: middle;
+}
+.policy-style-cont .tos-box .table-wrap.center td {
+  text-align: center;
+}
+.policy-style-cont .tos-box .border-type {
+  border-top: 1px #dddddd solid;
+  border-left: 1px #dddddd solid;
+}
+.policy-style-cont .tos-box .border-type th,
+.policy-style-cont .tos-box .border-type td {
+  border-right: 1px #dddddd solid;
+  border-bottom: 1px #dddddd solid;
+}
+
+/*@ 장바구니 프로모션 에러 추가 / 2018.01.12 / bhkim*/
+.promo_error {
+  width: 100%;
+}
+/*@ 장바구니 주문서 안내 추가 / 2018.01.12 / bhkim */
+.m-informative-section h3 {
+  /*font-weight: bold;*/
+}
+/*@ 장바구니 주문서요약 버튼 / 2018.01.12 / bhkim */
+.o-minicart .summary-section .a-button.is-secondary,
+.o-minicart .summary-section .a-button.is-secondary:hover {
+  border:#fff;
+}
+
+/*@ 임시수정*/
+@media (min-width: 768px) {
+  .o-lightbox {
+    max-height: 743px;
+  }
+}
+
+.ly_order .ly_edit .delivery_section .ly_address .form_group + .input_group {
+  padding-left: 14px; 
+  padding: 10px 0;
+}
+.ly_order .ly_body.od-section-body .form_group.option_info .input_group,
+.ly_order .ly_body.od-section-body .email_form {
+  width: 340px;
+}
+@media screen and (max-width: 570px){
+  .ly_order .ly_body.od-section-body .form_group.option_info .input_group,
+  .ly_order .ly_body.od-section-body .email_form {
+    width: 100%;
+  }
+}
+.ly_order .ly_body.od-section-body .form_group .input_group,
+.ly_order .ly_body.od-section-body .email_form .email_id {
+  width: 219px;
+}
+
+.ly_payment .payment_lst .credit-body .label-wrap .txt_etc .desc {
+  color: #f28860;
+}
+
+.ly_order .order_wrapper .right-wrapper.order_finish .ly_header.od-section-header {
+  display: none;
+}
+.ly_order .order_wrapper .right-wrapper .ly_header.od-section-header .txt_btn {
+  float: right;
+  /*@ 주문서 우측 버튼 밑줄제거 / 2018.01.29 / bhkim */
+  border-bottom: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .ly_order .order_wrapper .right-wrapper .ly_header.od-section-header {
+    display: block;
+  }
+}
+/*@ 장바구니 주문서 flammable 생성 폰트에서 이미지로 / 2018.01.25 / bhkim */
+.ly_order .productRows .m-hazmat.mflammable {
+  margin-top: 10px;
+}
+/*@ 주문서 헤더변경에 따른 마진 병경 / 2018.01.26 / bhkim*/
+.o-page-content.is-checkout {
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .o-page-content.is-checkout {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+@media (min-width: 1151px) {
+  .o-page-content.is-checkout {
+    margin-top: 0;
+    padding-top: 40px;
+  }
+}
+
+.ly_order .ly_send_messag {
+  margin-top: 30px;
+  max-width: 340px;
+  width: 100%;
+}
+/*@ 주문서 모바일시 반응형조정 / 2018.01.30 / bhkim */
+@media (max-width: 570px) { 
+  .ly_order .ly_send_messag {
+    max-width: 100%;
+  }
+  .ly_order.create-order .ly_body.od-section-body .form_group .input_group {
+    width: 100%;
+  }
+  .ly_order.create-order .ly_payment.ly_receipt .payment_lst .cash-receipts-wrap .cr-form  {
+    width: 100%;
+  }  
+  .ly_order.create-order .ly_payment.ly_receipt .payment_lst .cash-receipts-wrap .input_group {
+    width: 100%;
+    padding: 0;
+  }
+  .ly_order.create-order .ordersheet-box.order-payment-ctrl {
+    width: 100%;
+  }
+  .ly_order.create-order .ordersheet-box.order-payment-ctrl .order-check-number .form_control {
+    margin: 5px 0 10px 0;
+  }
+}
+

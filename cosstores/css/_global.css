@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*
+    파일 개요
+    ---------------------------------------------------------------------
+    @ 범위 : (V) OFF | ( ) SIS
+    @ 목적 : 비패턴립 스타일 정의
+    @ 작성 : IDR System - Publishing Team.
+    @ 최종 : 2018.02.19.00:00
+*/
+.scrolling_event {
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateZ(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-perspective: 1000;
+  touch-action: pan-y;
+}
